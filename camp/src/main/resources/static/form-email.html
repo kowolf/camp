@@ -1,0 +1,21 @@
+<div class="form-group">
+	<label for="email">Email</label> <input type="text"
+		class="form-control" name="email" ng-model="formData.email"> <label
+		for="campId">Camp Id</label> <input type="text" class="form-control"
+		name="campId" ng-model="campId">
+
+	<button ng-click="loadCamp(campId)">Load Camp</button>
+	<button ng-click="restCamp()">Reset Camp</button>
+
+
+	<div class="form-group row">
+		<div class="">
+			<a ui-sref="start.main" class="btn btn-info"> Start Over</span>
+			</a>
+			<a ui-sref="form.season" class="btn btn-info"> Next
+				Section <span class="glyphicon glyphicon-circle-arrow-right"></span>
+			</a>
+		</div>
+	</div>
+
+</div>

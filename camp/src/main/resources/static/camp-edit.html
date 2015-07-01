@@ -1,0 +1,53 @@
+
+<div class="text-center">
+	<a ui-sref-active="active" ui-sref="form.email"><span>1</span>Create
+		Camp</a> <a ui-sref-active="active" ui-sref="camp.list"><span>3</span>List
+		Camps</a>
+</div>
+
+<div class="row">
+	<table>
+		<tbody>
+			<tr>
+				<td>
+					{{id}}
+				</td>
+				<td>
+				 {{camp.email}}
+				 </td>
+				 <td>{{camp.location}}</td>
+				 <td>{{camp.count}}</td>
+				 
+			</tr>
+		</tbody>
+	</table>
+	
+	<div>
+		<label for="email">Email</label><input id="email" type="text" ng-model="camp.email"/>
+	</div>
+	<div>
+		<label for="season">Season</label>
+		<select id="season" ng-model="camp.season.id" ng-options="season.id as season.name for season in seasons">
+    		<!-- <option value="">Select Account</option> -->
+		</select>
+	</div>
+	<div>
+		<label for="location">Location</label><input id="location" type="text" ng-model="camp.location"/>
+	</div>
+	<div>
+		<label for="count">Count</label><input id="count" type="text" ng-model="camp.count"/>
+	</div>
+	<div>
+		<label>What to bring:</label>
+		<ul ng-repeat="item in camp.season.items">
+			<li>{{item.name}}</li>
+		</ul>
+	</div>
+	
+	<div>
+		<button ng-click="update()" >Save</button>
+	</div>
+</div>
+
+
+

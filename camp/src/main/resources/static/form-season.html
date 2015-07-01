@@ -1,0 +1,23 @@
+<label>What time of year is the camp?</label>
+<div class="form-group">
+	<div ng-repeat="season in seasons">
+
+		<label> <input name="season{{$index}}" type="radio"
+			ng-model="formData.seasonId" value="{{season.id}}" />
+			{{season.name}}
+		</label>
+
+	</div>
+</div>
+
+<div class="form-group row">
+	
+		<a ui-sref="start.main" class="btn btn-info"> Start Over</span></a>
+		<a ui-sref="form.email" class="btn btn-info">  <span class="glyphicon glyphicon-circle-arrow-left"></span>Previous
+				Section
+		</a>
+		<a ui-sref="form.location" class="btn btn-info"> Next
+				Section <span class="glyphicon glyphicon-circle-arrow-right"></span>
+		</a>
+	
+</div>

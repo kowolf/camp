@@ -1,0 +1,26 @@
+
+<div class="text-center">
+	<a ui-sref-active="active" ui-sref="form.email"><span>1</span>Create
+		Camp</a> <a ui-sref-active="active" ui-sref="camp.list"><span>3</span>List
+		Camps</a>
+</div>
+
+<div class="row">
+	<table>
+		<tbody ng-repeat="camp in campList">
+			<tr>
+				<td>
+					<a ui-sref-active="active" ui-sref="camp.edit({id:camp.id})">camp #{{camp.id}}</a>
+				</td>
+				<td>
+					{{camp.email}}
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="row">
+	<div class="selectedItems">{{mySelections}}</div>
+</div>
+
+
