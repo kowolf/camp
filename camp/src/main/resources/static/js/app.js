@@ -1,6 +1,6 @@
 // create our angular app and inject ngAnimate and ui-router 
 // =============================================================================
-angular.module('campApp', [ 'ngAnimate', 'ui.router','ngGrid' ])
+angular.module('campApp', [ 'ngAnimate', 'ui.router','ngGrid','ngSanitize','ui.select' ])
 
 // configuring our routes
 // =============================================================================
@@ -21,6 +21,23 @@ angular.module('campApp', [ 'ngAnimate', 'ui.router','ngGrid' ])
 		url : '/edit/:id',
 		templateUrl : 'camp-edit.html',
 		controller : 'campDetailController'
+		
+	})
+	
+	// (/season)
+	.state('season', {
+		url : '/season',
+		templateUrl : 'season.html',
+		controller : 'seasonController'
+	})
+	.state('season.list', {
+		url : '/list',
+		templateUrl : 'season-list.html',
+		controller : 'seasonController'
+	}).state('season.edit', {
+		url : '/edit/:id',
+		templateUrl : 'season-edit.html',
+		controller : 'seasonDetailController'
 		
 	})
 
@@ -60,6 +77,38 @@ angular.module('campApp', [ 'ngAnimate', 'ui.router','ngGrid' ])
 	$urlRouterProvider.otherwise('/camp/list');
 })
 
+//filter
+.filter('propsFilter', function() {
+  return function(items, props) {
+    var out = [];
+
+    if (angular.isArray(items)) {
+      items.forEach(function(item) {
+        var itemMatches = false;
+
+        var keys = Object.keys(props);
+        for (var i = 0; i < keys.length; i++) {
+          var prop = keys[i];
+          var text = props[prop].toLowerCase();
+          if (item[prop].toString().toLowerCase().indexOf(text) !== -1) {
+            itemMatches = true;
+            break;
+          }
+        }
+
+        if (itemMatches) {
+          out.push(item);
+        }
+      });
+    } else {
+      // Let the output be the input untouched
+      out = items;
+    }
+
+    return out;
+  };
+})
+
 // our controller for the form
 // =============================================================================
 .controller('homeController', function($scope, $http) {
@@ -92,6 +141,98 @@ angular.module('campApp', [ 'ngAnimate', 'ui.router','ngGrid' ])
 	
 
 })
+
+
+.controller('seasonController', function($scope, $http ,$stateParams) {
+	 $scope.mySelections = [];
+	
+	$http({
+		method : 'GET',
+		url : 'rest/season'
+	}).success(function(data, status) {
+		console.log(JSON.stringify(data));
+		$scope.status = status;
+		$scope.seasonList = data;
+		
+		   
+	}).error(function(data, status) {
+		$scope.seasonList = data || "Request failed";
+		$scope.status = status;
+	});
+	
+	$scope.update = function() {
+		alert("Update Season???");
+	};
+	
+	
+
+})
+
+//TODO - create season detail controller
+.controller('seasonDetailController', function($scope,$stateParams, $http){
+  $scope.id = $stateParams.id;
+  
+  $http({
+		method : 'GET',
+		url : 'rest/season/' + $scope.id + '.json'
+	}).success(function(data, status) {
+		$scope.status = status;
+		$scope.season = data;
+		console.log("data = " + JSON.stringify(data));
+	}).error(function(data, status) {
+		$scope.seasons = data || "Request failed";
+		$scope.status = status;
+	});
+
+  
+  $scope.update = function() {
+	  console.log("data: " + $scope.camp);
+	  $http( {
+			method : 'PUT',
+			headers: {'Content-Type': 'application/json'},
+			url : 'rest/season/' + $scope.id + ".json",
+			data : {'id': $scope.id}
+		}).success(function() {
+			alert("Saved!!!");
+		}).error(function() {
+		});
+  }
+  
+  $scope.enable = function() {
+	    $scope.disabled = false;
+	  };
+
+	  $scope.disable = function() {
+	    $scope.disabled = true;
+	  };
+
+	  $scope.enableSearch = function() {
+	    $scope.searchEnabled = true;
+	  }
+
+	  $scope.disableSearch = function() {
+	    $scope.searchEnabled = false;
+	  }
+	  
+	  $scope.multipleDemo = {};
+	  $scope.multipleDemo.selectedPeople = [];
+  
+  $scope.person = {};
+  $scope.people = [
+    { name: 'Adam',      email: 'adam@email.com',      age: 12, country: 'United States' },
+    { name: 'Amalie',    email: 'amalie@email.com',    age: 12, country: 'Argentina' },
+    { name: 'Estefanía', email: 'estefania@email.com', age: 21, country: 'Argentina' },
+    { name: 'Adrian',    email: 'adrian@email.com',    age: 21, country: 'Ecuador' },
+    { name: 'Wladimir',  email: 'wladimir@email.com',  age: 30, country: 'Ecuador' },
+    { name: 'Samantha',  email: 'samantha@email.com',  age: 30, country: 'United States' },
+    { name: 'Nicole',    email: 'nicole@email.com',    age: 43, country: 'Colombia' },
+    { name: 'Natasha',   email: 'natasha@email.com',   age: 54, country: 'Ecuador' },
+    { name: 'Michael',   email: 'michael@email.com',   age: 15, country: 'Colombia' },
+    { name: 'Nicolás',   email: 'nicolas@email.com',    age: 43, country: 'Colombia' }
+  ];
+  
+})
+
 
 .controller('campDetailController', function($scope,$stateParams, $http){
   $scope.id = $stateParams.id;

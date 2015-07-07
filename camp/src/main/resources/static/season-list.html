@@ -1,19 +1,16 @@
 
 <div class="text-center">
 	<a ui-sref-active="active" ui-sref="form.email"><span>1</span>Create
-		Camp</a> 
-		<a ui-sref-active="active" ui-sref="camp.list"><span>3</span>List
-		Camps</a> 
-		<a ui-sref-active="active" ui-sref="season.list"><span>4</span>List
-		Seasons</a>
+		Camp</a> <a ui-sref-active="active" ui-sref="camp.list"><span>3</span>List
+		Camps</a>
 </div>
 
 <div class="row">
 	<table>
-		<tbody ng-repeat="camp in campList">
+		<tbody ng-repeat="season in seasonList">
 			<tr>
 				<td>
-					<a ui-sref-active="active" ui-sref="camp.edit({id:camp.id})">camp #{{camp.id}}</a>
+					<a ui-sref-active="active" ui-sref="season.edit({id:season.id})">{{season.name}}</a>
 				</td>
 				<td>
 					{{camp.email}}

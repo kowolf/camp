@@ -1,0 +1,56 @@
+
+<div class="text-center">
+	<a ui-sref-active="active" ui-sref="form.email"><span>1</span>Create
+		Camp</a> <a ui-sref-active="active" ui-sref="camp.list"><span>3</span>List
+		Camps</a> <a ui-sref-active="active" ui-sref="season.list"><span>4</span>List
+		Seasons</a>
+</div>
+
+<div class="row">
+	<table>
+		<tbody>
+			<tr>
+				<td>
+					{{id}}
+				</td>
+				<td>
+				 {{season.name}}
+				 </td>
+				
+				 
+			</tr>
+		</tbody>
+	</table>
+	
+	<div>
+		<label for="seasonName">Season:</label><input id="seasonName" type="text" ng-model="season.name"/>
+	</div>
+	<div>
+		<label>What to bring:</label>
+		<ul ng-repeat="item in season.items">
+			<li>{{item.name}}</li>
+		</ul>
+	</div>
+	
+	<hr>
+  <h3>Array of objects</h3>
+  <ui-select multiple ng-model="multipleDemo.selectedPeople" theme="select2"  style="width: 800px;">
+    <ui-select-match placeholder="Select person...">{{$item.name}} &lt;{{$item.email}}&gt;</ui-select-match>
+    <ui-select-choices repeat="person in people | propsFilter: {name: $select.search, age: $select.search}">
+      <div ng-bind-html="person.name | highlight: $select.search"></div>
+      <small>
+        email: {{person.email}}
+        age: <span ng-bind-html="''+person.age | highlight: $select.search"></span>
+      </small>
+    </ui-select-choices>
+  </ui-select>
+  <div>{{people}}</div>
+  <p>Selected: {{multipleDemo.selectedPeople}}</p>
+	
+	<div>
+		<button ng-click="update()" >Save</button>
+	</div>
+</div>
+
+
+
