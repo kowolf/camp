@@ -169,10 +169,10 @@ angular.module('campApp', [ 'ngAnimate', 'ui.router','ngGrid','ngSanitize','ui.s
 })
 
 //TODO - create season detail controller
-.controller('seasonDetailController', function($scope,$stateParams, $http){
-  $scope.id = $stateParams.id;
-  
-  $http({
+.controller('seasonDetailController', function($scope, $stateParams, $http) {
+	$scope.id = $stateParams.id;
+
+	$http({
 		method : 'GET',
 		url : 'rest/season/' + $scope.id + '.json'
 	}).success(function(data, status) {
@@ -184,53 +184,60 @@ angular.module('campApp', [ 'ngAnimate', 'ui.router','ngGrid','ngSanitize','ui.s
 		$scope.status = status;
 	});
 
-  
-  $scope.update = function() {
-	  console.log("data: " + $scope.camp);
-	  $http( {
+	$scope.update = function() {
+		console.log("data: " + $scope.camp);
+		$http({
 			method : 'PUT',
-			headers: {'Content-Type': 'application/json'},
+			headers : {
+				'Content-Type' : 'application/json'
+			},
 			url : 'rest/season/' + $scope.id + ".json",
-			data : {'id': $scope.id}
+			data : {
+				'id' : $scope.id
+			}
 		}).success(function() {
 			alert("Saved!!!");
 		}).error(function() {
 		});
-  }
-  
-  $scope.enable = function() {
-	    $scope.disabled = false;
-	  };
+	}
 
-	  $scope.disable = function() {
-	    $scope.disabled = true;
-	  };
+	$scope.enable = function() {
+		$scope.disabled = false;
+	};
 
-	  $scope.enableSearch = function() {
-	    $scope.searchEnabled = true;
-	  }
+	$scope.disable = function() {
+		$scope.disabled = true;
+	};
 
-	  $scope.disableSearch = function() {
-	    $scope.searchEnabled = false;
-	  }
-	  
-	  $scope.multipleDemo = {};
-	  $scope.multipleDemo.selectedPeople = [];
-  
-  $scope.person = {};
-  $scope.people = [
-    { name: 'Adam',      email: 'adam@email.com',      age: 12, country: 'United States' },
-    { name: 'Amalie',    email: 'amalie@email.com',    age: 12, country: 'Argentina' },
-    { name: 'Estefanía', email: 'estefania@email.com', age: 21, country: 'Argentina' },
-    { name: 'Adrian',    email: 'adrian@email.com',    age: 21, country: 'Ecuador' },
-    { name: 'Wladimir',  email: 'wladimir@email.com',  age: 30, country: 'Ecuador' },
-    { name: 'Samantha',  email: 'samantha@email.com',  age: 30, country: 'United States' },
-    { name: 'Nicole',    email: 'nicole@email.com',    age: 43, country: 'Colombia' },
-    { name: 'Natasha',   email: 'natasha@email.com',   age: 54, country: 'Ecuador' },
-    { name: 'Michael',   email: 'michael@email.com',   age: 15, country: 'Colombia' },
-    { name: 'Nicolás',   email: 'nicolas@email.com',    age: 43, country: 'Colombia' }
-  ];
-  
+	$scope.enableSearch = function() {
+		$scope.searchEnabled = true;
+	}
+
+	$scope.disableSearch = function() {
+		$scope.searchEnabled = false;
+	}
+
+	
+	$scope.items = [ {
+		id : 1,
+		name : 'Coat',
+		description : 'Warm Coat'
+	}, {
+		id : 2,
+		name : 'Socks',
+		description : 'Everyday socks'
+	}, {
+		id : 3,
+		name : 'Boots',
+		description : 'Water proof hiking boot'
+	} ];
+	
+	$scope.multipleDemo = {};
+	$scope.multipleDemo.selectedPeople = [$scope.items[0]];
+
+	$scope.person = {};
+	
+
 })
 
 
