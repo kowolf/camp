@@ -168,7 +168,6 @@ angular.module('campApp', [ 'ngAnimate', 'ui.router','ngGrid','ngSanitize','ui.s
 
 })
 
-//TODO - create season detail controller
 .controller('seasonDetailController', function($scope, $stateParams, $http) {
 	$scope.id = $stateParams.id;
 
@@ -181,6 +180,20 @@ angular.module('campApp', [ 'ngAnimate', 'ui.router','ngGrid','ngSanitize','ui.s
 		console.log("data = " + JSON.stringify(data));
 	}).error(function(data, status) {
 		$scope.seasons = data || "Request failed";
+		$scope.status = status;
+	});
+	
+	$http({
+		method : 'GET',
+		url : 'rest/item'
+	}).success(function(data, status) {
+		console.log(JSON.stringify(data));
+		$scope.status = status;
+		$scope.itemList = data;
+		
+		   
+	}).error(function(data, status) {
+		$scope.campList = data || "Request failed";
 		$scope.status = status;
 	});
 
