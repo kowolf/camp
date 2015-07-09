@@ -170,6 +170,9 @@ angular.module('campApp', [ 'ngAnimate', 'ui.router','ngGrid','ngSanitize','ui.s
 
 .controller('seasonDetailController', function($scope, $stateParams, $http) {
 	$scope.id = $stateParams.id;
+	
+	$scope.seasonItems = {};
+	$scope.seasonItems.selectedItems = [];
 
 	$http({
 		method : 'GET',
@@ -183,6 +186,7 @@ angular.module('campApp', [ 'ngAnimate', 'ui.router','ngGrid','ngSanitize','ui.s
 		$scope.status = status;
 	});
 	
+	
 	$http({
 		method : 'GET',
 		url : 'rest/item'
@@ -190,6 +194,9 @@ angular.module('campApp', [ 'ngAnimate', 'ui.router','ngGrid','ngSanitize','ui.s
 		console.log(JSON.stringify(data));
 		$scope.status = status;
 		$scope.itemList = data;
+		
+		$scope.seasonItems = {};
+		$scope.seasonItems.selectedItems = [$scope.itemList[0],$scope.itemList[3]];
 		
 		   
 	}).error(function(data, status) {
@@ -200,13 +207,15 @@ angular.module('campApp', [ 'ngAnimate', 'ui.router','ngGrid','ngSanitize','ui.s
 	$scope.update = function() {
 		console.log("data: " + $scope.camp);
 		$http({
-			method : 'PUT',
+			method : 'POST',
 			headers : {
 				'Content-Type' : 'application/json'
 			},
-			url : 'rest/season/' + $scope.id + ".json",
+			url : 'rest/season/' + $scope.id + "/item",
 			data : {
-				'id' : $scope.id
+				'id' : $scope.season.id,
+				'name': $scope.season.name,
+				'items': $scope.seasonItems.selectedItems 
 			}
 		}).success(function() {
 			alert("Saved!!!");
@@ -231,22 +240,9 @@ angular.module('campApp', [ 'ngAnimate', 'ui.router','ngGrid','ngSanitize','ui.s
 	}
 
 	
-	$scope.items = [ {
-		id : 1,
-		name : 'Coat',
-		description : 'Warm Coat'
-	}, {
-		id : 2,
-		name : 'Socks',
-		description : 'Everyday socks'
-	}, {
-		id : 3,
-		name : 'Boots',
-		description : 'Water proof hiking boot'
-	} ];
 	
-	$scope.multipleDemo = {};
-	$scope.multipleDemo.selectedPeople = [$scope.items[0]];
+	
+	
 
 	$scope.person = {};
 	

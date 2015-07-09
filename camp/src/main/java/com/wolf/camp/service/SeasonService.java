@@ -22,5 +22,8 @@ public class SeasonService {
 		return seasons.findOne(id);
 	}
 	
+	public Season saveSeason(Season season) {
+		return seasons.save(season);
+	}
 	
 }
