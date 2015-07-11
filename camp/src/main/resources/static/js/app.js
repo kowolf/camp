@@ -138,8 +138,6 @@ angular.module('campApp', [ 'ngAnimate', 'ui.router','ngGrid','ngSanitize','ui.s
 		$scope.status = status;
 	});
 	
-	
-
 })
 
 
@@ -164,8 +162,6 @@ angular.module('campApp', [ 'ngAnimate', 'ui.router','ngGrid','ngSanitize','ui.s
 		alert("Update Season???");
 	};
 	
-	
-
 })
 
 .controller('seasonDetailController', function($scope, $stateParams, $http) {
@@ -207,19 +203,18 @@ angular.module('campApp', [ 'ngAnimate', 'ui.router','ngGrid','ngSanitize','ui.s
 	$scope.update = function() {
 		console.log("data: " + $scope.camp);
 		$http({
-			method : 'POST',
+			method : 'PUT',
 			headers : {
 				'Content-Type' : 'application/json'
 			},
-			url : 'rest/season/' + $scope.id + "/item",
+			url : 'rest/season/' + $scope.id ,
 			data : {
 				'id' : $scope.season.id,
-				'name': $scope.season.name,
-				'items': $scope.seasonItems.selectedItems 
+				'name': $scope.season.name
 			}
 		}).success(function() {
-			alert("Saved!!!");
-		}).error(function() {
+			//TODO - Need to do something on success
+			}).error(function() {
 		});
 	}
 
@@ -239,13 +234,7 @@ angular.module('campApp', [ 'ngAnimate', 'ui.router','ngGrid','ngSanitize','ui.s
 		$scope.searchEnabled = false;
 	}
 
-	
-	
-	
-	
-
 	$scope.person = {};
-	
 
 })
 
@@ -267,7 +256,7 @@ angular.module('campApp', [ 'ngAnimate', 'ui.router','ngGrid','ngSanitize','ui.s
   
   $http({
 		method : 'GET',
-		url : 'rest/seasons'
+		url : 'rest/season'
 	}).success(function(data, status) {
 		$scope.status = status;
 		$scope.seasons = data;
@@ -275,10 +264,6 @@ angular.module('campApp', [ 'ngAnimate', 'ui.router','ngGrid','ngSanitize','ui.s
 		$scope.seasons = data || "Request failed";
 		$scope.status = status;
 	});
-  
-  
-
-		
   
   $scope.update = function() {
 	  console.log("data: " + $scope.camp);
@@ -288,7 +273,7 @@ angular.module('campApp', [ 'ngAnimate', 'ui.router','ngGrid','ngSanitize','ui.s
 			url : 'rest/camps/' + $scope.id + ".json",
 			data : {'id': $scope.id,
 					'email' : $scope.camp.email,
-					'seasonId' : $scope.camp.seasonId,
+					'season' : 'http://localhost:8080/camp/rest/season/' + $scope.camp.season.id,
 					'location' : $scope.camp.location,
 					'count' : $scope.camp.count}
 		}).success(function() {

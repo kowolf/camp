@@ -23,7 +23,11 @@ public class SeasonService {
 	}
 	
 	public Season saveSeason(Season season) {
-		return seasons.save(season);
+		Season currentSeeson = seasons.findOne(season.getId());
+		
+		currentSeeson.setName(season.getName());
+		
+		return seasons.save(currentSeeson);
 	}
 	
 }

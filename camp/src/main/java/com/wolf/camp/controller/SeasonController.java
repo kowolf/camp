@@ -25,7 +25,7 @@ import com.wolf.camp.service.SeasonService;
 @RequestMapping("/rest/season")
 public class SeasonController {
 
-	private static final Logger logger = LoggerFactory
+	private static final Logger logger = LoggerFactory				
 			.getLogger(SeasonController.class);
 	
 	@Autowired
@@ -53,10 +53,7 @@ public class SeasonController {
 	@RequestMapping(method = RequestMethod.PUT, value = "/{id}")
 	public Season update(@PathVariable String id, @RequestBody Season seasonModel) {
 		
-		
 		seasonModel = seasonService.saveSeason(seasonModel);
-		
-		//TODO Need to figure out how to deal with nested season object on update.
 
 		return seasonModel;
 	}
