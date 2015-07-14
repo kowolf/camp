@@ -31,7 +31,7 @@ public class Season implements java.io.Serializable {
 
 	private Integer id;
 	private String name;
-	private Collection<Item> items;
+	private List<Item> items;
 
 	public Season() {
 	}
@@ -65,13 +65,13 @@ public class Season implements java.io.Serializable {
 		      name="SEASON_ITEM",
 		      joinColumns={@JoinColumn(name="SEASON_ID", referencedColumnName="ID")},
 		      inverseJoinColumns={@JoinColumn(name="ITEM_ID", referencedColumnName="ID")})
-	public Collection<Item> getItems() {
+	public List<Item> getItems() {
 		return items;
 	}
 
 
 
-	public void setItems(Collection<Item> items) {
+	public void setItems(List<Item> items) {
 		this.items = items;
 	}
 

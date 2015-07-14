@@ -200,6 +200,7 @@ angular.module('campApp', [ 'ngAnimate', 'ui.router','ngGrid','ngSanitize','ui.s
 		$scope.status = status;
 	});
 
+	//TODO only need 1 update function
 	$scope.update = function() {
 		console.log("data: " + $scope.camp);
 		$http({
@@ -216,7 +217,35 @@ angular.module('campApp', [ 'ngAnimate', 'ui.router','ngGrid','ngSanitize','ui.s
 			//TODO - Need to do something on success
 			}).error(function() {
 		});
-	}
+	};
+	
+	$scope.updateItemList = function() {
+		
+		var theItems = [];
+		
+		for(var i=0;i<$scope.seasonItems.selectedItems.length;i++){
+			theItems.push('http://localhost:8080/camp/rest/item/' + $scope.seasonItems.selectedItems[i].id);
+		}
+		
+		$http({
+			method : 'PUT',
+			headers : {
+				'Content-Type' : 'application/json'
+			},
+			url : 'rest/season/' + $scope.id ,
+			data : {
+				'id' : $scope.season.id,
+				'name': $scope.season.name,
+				'items': theItems				
+			}
+		}).success(function(data) {
+			$scope.season = angular.copy(data);
+			}).error(function() {
+				//TODO - Need to do something on success
+		});
+	};
+	
+	
 
 	$scope.enable = function() {
 		$scope.disabled = false;
@@ -276,7 +305,8 @@ angular.module('campApp', [ 'ngAnimate', 'ui.router','ngGrid','ngSanitize','ui.s
 					'season' : 'http://localhost:8080/camp/rest/season/' + $scope.camp.season.id,
 					'location' : $scope.camp.location,
 					'count' : $scope.camp.count}
-		}).success(function() {
+		}).success(function(data) {
+			$scope.camp = angular.copy(data);
 			alert("Saved!!!");
 		}).error(function() {
 		});

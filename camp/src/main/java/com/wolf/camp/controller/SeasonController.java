@@ -51,11 +51,13 @@ public class SeasonController {
 	}
 	
 	@RequestMapping(method = RequestMethod.PUT, value = "/{id}")
-	public Season update(@PathVariable String id, @RequestBody Season seasonModel) {
-		
+	
+		public Season updateItems(@PathVariable String id, @RequestBody Season seasonModel) {
 		seasonModel = seasonService.saveSeason(seasonModel);
 
 		return seasonModel;
+		
 	}
+	
 
 }

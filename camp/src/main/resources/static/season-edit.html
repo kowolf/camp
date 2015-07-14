@@ -7,25 +7,16 @@
 </div>
 
 <div class="row">
-	<table>
-		<tbody>
-			<tr>
-				<td>
-					{{id}}
-				</td>
-				<td>
-				 {{season.name}}
-				 </td>
-				
-				 
-			</tr>
-		</tbody>
-	</table>
+	<hr>
 	
 	<div>
-		<label for="seasonName">Season:</label><input id="seasonName" type="text" ng-model="season.name"/>
+		<label for="seasonName">Season:</label><input id="seasonName" type="text" ng-model="season.name"/><button ng-click="update()" >Save</button>
 	</div>
-	<div>
+	
+	<hr>
+	
+  	<h3>What to bring for this season</h3>
+  	<div>
 		<label>What to bring:</label>
 		<ul ng-repeat="item in season.items">
 			<li>{{item.name}}</li>
@@ -33,22 +24,19 @@
 	</div>
 	
 	<hr>
-  <h3>What to bring for this season</h3>
-  <ui-select multiple ng-model="seasonItems.selectedItems" theme="select2"  style="width: 800px;">
-    <ui-select-match placeholder="Select item...">{{$item.name}} </ui-select-match>
-    <ui-select-choices repeat="item in itemList | propsFilter: {name: $select.search}">
-      <div ng-bind-html="item.name | highlight: $select.search"></div>
-      <small>
-        description: {{item.description}}
-      </small>
-    </ui-select-choices>
-  </ui-select>
-  <div>{{people}}</div>
-  <p>Selected: {{seasonItems.selectedItems}}</p>
 	
-	<div>
-		<button ng-click="update()" >Save</button>
-	</div>
+	<ui-select multiple ng-model="seasonItems.selectedItems" theme="select2"  style="width: 800px;">
+	  <ui-select-match placeholder="Select item...">{{$item.name}} </ui-select-match>
+	  <ui-select-choices repeat="item in itemList | propsFilter: {name: $select.search}">
+	    <div ng-bind-html="item.name | highlight: $select.search"></div>
+	    <small>
+	      description: {{item.description}}
+	    </small>
+	  </ui-select-choices>
+	</ui-select>
+  	<div>{{people}}</div>
+  	<p>Selected: {{seasonItems.selectedItems}}</p>
+	<button ng-click="updateItemList()">Save Items</button>
 </div>
 
 
