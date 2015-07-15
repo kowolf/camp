@@ -2,6 +2,7 @@ package com.wolf.camp.controller;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,9 +26,9 @@ import com.wolf.camp.service.SeasonService;
 @RequestMapping("/rest/season")
 public class SeasonController {
 
-	private static final Logger logger = LoggerFactory				
+	private static final Logger logger = LoggerFactory
 			.getLogger(SeasonController.class);
-	
+
 	@Autowired
 	SeasonService seasonService;
 
@@ -35,12 +36,11 @@ public class SeasonController {
 	public @ResponseBody List<Season> getSessons() {
 
 		List<Season> list = seasonService.getSesaons();
-	
 
 		return list;
 
 	}
-	
+
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
 	public Season get(@PathVariable("id") int id) {
 
@@ -49,15 +49,14 @@ public class SeasonController {
 		return season;
 
 	}
-	
+
 	@RequestMapping(method = RequestMethod.PUT, value = "/{id}")
-	
-		public Season updateItems(@PathVariable String id, @RequestBody Season seasonModel) {
+	public Season updateItems(@PathVariable String id,
+			@RequestBody Season seasonModel) {
 		seasonModel = seasonService.saveSeason(seasonModel);
 
 		return seasonModel;
-		
+
 	}
-	
 
 }

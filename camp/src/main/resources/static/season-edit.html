@@ -6,24 +6,15 @@
 		Seasons</a>
 </div>
 
+<div class="container">
+	<hr>
+	
+	<div class="row">
+		<label for="seasonName">Season:</label><input id="seasonName" type="text" ng-model="season.name"/>
+	</div>
+
 <div class="row">
-	<hr>
-	
-	<div>
-		<label for="seasonName">Season:</label><input id="seasonName" type="text" ng-model="season.name"/><button ng-click="update()" >Save</button>
-	</div>
-	
-	<hr>
-	
-  	<h3>What to bring for this season</h3>
-  	<div>
-		<label>What to bring:</label>
-		<ul ng-repeat="item in season.items">
-			<li>{{item.name}}</li>
-		</ul>
-	</div>
-	
-	<hr>
+  	<label>What to bring for this season</label>
 	
 	<ui-select multiple ng-model="seasonItems.selectedItems" theme="select2"  style="width: 800px;">
 	  <ui-select-match placeholder="Select item...">{{$item.name}} </ui-select-match>
@@ -34,9 +25,12 @@
 	    </small>
 	  </ui-select-choices>
 	</ui-select>
-  	<div>{{people}}</div>
-  	<p>Selected: {{seasonItems.selectedItems}}</p>
-	<button ng-click="updateItemList()">Save Items</button>
+	
+	</div>
+	
+	<div class="row">
+		<button class="btn btn-success" ng-click="updateItemList()">Save Items</button>
+	</div>
 </div>
 
 

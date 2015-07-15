@@ -1,6 +1,6 @@
 // create our angular app and inject ngAnimate and ui-router 
 // =============================================================================
-angular.module('campApp', [ 'ngAnimate', 'ui.router','ngGrid','ngSanitize','ui.select' ])
+angular.module('campApp', [ 'ngAnimate', 'ui.router','ngGrid','ngSanitize','ui.select','cgNotify' ])
 
 // configuring our routes
 // =============================================================================
@@ -164,7 +164,7 @@ angular.module('campApp', [ 'ngAnimate', 'ui.router','ngGrid','ngSanitize','ui.s
 	
 })
 
-.controller('seasonDetailController', function($scope, $stateParams, $http) {
+.controller('seasonDetailController', function($scope, $stateParams, $http, notify) {
 	$scope.id = $stateParams.id;
 	
 	$scope.seasonItems = {};
@@ -176,6 +176,7 @@ angular.module('campApp', [ 'ngAnimate', 'ui.router','ngGrid','ngSanitize','ui.s
 	}).success(function(data, status) {
 		$scope.status = status;
 		$scope.season = data;
+		$scope.seasonItems.selectedItems = $scope.season.items;
 		console.log("data = " + JSON.stringify(data));
 	}).error(function(data, status) {
 		$scope.seasons = data || "Request failed";
@@ -191,33 +192,14 @@ angular.module('campApp', [ 'ngAnimate', 'ui.router','ngGrid','ngSanitize','ui.s
 		$scope.status = status;
 		$scope.itemList = data;
 		
-		$scope.seasonItems = {};
-		$scope.seasonItems.selectedItems = [$scope.itemList[0],$scope.itemList[3]];
+		//$scope.seasonItems = {};
+		//$scope.seasonItems.selectedItems = [$scope.itemList[0],$scope.itemList[3]];
 		
 		   
 	}).error(function(data, status) {
 		$scope.campList = data || "Request failed";
 		$scope.status = status;
 	});
-
-	//TODO only need 1 update function
-	$scope.update = function() {
-		console.log("data: " + $scope.camp);
-		$http({
-			method : 'PUT',
-			headers : {
-				'Content-Type' : 'application/json'
-			},
-			url : 'rest/season/' + $scope.id ,
-			data : {
-				'id' : $scope.season.id,
-				'name': $scope.season.name
-			}
-		}).success(function() {
-			//TODO - Need to do something on success
-			}).error(function() {
-		});
-	};
 	
 	$scope.updateItemList = function() {
 		
@@ -239,9 +221,10 @@ angular.module('campApp', [ 'ngAnimate', 'ui.router','ngGrid','ngSanitize','ui.s
 				'items': theItems				
 			}
 		}).success(function(data) {
+			//TODO - Need a notify message here
 			$scope.season = angular.copy(data);
 			}).error(function() {
-				//TODO - Need to do something on success
+				//TODO - Need to do something on error
 		});
 	};
 	

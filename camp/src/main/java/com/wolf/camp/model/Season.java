@@ -18,6 +18,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.OrderBy;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -63,8 +64,9 @@ public class Season implements java.io.Serializable {
 	
 	  @JoinTable(
 		      name="SEASON_ITEM",
-		      joinColumns={@JoinColumn(name="SEASON_ID", referencedColumnName="ID")},
-		      inverseJoinColumns={@JoinColumn(name="ITEM_ID", referencedColumnName="ID")})
+		      joinColumns={@JoinColumn(name="SEASON_ID", referencedColumnName="ID", nullable = false, updatable = true)},
+		      inverseJoinColumns={@JoinColumn(name="ITEM_ID", referencedColumnName="ID", nullable = false, updatable = true)})
+	@OrderBy("id")
 	public List<Item> getItems() {
 		return items;
 	}
@@ -75,6 +77,46 @@ public class Season implements java.io.Serializable {
 		this.items = items;
 	}
 
+
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		result = prime * result + ((name == null) ? 0 : name.hashCode());
+		return result;
+	}
+
+
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Season other = (Season) obj;
+		if (id == null) {
+			if (other.id != null)
+				return false;
+		} else if (!id.equals(other.id))
+			return false;
+		if (name == null) {
+			if (other.name != null)
+				return false;
+		} else if (!name.equals(other.name))
+			return false;
+		return true;
+	}
+
+
+
+	
+
+	
 
 
 
