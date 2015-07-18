@@ -77,37 +77,7 @@ angular.module('campApp', [ 'ngAnimate', 'ui.router','ui.grid','ngSanitize','ui.
 	$urlRouterProvider.otherwise('/camp/list');
 })
 
-//filter
-.filter('propsFilter', function() {
-  return function(items, props) {
-    var out = [];
 
-    if (angular.isArray(items)) {
-      items.forEach(function(item) {
-        var itemMatches = false;
-
-        var keys = Object.keys(props);
-        for (var i = 0; i < keys.length; i++) {
-          var prop = keys[i];
-          var text = props[prop].toLowerCase();
-          if (item[prop].toString().toLowerCase().indexOf(text) !== -1) {
-            itemMatches = true;
-            break;
-          }
-        }
-
-        if (itemMatches) {
-          out.push(item);
-        }
-      });
-    } else {
-      // Let the output be the input untouched
-      out = items;
-    }
-
-    return out;
-  };
-})
 
 // our controller for the form
 // =============================================================================
@@ -119,57 +89,6 @@ angular.module('campApp', [ 'ngAnimate', 'ui.router','ui.grid','ngSanitize','ui.
 
 	console.log("Here!!!");
 
-})
-
-
-
-
-
-
-.controller('campDetailController', function($scope,$stateParams, $http){
-  $scope.id = $stateParams.id;
-  
-  $http({
-		method : 'GET',
-		url : 'rest/camps/' + $scope.id
-	}).success(function(data, status) {
-		$scope.status = status;
-		$scope.camp = data;
-		console.log("data = " + JSON.stringify(data));
-	}).error(function(data, status) {
-		$scope.seasons = data || "Request failed";
-		$scope.status = status;
-	});
-  
-  $http({
-		method : 'GET',
-		url : 'rest/season'
-	}).success(function(data, status) {
-		$scope.status = status;
-		$scope.seasons = data;
-	}).error(function(data, status) {
-		$scope.seasons = data || "Request failed";
-		$scope.status = status;
-	});
-  
-  $scope.update = function() {
-	  console.log("data: " + $scope.camp);
-	  $http( {
-			method : 'PUT',
-			headers: {'Content-Type': 'application/json'},
-			url : 'rest/camps/' + $scope.id + ".json",
-			data : {'id': $scope.id,
-					'email' : $scope.camp.email,
-					'season' : 'http://localhost:8080/camp/rest/season/' + $scope.camp.season.id,
-					'location' : $scope.camp.location,
-					'count' : $scope.camp.count}
-		}).success(function(data) {
-			$scope.camp = angular.copy(data);
-			alert("Saved!!!");
-		}).error(function() {
-		});
-  }
-  
 })
 
 .controller('formController', function($scope, $http) {
