@@ -1,4 +1,4 @@
-.controller('seasonDetailController', function($scope, $stateParams, $http, notify) {
+angular.module('campApp').controller('seasonDetailController', function($scope, $stateParams, $http, notify) {
 	$scope.id = $stateParams.id;
 	
 	$scope.seasonItems = {};

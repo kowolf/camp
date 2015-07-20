@@ -38,7 +38,14 @@
 <script src="js/lib/angular-notify.js"></script>
 <script src="js/app.js"></script>
 
+<!-- Routing -->
+<script src="js/routing.js"></script>
+
+<!-- Filters -->
+<script src="js/filters.js"></script>
+
 <!-- Controllers -->
+<script src="js/formController.js"></script>
 <script src="js/campController.js"></script>
 <script src="js/campDetailController.js"></script>
 <script src="js/seasonController.js"></script>
@@ -47,6 +54,16 @@
 
 </head>
 <body ng-app="campApp">
+
+<div class="text-center">
+	<h1>Camp</h1>
+	<a ui-sref-active="active" ui-sref="form.email"><span>1</span>Create
+		Camp</a> 
+		<a ui-sref-active="active" ui-sref="camp.list"><span>2</span>List
+		Camps</a> 
+		<a ui-sref-active="active" ui-sref="season.list"><span>3</span>List
+		Seasons</a>
+</div>
 
 	<!-- views will be injected here -->
 	<div class="container">
