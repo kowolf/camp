@@ -1,4 +1,4 @@
-angular.module('campApp').controller('seasonDetailController', function($scope, $stateParams, $http, notify) {
+angular.module('campApp').controller('seasonDetailController', function($scope, $stateParams, $http) {
 	$scope.id = $stateParams.id;
 	
 	$scope.seasonItems = {};
@@ -56,9 +56,34 @@ angular.module('campApp').controller('seasonDetailController', function($scope, 
 			}
 		}).success(function(data) {
 			//TODO - Need a notify message here
+			
+			$('.single-message').notify('Season saved successfully!!!', 
+				{
+					className:'success',
+					autoHideDelay: 7000,
+					elementPosition: 'bottom center',
+				}
+			);
+			
+	
+			/*notify({
+	            message: 'Season save successfully!!!',
+	            classes: 'alert-success',
+	            //templateUrl: $scope.template,
+	            //position: 'center',
+	            duration: 3000,
+	            container: document.getElementById('#global-message')
+	        });*/
+			
 			$scope.season = angular.copy(data);
 			}).error(function() {
-				//TODO - Need to do something on error
+				$('.single-message').notify('Season failed to saved!!!', 
+						{
+							className:'error',
+							autoHideDelay: 7000,
+							elementPosition: 'bottom center',
+						}
+					);
 		});
 	};
 	
