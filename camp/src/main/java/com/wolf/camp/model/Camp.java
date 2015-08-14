@@ -23,16 +23,18 @@ public class Camp implements java.io.Serializable {
 	private Season season;
 	private Integer count;
 	private String email;
-	private String location;
+	private String locationOrigin;
+	private String locationDestination;
 
 	public Camp() {
 	}
 
-	public Camp(Season season, Integer count, String email, String location) {
+	public Camp(Season season, Integer count, String email, String locationOrigin, String locationDestination) {
 		this.season = season;
 		this.count = count;
 		this.email = email;
-		this.location = location;
+		this.locationOrigin = locationOrigin;
+		this.locationDestination = locationDestination;
 	}
 
 	@Id
@@ -74,13 +76,25 @@ public class Camp implements java.io.Serializable {
 		this.email = email;
 	}
 
-	@Column(name = "location")
-	public String getLocation() {
-		return this.location;
+
+	@Column(name = "location_origin")
+	public String getLocationOrigin() {
+		return locationOrigin;
 	}
 
-	public void setLocation(String location) {
-		this.location = location;
+	public void setLocationOrigin(String locationOrigin) {
+		this.locationOrigin = locationOrigin;
 	}
+
+	@Column(name = "location_destination")
+	public String getLocationDestination() {
+		return locationDestination;
+	}
+
+	public void setLocationDestination(String locationDestination) {
+		this.locationDestination = locationDestination;
+	}
+	
+	
 
 }

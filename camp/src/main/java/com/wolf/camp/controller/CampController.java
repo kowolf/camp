@@ -48,22 +48,14 @@ public class CampController {
 		Camp camp = campService.getCamp(id);
 
 		return camp;
-
 	}
 
 	@RequestMapping(method = RequestMethod.POST)
-	public CampModel create(@RequestBody CampModel campModel) {
-		System.out.println(campModel);
-		
-		Camp camp = new Camp();
-		camp.setEmail(campModel.getEmail());
-		camp.setSeason(seasonService.getSeason(campModel.getSeasonId()));
-		camp.setLocation(campModel.getLocation());
-		camp.setCount(campModel.getCount());
+	public Camp create(@RequestBody Camp camp) {
 
 		camp = campService.saveCamp(camp);
 
-		return campModel;
+		return camp;
 	}
 
 	@RequestMapping(method = RequestMethod.DELETE, value = "{id}")
@@ -72,14 +64,11 @@ public class CampController {
 	}
 
 	@RequestMapping(method = RequestMethod.PUT, value = "/{id}")
-	public Camp update(@PathVariable String id, @RequestBody Camp campModel) {
+	public Camp update(@PathVariable String id, @RequestBody Camp camp) {	
 		
-		
-		campModel = campService.saveCamp(campModel);
-		
-		//TODO Need to figure out how to deal with nested season object on update.
+		camp = campService.saveCamp(camp);
 
-		return campModel;
+		return camp;
 	}
 
 }

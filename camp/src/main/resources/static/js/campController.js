@@ -15,4 +15,5 @@ angular.module('campApp').controller('campController', function($scope, $http ,$
 		$scope.status = status;
 	});
 	
+	
 })

@@ -7,6 +7,12 @@ angular.module('campApp').controller('campDetailController', function($scope,$st
 	}).success(function(data, status) {
 		$scope.status = status;
 		$scope.camp = data;
+		// directions object -- with defaults
+		  $scope.directions = {
+		    origin: data.locationOrigin,
+		    destination: data.locationDestination,
+		    showList: false
+		  }
 		console.log("data = " + JSON.stringify(data));
 	}).error(function(data, status) {
 		$scope.seasons = data || "Request failed";
@@ -33,7 +39,8 @@ angular.module('campApp').controller('campDetailController', function($scope,$st
 			data : {'id': $scope.id,
 					'email' : $scope.camp.email,
 					'season' : 'http://localhost:8080/camp/rest/season/' + $scope.camp.season.id,
-					'location' : $scope.camp.location,
+					'locationOrigin' : $scope.camp.locationOrigin,
+					'locationDestination' : $scope.camp.locationDestination,
 					'count' : $scope.camp.count}
 		}).success(function(data) {
 			$scope.camp = angular.copy(data);
@@ -41,5 +48,51 @@ angular.module('campApp').controller('campDetailController', function($scope,$st
 		}).error(function() {
 		});
   }
+  
+//DIRECTIONS
+	// map object
+	  $scope.map = {
+	    control: {},
+	    center: {
+	        latitude: 40.501302,
+	        longitude: -112.016033
+	    },
+	    zoom: 14
+	  };
+	  
+	  // marker object
+	  $scope.marker = {
+	    center: {
+	        latitude: 40.501302,
+	        longitude: -112.016033
+	    }
+	  }
+	  
+	  // instantiate google map objects for directions
+	  var directionsDisplay = new google.maps.DirectionsRenderer();
+	  var directionsService = new google.maps.DirectionsService();
+	  var geocoder = new google.maps.Geocoder();
+	  
+	  
+	  
+	  // get directions using google maps api
+	  $scope.getDirections = function () {
+	    var request = {
+	      origin: $scope.camp.locationOrigin,
+	      destination: $scope.camp.locationDestination,
+	      travelMode: google.maps.DirectionsTravelMode.DRIVING
+	    };
+	    directionsService.route(request, function (response, status) {
+	      if (status === google.maps.DirectionsStatus.OK) {
+	        directionsDisplay.setDirections(response);
+	        directionsDisplay.setMap($scope.map.control.getGMap());
+	        directionsDisplay.setPanel(document.getElementById('directionsList'));
+	        $scope.directions.showList = true;
+	      } else {
+	        alert('Google route unsuccesfull!');
+	      }
+	    });
+	
+	  }	
   
 })

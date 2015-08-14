@@ -1,106 +1,4 @@
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
-  <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
-  <meta http-equiv="Content-Language" content="en">
-  <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114-precomposed.png">
-  <meta name="google-analytics" content="UA-3769691-2">
-    <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
-
-  
-  <meta content="Rails, view, blob#show" name="analytics-event" />
-  <meta class="js-ga-set" name="dimension1" content="Logged Out">
-    <meta class="js-ga-set" name="dimension3" content="mobile">
-
-  <meta content="authenticity_token" name="csrf-param" />
-<meta content="JBHrMO3LiR4U4LexIL7dAdaJ7VCuL0l6nAB5NkyJWj8uiuxJjlarAHaVWDb+6iadtchexBOSv/50MGC3/lUqZQ==" name="csrf-token" />
-
-  <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="46C4D1D2:06C2:5AB459B:5574960B" name="octolytics-dimension-request_id" />
-  <meta content="mobile" name="octolytics-dimension-device" />
-  <meta content="1530011" name="octolytics-dimension-user_id" /><meta content="angular-ui" name="octolytics-dimension-user_login" /><meta content="7693799" name="octolytics-dimension-repository_id" /><meta content="angular-ui/ui-router" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="7693799" name="octolytics-dimension-repository_network_root_id" /><meta content="angular-ui/ui-router" name="octolytics-dimension-repository_network_root_nwo" />
-  
-
-  <title>GitHub · Build software better, together.</title>
-
-  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/mobile/index-6b9d2079a22242c5215b0fe5bda28dcbad179397226b064485e9a0bfff508256.css" media="all" rel="stylesheet" />
-  <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/mobile/index-1945aafeb51218b7e01846581bdb166c34b72bf5d67c5031646d689bac199f65.js"></script>
-</head>
-<body class="">
-  <header class="nav-bar">
-    <div class="nav-bar-inner">
-      
-
-      <button class="header-button header-nav-button touchable js-show-global-nav">
-        <span class="octicon octicon-three-bars"></span>
-
-      </button>
-
-      <div class="nav-bar-title-text">
-              <span class="octicon octicon-repo"></span>
-
-    <strong><a href="/angular-ui">angular-ui</a></strong>
-    /
-    <strong><a href="/angular-ui/ui-router">ui-router</a></strong>
-
-      </div>
-    </div>
-
-
-    <nav class="nav-bar-tabs repo-nav-bar-tabs">
-      <ul>
-        <li>
-          <a href="/explore">
-            <span class="octicon octicon-telescope"></span>
-            Explore
-          </a>
-        </li>
-        <li>
-            <a href="/login?return_to=%2Fangular-ui%2Fui-router%2Fblob%2Fmaster%2Frelease%2Fangular-ui-router.js">
-              <span class="octicon octicon-sign-in"></span>
-              Sign in
-            </a>
-        </li>
-            <li class="section-title">This repository</li>
-    <li><a href="/angular-ui/ui-router?files=1"><span class="octicon octicon-code"></span> Code</a></li>
-      <li><a href="/angular-ui/ui-router/issues"><span class="octicon octicon-issue-opened"></span> Issues</a></li>
-    <li><a href="/angular-ui/ui-router/pulls"><span class="octicon octicon-git-pull-request"></span> Pull Requests</a></li>
-    <li><a href="/angular-ui/ui-router/pulse"><span class="octicon octicon-pulse"></span> Pulse</a></li>
-
-      </ul>
-    </nav>
-  </header>
-
-  
-
-        
-
-<div class="breadcrumb blob-breadcrumb">
-  <label for="blob-history-checkbox" class="blob-history-label">
-    <span class="octicon octicon-history"></span>
-  </label>
-  <span class="filetype-icon"><span class="octicon octicon-file-text"></span></span>
-  <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/angular-ui/ui-router/tree/master/release" class="" data-branch="master" data-pjax="true" itemscope="url"><span itemprop="title">release</span></a></span><span class="separator">/</span><strong class="final-path">angular-ui-router.js</strong>
-</div>
-
-<input id="blob-history-checkbox"
-       class="js-blob-history-checkbox"
-       type="checkbox"
-       data-url="/angular-ui/ui-router/latest_commit/master/release/angular-ui-router.js">
-
-<div class="blob-history">
-  <a href="/angular-ui/ui-router/commits/master/release/angular-ui-router.js" class="js-blob-history-link">
-    Loading latest commit...
-</a></div>
-
-<div class="blob-file-content js-file-line-container">
-    <pre itemprop="mainContentOfPage">/**
+/**
  * State-based routing for AngularJS
  * @version v0.2.15
  * @link http://angular-ui.github.com/
@@ -108,14 +6,14 @@
  */
 
 /* commonjs package manager support (eg componentjs) */
-if (typeof module !== &quot;undefined&quot; &amp;&amp; typeof exports !== &quot;undefined&quot; &amp;&amp; module.exports === exports){
-  module.exports = &#39;ui.router&#39;;
+if (typeof module !== "undefined" && typeof exports !== "undefined" && module.exports === exports){
+  module.exports = 'ui.router';
 }
 
 (function (window, angular, undefined) {
 /*jshint globalstrict:true*/
 /*global angular:false*/
-&#39;use strict&#39;;
+'use strict';
 
 var isDefined = angular.isDefined,
     isFunction = angular.isFunction,
@@ -187,13 +85,13 @@ function indexOf(array, value) {
   if (Array.prototype.indexOf) {
     return array.indexOf(value, Number(arguments[2]) || 0);
   }
-  var len = array.length &gt;&gt;&gt; 0, from = Number(arguments[2]) || 0;
-  from = (from &lt; 0) ? Math.ceil(from) : Math.floor(from);
+  var len = array.length >>> 0, from = Number(arguments[2]) || 0;
+  from = (from < 0) ? Math.ceil(from) : Math.floor(from);
 
-  if (from &lt; 0) from += len;
+  if (from < 0) from += len;
 
-  for (; from &lt; len; from++) {
-    if (from in array &amp;&amp; array[from] === value) return from;
+  for (; from < len; from++) {
+    if (from in array && array[from] === value) return from;
   }
   return -1;
 }
@@ -216,7 +114,7 @@ function inheritParams(currentParams, newParams, $current, $to) {
     if (!parentParams.length) continue;
 
     for (var j in parentParams) {
-      if (indexOf(inheritList, parentParams[j]) &gt;= 0) continue;
+      if (indexOf(inheritList, parentParams[j]) >= 0) continue;
       inheritList.push(parentParams[j]);
       inherited[parentParams[j]] = currentParams[parentParams[j]];
     }
@@ -239,9 +137,9 @@ function equalForKeys(a, b, keys) {
     for (var n in a) keys.push(n); // Used instead of Object.keys() for IE8 compatibility
   }
 
-  for (var i=0; i&lt;keys.length; i++) {
+  for (var i=0; i<keys.length; i++) {
     var k = keys[i];
-    if (a[k] != b[k]) return false; // Not &#39;===&#39;, values aren&#39;t necessarily normalized
+    if (a[k] != b[k]) return false; // Not '===', values aren't necessarily normalized
   }
   return true;
 }
@@ -334,7 +232,7 @@ function map(collection, callback) {
  * in your angular app (use {@link ui.router} module instead).
  *
  */
-angular.module(&#39;ui.router.util&#39;, [&#39;ng&#39;]);
+angular.module('ui.router.util', ['ng']);
 
 /**
  * @ngdoc overview
@@ -348,7 +246,7 @@ angular.module(&#39;ui.router.util&#39;, [&#39;ng&#39;]);
  * This module is a dependency of other sub-modules. Do not include this module as a dependency
  * in your angular app (use {@link ui.router} module instead).
  */
-angular.module(&#39;ui.router.router&#39;, [&#39;ui.router.util&#39;]);
+angular.module('ui.router.router', ['ui.router.util']);
 
 /**
  * @ngdoc overview
@@ -364,7 +262,7 @@ angular.module(&#39;ui.router.router&#39;, [&#39;ui.router.util&#39;]);
  * in your angular app (use {@link ui.router} module instead).
  * 
  */
-angular.module(&#39;ui.router.state&#39;, [&#39;ui.router.router&#39;, &#39;ui.router.util&#39;]);
+angular.module('ui.router.state', ['ui.router.router', 'ui.router.util']);
 
 /**
  * @ngdoc overview
@@ -380,31 +278,31 @@ angular.module(&#39;ui.router.state&#39;, [&#39;ui.router.router&#39;, &#39;ui.r
  * as a dependency within your angular app. The other modules are for organization purposes. 
  *
  * The modules are:
- * * ui.router - the main &quot;umbrella&quot; module
+ * * ui.router - the main "umbrella" module
  * * ui.router.router - 
  * 
- * *You&#39;ll need to include **only** this module as the dependency within your angular app.*
+ * *You'll need to include **only** this module as the dependency within your angular app.*
  * 
- * &lt;pre&gt;
- * &lt;!doctype html&gt;
- * &lt;html ng-app=&quot;myApp&quot;&gt;
- * &lt;head&gt;
- *   &lt;script src=&quot;js/angular.js&quot;&gt;&lt;/script&gt;
- *   &lt;!-- Include the ui-router script --&gt;
- *   &lt;script src=&quot;js/angular-ui-router.min.js&quot;&gt;&lt;/script&gt;
- *   &lt;script&gt;
- *     // ...and add &#39;ui.router&#39; as a dependency
- *     var myApp = angular.module(&#39;myApp&#39;, [&#39;ui.router&#39;]);
- *   &lt;/script&gt;
- * &lt;/head&gt;
- * &lt;body&gt;
- * &lt;/body&gt;
- * &lt;/html&gt;
- * &lt;/pre&gt;
+ * <pre>
+ * <!doctype html>
+ * <html ng-app="myApp">
+ * <head>
+ *   <script src="js/angular.js"></script>
+ *   <!-- Include the ui-router script -->
+ *   <script src="js/angular-ui-router.min.js"></script>
+ *   <script>
+ *     // ...and add 'ui.router' as a dependency
+ *     var myApp = angular.module('myApp', ['ui.router']);
+ *   </script>
+ * </head>
+ * <body>
+ * </body>
+ * </html>
+ * </pre>
  */
-angular.module(&#39;ui.router&#39;, [&#39;ui.router.state&#39;]);
+angular.module('ui.router', ['ui.router.state']);
 
-angular.module(&#39;ui.router.compat&#39;, [&#39;ui.router&#39;]);
+angular.module('ui.router.compat', ['ui.router']);
 
 /**
  * @ngdoc object
@@ -416,7 +314,7 @@ angular.module(&#39;ui.router.compat&#39;, [&#39;ui.router&#39;]);
  * @description
  * Manages resolution of (acyclic) graphs of promises.
  */
-$Resolve.$inject = [&#39;$q&#39;, &#39;$injector&#39;];
+$Resolve.$inject = ['$q', '$injector'];
 function $Resolve(  $q,    $injector) {
   
   var VISIT_IN_PROGRESS = 1,
@@ -434,13 +332,13 @@ function $Resolve(  $q,    $injector) {
    *
    * @description
    * Studies a set of invocables that are likely to be used multiple times.
-   * &lt;pre&gt;
+   * <pre>
    * $resolve.study(invocables)(locals, parent, self)
-   * &lt;/pre&gt;
+   * </pre>
    * is equivalent to
-   * &lt;pre&gt;
+   * <pre>
    * $resolve.resolve(invocables, locals, parent, self)
-   * &lt;/pre&gt;
+   * </pre>
    * but the former is more efficient (in fact `resolve` just calls `study` 
    * internally).
    *
@@ -448,7 +346,7 @@ function $Resolve(  $q,    $injector) {
    * @return {function} a function to pass in locals, parent and self
    */
   this.study = function (invocables) {
-    if (!isObject(invocables)) throw new Error(&quot;&#39;invocables&#39; must be an object&quot;);
+    if (!isObject(invocables)) throw new Error("'invocables' must be an object");
     var invocableKeys = objectKeys(invocables || {});
     
     // Perform a topological sort of invocables to build an ordered plan
@@ -459,7 +357,7 @@ function $Resolve(  $q,    $injector) {
       cycle.push(key);
       if (visited[key] === VISIT_IN_PROGRESS) {
         cycle.splice(0, indexOf(cycle, key));
-        throw new Error(&quot;Cyclic dependency: &quot; + cycle.join(&quot; -&gt; &quot;));
+        throw new Error("Cyclic dependency: " + cycle.join(" -> "));
       }
       visited[key] = VISIT_IN_PROGRESS;
       
@@ -468,7 +366,7 @@ function $Resolve(  $q,    $injector) {
       } else {
         var params = $injector.annotate(value);
         forEach(params, function (param) {
-          if (param !== key &amp;&amp; invocables.hasOwnProperty(param)) visit(invocables[param], param);
+          if (param !== key && invocables.hasOwnProperty(param)) visit(invocables[param], param);
         });
         plan.push(key, value, params);
       }
@@ -477,23 +375,23 @@ function $Resolve(  $q,    $injector) {
       visited[key] = VISIT_DONE;
     }
     forEach(invocables, visit);
-    invocables = cycle = visited = null; // plan is all that&#39;s required
+    invocables = cycle = visited = null; // plan is all that's required
     
     function isResolve(value) {
-      return isObject(value) &amp;&amp; value.then &amp;&amp; value.$$promises;
+      return isObject(value) && value.then && value.$$promises;
     }
     
     return function (locals, parent, self) {
-      if (isResolve(locals) &amp;&amp; self === undefined) {
+      if (isResolve(locals) && self === undefined) {
         self = parent; parent = locals; locals = null;
       }
       if (!locals) locals = NO_LOCALS;
       else if (!isObject(locals)) {
-        throw new Error(&quot;&#39;locals&#39; must be an object&quot;);
+        throw new Error("'locals' must be an object");
       }       
       if (!parent) parent = NO_PARENT;
       else if (!isResolve(parent)) {
-        throw new Error(&quot;&#39;parent&#39; must be a promise returned by $resolve.resolve()&quot;);
+        throw new Error("'parent' must be a promise returned by $resolve.resolve()");
       }
       
       // To complete the overall resolution, we have to wait for the parent
@@ -506,7 +404,7 @@ function $Resolve(  $q,    $injector) {
           merged = false;
           
       function done() {
-        // Merge parent values we haven&#39;t got yet and publish our own $$values
+        // Merge parent values we haven't got yet and publish our own $$values
         if (!--wait) {
           if (!merged) merge(values, parent.$$values); 
           result.$$values = values;
@@ -546,7 +444,7 @@ function $Resolve(  $q,    $injector) {
       }
       
       // Process each invocable in the plan, but ignore any where a local of the same name exists.
-      for (var i=0, ii=plan.length; i&lt;ii; i+=3) {
+      for (var i=0, ii=plan.length; i<ii; i+=3) {
         if (locals.hasOwnProperty(plan[i])) done();
         else invoke(plan[i], plan[i+1], plan[i+2]);
       }
@@ -559,9 +457,9 @@ function $Resolve(  $q,    $injector) {
           fail(reason);
         }
         // Wait for any parameter that we have a promise for (either from parent or from this
-        // resolve; in that case study() will have made sure it&#39;s ordered before us in the plan).
+        // resolve; in that case study() will have made sure it's ordered before us in the plan).
         forEach(params, function (dep) {
-          if (promises.hasOwnProperty(dep) &amp;&amp; !locals.hasOwnProperty(dep)) {
+          if (promises.hasOwnProperty(dep) && !locals.hasOwnProperty(dep)) {
             waitParams++;
             promises[dep].then(function (result) {
               values[dep] = result;
@@ -656,7 +554,7 @@ function $Resolve(  $q,    $injector) {
   };
 }
 
-angular.module(&#39;ui.router.util&#39;).service(&#39;$resolve&#39;, $Resolve);
+angular.module('ui.router.util').service('$resolve', $Resolve);
 
 
 /**
@@ -670,7 +568,7 @@ angular.module(&#39;ui.router.util&#39;).service(&#39;$resolve&#39;, $Resolve);
  * @description
  * Service. Manages loading of templates.
  */
-$TemplateFactory.$inject = [&#39;$http&#39;, &#39;$templateCache&#39;, &#39;$injector&#39;];
+$TemplateFactory.$inject = ['$http', '$templateCache', '$injector'];
 function $TemplateFactory(  $http,   $templateCache,   $injector) {
 
   /**
@@ -737,14 +635,14 @@ function $TemplateFactory(  $http,   $templateCache,   $injector) {
    * @param {string|Function} url url of the template to load, or a function 
    * that returns a url.
    * @param {Object} params Parameters to pass to the url function.
-   * @return {string|Promise.&lt;string&gt;} The template html as a string, or a promise 
+   * @return {string|Promise.<string>} The template html as a string, or a promise 
    * for that string.
    */
   this.fromUrl = function (url, params) {
     if (isFunction(url)) url = url(params);
     if (url == null) return null;
     else return $http
-        .get(url, { cache: $templateCache, headers: { Accept: &#39;text/html&#39; }})
+        .get(url, { cache: $templateCache, headers: { Accept: 'text/html' }})
         .then(function(response) { return response.data; });
   };
 
@@ -760,7 +658,7 @@ function $TemplateFactory(  $http,   $templateCache,   $injector) {
    * @param {Object} params Parameters for the template.
    * @param {Object} locals Locals to pass to `invoke`. Defaults to 
    * `{ params: params }`.
-   * @return {string|Promise.&lt;string&gt;} The template html as a string, or a promise 
+   * @return {string|Promise.<string>} The template html as a string, or a promise 
    * for that string.
    */
   this.fromProvider = function (provider, params, locals) {
@@ -768,7 +666,7 @@ function $TemplateFactory(  $http,   $templateCache,   $injector) {
   };
 }
 
-angular.module(&#39;ui.router.util&#39;).service(&#39;$templateFactory&#39;, $TemplateFactory);
+angular.module('ui.router.util').service('$templateFactory', $TemplateFactory);
 
 var $$UMFP; // reference to $UrlMatcherFactoryProvider
 
@@ -778,40 +676,40 @@ var $$UMFP; // reference to $UrlMatcherFactoryProvider
  *
  * @description
  * Matches URLs against patterns and extracts named parameters from the path or the search
- * part of the URL. A URL pattern consists of a path pattern, optionally followed by &#39;?&#39; and a list
- * of search parameters. Multiple search parameter names are separated by &#39;&amp;&#39;. Search parameters
+ * part of the URL. A URL pattern consists of a path pattern, optionally followed by '?' and a list
+ * of search parameters. Multiple search parameter names are separated by '&'. Search parameters
  * do not influence whether or not a URL is matched, but their values are passed through into
  * the matched parameters returned by {@link ui.router.util.type:UrlMatcher#methods_exec exec}.
  *
  * Path parameter placeholders can be specified using simple colon/catch-all syntax or curly brace
  * syntax, which optionally allows a regular expression for the parameter to be specified:
  *
- * * `&#39;:&#39;` name - colon placeholder
- * * `&#39;*&#39;` name - catch-all placeholder
- * * `&#39;{&#39; name &#39;}&#39;` - curly placeholder
- * * `&#39;{&#39; name &#39;:&#39; regexp|type &#39;}&#39;` - curly placeholder with regexp or type name. Should the
+ * * `':'` name - colon placeholder
+ * * `'*'` name - catch-all placeholder
+ * * `'{' name '}'` - curly placeholder
+ * * `'{' name ':' regexp|type '}'` - curly placeholder with regexp or type name. Should the
  *   regexp itself contain curly braces, they must be in matched pairs or escaped with a backslash.
  *
  * Parameter names may contain only word characters (latin letters, digits, and underscore) and
  * must be unique within the pattern (across both path and search parameters). For colon
  * placeholders or curly placeholders without an explicit regexp, a path parameter matches any
- * number of characters other than &#39;/&#39;. For catch-all placeholders the path parameter matches
+ * number of characters other than '/'. For catch-all placeholders the path parameter matches
  * any number of characters.
  *
  * Examples:
  *
- * * `&#39;/hello/&#39;` - Matches only if the path is exactly &#39;/hello/&#39;. There is no special treatment for
+ * * `'/hello/'` - Matches only if the path is exactly '/hello/'. There is no special treatment for
  *   trailing slashes, and patterns have to match the entire path, not just a prefix.
- * * `&#39;/user/:id&#39;` - Matches &#39;/user/bob&#39; or &#39;/user/1234!!!&#39; or even &#39;/user/&#39; but not &#39;/user&#39; or
- *   &#39;/user/bob/details&#39;. The second path segment will be captured as the parameter &#39;id&#39;.
- * * `&#39;/user/{id}&#39;` - Same as the previous example, but using curly brace syntax.
- * * `&#39;/user/{id:[^/]*}&#39;` - Same as the previous example.
- * * `&#39;/user/{id:[0-9a-fA-F]{1,8}}&#39;` - Similar to the previous example, but only matches if the id
+ * * `'/user/:id'` - Matches '/user/bob' or '/user/1234!!!' or even '/user/' but not '/user' or
+ *   '/user/bob/details'. The second path segment will be captured as the parameter 'id'.
+ * * `'/user/{id}'` - Same as the previous example, but using curly brace syntax.
+ * * `'/user/{id:[^/]*}'` - Same as the previous example.
+ * * `'/user/{id:[0-9a-fA-F]{1,8}}'` - Similar to the previous example, but only matches if the id
  *   parameter consists of 1 to 8 hex digits.
- * * `&#39;/files/{path:.*}&#39;` - Matches any URL starting with &#39;/files/&#39; and captures the rest of the
- *   path into the parameter &#39;path&#39;.
- * * `&#39;/files/*path&#39;` - ditto.
- * * `&#39;/calendar/{start:date}&#39;` - Matches &quot;/calendar/2014-11-12&quot; (because the pattern defined
+ * * `'/files/{path:.*}'` - Matches any URL starting with '/files/' and captures the rest of the
+ *   path into the parameter 'path'.
+ * * `'/files/*path'` - ditto.
+ * * `'/calendar/{start:date}'` - Matches "/calendar/2014-11-12" (because the pattern defined
  *   in the built-in  `date` Type matches `2014-11-12`) and provides a Date object in $stateParams.start
  *
  * @param {string} pattern  The pattern to compile into a matcher.
@@ -841,10 +739,10 @@ function UrlMatcher(pattern, config, parentMatcher) {
   config = extend({ params: {} }, isObject(config) ? config : {});
 
   // Find all placeholders and create a compiled pattern, using either classic or curly syntax:
-  //   &#39;*&#39; name
-  //   &#39;:&#39; name
-  //   &#39;{&#39; name &#39;}&#39;
-  //   &#39;{&#39; name &#39;:&#39; regexp &#39;}&#39;
+  //   '*' name
+  //   ':' name
+  //   '{' name '}'
+  //   '{' name ':' regexp '}'
   // The regular expression is somewhat complicated due to the need to allow curly braces
   // inside the regular expression. The placeholder regexp breaks down as follows:
   //    ([:*])([\w\[\]]+)              - classic placeholder ($1 / $2) (search version has - for snake-case)
@@ -855,7 +753,7 @@ function UrlMatcher(pattern, config, parentMatcher) {
   //    \{(?:[^{}\\]+|\\.)*\}          - a matched set of curly braces containing other atoms
   var placeholder       = /([:*])([\w\[\]]+)|\{([\w\[\]]+)(?:\:((?:[^{}\\]+|\\.|\{(?:[^{}\\]+|\\.)*\})+))?\}/g,
       searchPlaceholder = /([:]?)([\w\[\]-]+)|\{([\w\[\]-]+)(?:\:((?:[^{}\\]+|\\.|\{(?:[^{}\\]+|\\.)*\})+))?\}/g,
-      compiled = &#39;^&#39;, last = 0, m,
+      compiled = '^', last = 0, m,
       segments = this.segments = [],
       parentParams = parentMatcher ? parentMatcher.params : {},
       params = this.params = parentMatcher ? parentMatcher.params.$$new() : new $$UMFP.ParamSet(),
@@ -864,19 +762,19 @@ function UrlMatcher(pattern, config, parentMatcher) {
   function addParameter(id, type, config, location) {
     paramNames.push(id);
     if (parentParams[id]) return parentParams[id];
-    if (!/^\w+(-+\w+)*(?:\[\])?$/.test(id)) throw new Error(&quot;Invalid parameter name &#39;&quot; + id + &quot;&#39; in pattern &#39;&quot; + pattern + &quot;&#39;&quot;);
-    if (params[id]) throw new Error(&quot;Duplicate parameter name &#39;&quot; + id + &quot;&#39; in pattern &#39;&quot; + pattern + &quot;&#39;&quot;);
+    if (!/^\w+(-+\w+)*(?:\[\])?$/.test(id)) throw new Error("Invalid parameter name '" + id + "' in pattern '" + pattern + "'");
+    if (params[id]) throw new Error("Duplicate parameter name '" + id + "' in pattern '" + pattern + "'");
     params[id] = new $$UMFP.Param(id, type, config, location);
     return params[id];
   }
 
   function quoteRegExp(string, pattern, squash, optional) {
-    var surroundPattern = [&#39;&#39;,&#39;&#39;], result = string.replace(/[\\\[\]\^$*+?.()|{}]/g, &quot;\\$&amp;&quot;);
+    var surroundPattern = ['',''], result = string.replace(/[\\\[\]\^$*+?.()|{}]/g, "\\$&");
     if (!pattern) return result;
     switch(squash) {
-      case false: surroundPattern = [&#39;(&#39;, &#39;)&#39; + (optional ? &quot;?&quot; : &quot;&quot;)]; break;
-      case true:  surroundPattern = [&#39;?(&#39;, &#39;)?&#39;]; break;
-      default:    surroundPattern = [&#39;(&#39; + squash + &quot;|&quot;, &#39;)?&#39;]; break;
+      case false: surroundPattern = ['(', ')' + (optional ? "?" : "")]; break;
+      case true:  surroundPattern = ['?(', ')?']; break;
+      default:    surroundPattern = ['(' + squash + "|", ')?']; break;
     }
     return result + surroundPattern[0] + pattern + surroundPattern[1];
   }
@@ -887,11 +785,11 @@ function UrlMatcher(pattern, config, parentMatcher) {
   // The number of segments is always 1 more than the number of parameters.
   function matchDetails(m, isSearch) {
     var id, regexp, segment, type, cfg, arrayMode;
-    id          = m[2] || m[3]; // IE[78] returns &#39;&#39; for unmatched groups instead of null
+    id          = m[2] || m[3]; // IE[78] returns '' for unmatched groups instead of null
     cfg         = config.params[id];
     segment     = pattern.substring(last, m.index);
-    regexp      = isSearch ? m[4] : m[4] || (m[1] == &#39;*&#39; ? &#39;.*&#39; : null);
-    type        = $$UMFP.type(regexp || &quot;string&quot;) || inherit($$UMFP.type(&quot;string&quot;), { pattern: new RegExp(regexp, config.caseInsensitive ? &#39;i&#39; : undefined) });
+    regexp      = isSearch ? m[4] : m[4] || (m[1] == '*' ? '.*' : null);
+    type        = $$UMFP.type(regexp || "string") || inherit($$UMFP.type("string"), { pattern: new RegExp(regexp, config.caseInsensitive ? 'i' : undefined) });
     return {
       id: id, regexp: regexp, segment: segment, type: type, cfg: cfg
     };
@@ -900,9 +798,9 @@ function UrlMatcher(pattern, config, parentMatcher) {
   var p, param, segment;
   while ((m = placeholder.exec(pattern))) {
     p = matchDetails(m, false);
-    if (p.segment.indexOf(&#39;?&#39;) &gt;= 0) break; // we&#39;re into the search part
+    if (p.segment.indexOf('?') >= 0) break; // we're into the search part
 
-    param = addParameter(p.id, p.type, p.cfg, &quot;path&quot;);
+    param = addParameter(p.id, p.type, p.cfg, "path");
     compiled += quoteRegExp(p.segment, param.type.pattern.source, param.squash, param.isOptional);
     segments.push(p.segment);
     last = placeholder.lastIndex;
@@ -910,31 +808,31 @@ function UrlMatcher(pattern, config, parentMatcher) {
   segment = pattern.substring(last);
 
   // Find any search parameter names and remove them from the last segment
-  var i = segment.indexOf(&#39;?&#39;);
+  var i = segment.indexOf('?');
 
-  if (i &gt;= 0) {
+  if (i >= 0) {
     var search = this.sourceSearch = segment.substring(i);
     segment = segment.substring(0, i);
     this.sourcePath = pattern.substring(0, last + i);
 
-    if (search.length &gt; 0) {
+    if (search.length > 0) {
       last = 0;
       while ((m = searchPlaceholder.exec(search))) {
         p = matchDetails(m, true);
-        param = addParameter(p.id, p.type, p.cfg, &quot;search&quot;);
+        param = addParameter(p.id, p.type, p.cfg, "search");
         last = placeholder.lastIndex;
-        // check if ?&amp;
+        // check if ?&
       }
     }
   } else {
     this.sourcePath = pattern;
-    this.sourceSearch = &#39;&#39;;
+    this.sourceSearch = '';
   }
 
-  compiled += quoteRegExp(segment) + (config.strict === false ? &#39;\/?&#39; : &#39;&#39;) + &#39;$&#39;;
+  compiled += quoteRegExp(segment) + (config.strict === false ? '\/?' : '') + '$';
   segments.push(segment);
 
-  this.regexp = new RegExp(compiled, config.caseInsensitive ? &#39;i&#39; : undefined);
+  this.regexp = new RegExp(compiled, config.caseInsensitive ? 'i' : undefined);
   this.prefix = segments[0];
   this.$$paramNames = paramNames;
 }
@@ -952,10 +850,10 @@ function UrlMatcher(pattern, config, parentMatcher) {
  *
  * @example
  * The following two matchers are equivalent:
- * &lt;pre&gt;
- * new UrlMatcher(&#39;/user/{id}?q&#39;).concat(&#39;/details?date&#39;);
- * new UrlMatcher(&#39;/user/{id}/details?q&amp;date&#39;);
- * &lt;/pre&gt;
+ * <pre>
+ * new UrlMatcher('/user/{id}?q').concat('/details?date');
+ * new UrlMatcher('/user/{id}/details?q&date');
+ * </pre>
  *
  * @param {string} pattern  The pattern to append.
  * @param {Object} config  An object hash of the configuration for the matcher.
@@ -964,7 +862,7 @@ function UrlMatcher(pattern, config, parentMatcher) {
 UrlMatcher.prototype.concat = function (pattern, config) {
   // Because order of search parameters is irrelevant, we can add our own search
   // parameters to the end of the new pattern. Parse the new pattern by itself
-  // and then join the bits together, but it&#39;s much easier to do this on a string level.
+  // and then join the bits together, but it's much easier to do this on a string level.
   var defaultConfig = {
     caseInsensitive: $$UMFP.caseInsensitive(),
     strict: $$UMFP.strictMode(),
@@ -990,12 +888,12 @@ UrlMatcher.prototype.toString = function () {
  * as optional.
  *
  * @example
- * &lt;pre&gt;
- * new UrlMatcher(&#39;/user/{id}?q&amp;r&#39;).exec(&#39;/user/bob&#39;, {
- *   x: &#39;1&#39;, q: &#39;hello&#39;
+ * <pre>
+ * new UrlMatcher('/user/{id}?q&r').exec('/user/bob', {
+ *   x: '1', q: 'hello'
  * });
- * // returns { id: &#39;bob&#39;, q: &#39;hello&#39;, r: null }
- * &lt;/pre&gt;
+ * // returns { id: 'bob', q: 'hello', r: null }
+ * </pre>
  *
  * @param {string} path  The URL path to match, e.g. `$location.path()`.
  * @param {Object} searchParams  URL search parameters, e.g. `$location.search()`.
@@ -1010,29 +908,29 @@ UrlMatcher.prototype.exec = function (path, searchParams) {
     nPath = this.segments.length - 1,
     values = {}, i, j, cfg, paramName;
 
-  if (nPath !== m.length - 1) throw new Error(&quot;Unbalanced capture group in route &#39;&quot; + this.source + &quot;&#39;&quot;);
+  if (nPath !== m.length - 1) throw new Error("Unbalanced capture group in route '" + this.source + "'");
 
   function decodePathArray(string) {
-    function reverseString(str) { return str.split(&quot;&quot;).reverse().join(&quot;&quot;); }
-    function unquoteDashes(str) { return str.replace(/\\-/g, &quot;-&quot;); }
+    function reverseString(str) { return str.split("").reverse().join(""); }
+    function unquoteDashes(str) { return str.replace(/\\-/g, "-"); }
 
     var split = reverseString(string).split(/-(?!\\)/);
     var allReversed = map(split, reverseString);
     return map(allReversed, unquoteDashes).reverse();
   }
 
-  for (i = 0; i &lt; nPath; i++) {
+  for (i = 0; i < nPath; i++) {
     paramName = paramNames[i];
     var param = this.params[paramName];
     var paramVal = m[i+1];
     // if the param value matches a pre-replace pair, replace the value before decoding.
-    for (j = 0; j &lt; param.replace; j++) {
+    for (j = 0; j < param.replace; j++) {
       if (param.replace[j].from === paramVal) paramVal = param.replace[j].to;
     }
-    if (paramVal &amp;&amp; param.array === true) paramVal = decodePathArray(paramVal);
+    if (paramVal && param.array === true) paramVal = decodePathArray(paramVal);
     values[paramName] = param.value(paramVal);
   }
-  for (/**/; i &lt; nTotal; i++) {
+  for (/**/; i < nTotal; i++) {
     paramName = paramNames[i];
     values[paramName] = this.params[paramName].value(searchParams[paramName]);
   }
@@ -1048,7 +946,7 @@ UrlMatcher.prototype.exec = function (path, searchParams) {
  * @description
  * Returns the names of all path and search parameters of this pattern in an unspecified order.
  *
- * @returns {Array.&lt;string&gt;}  An array of parameter names. Must be treated as read-only. If the
+ * @returns {Array.<string>}  An array of parameter names. Must be treated as read-only. If the
  *    pattern has no parameters, an empty array is returned.
  */
 UrlMatcher.prototype.parameters = function (param) {
@@ -1083,10 +981,10 @@ UrlMatcher.prototype.validates = function (params) {
  * treated as empty strings.
  *
  * @example
- * &lt;pre&gt;
- * new UrlMatcher(&#39;/user/{id}?q&#39;).format({ id:&#39;bob&#39;, q:&#39;yes&#39; });
- * // returns &#39;/user/bob?q=yes&#39;
- * &lt;/pre&gt;
+ * <pre>
+ * new UrlMatcher('/user/{id}?q').format({ id:'bob', q:'yes' });
+ * // returns '/user/bob?q=yes'
+ * </pre>
  *
  * @param {Object} values  the values to substitute for the parameters in this pattern.
  * @returns {string}  the formatted URL (path and optionally search part).
@@ -1098,14 +996,14 @@ UrlMatcher.prototype.format = function (values) {
 
   var i, search = false, nPath = segments.length - 1, nTotal = params.length, result = segments[0];
 
-  function encodeDashes(str) { // Replace dashes with encoded &quot;\-&quot;
-    return encodeURIComponent(str).replace(/-/g, function(c) { return &#39;%5C%&#39; + c.charCodeAt(0).toString(16).toUpperCase(); });
+  function encodeDashes(str) { // Replace dashes with encoded "\-"
+    return encodeURIComponent(str).replace(/-/g, function(c) { return '%5C%' + c.charCodeAt(0).toString(16).toUpperCase(); });
   }
 
-  for (i = 0; i &lt; nTotal; i++) {
-    var isPathParam = i &lt; nPath;
+  for (i = 0; i < nTotal; i++) {
+    var isPathParam = i < nPath;
     var name = params[i], param = paramset[name], value = param.value(values[name]);
-    var isDefaultValue = param.isOptional &amp;&amp; param.type.equals(param.value(), value);
+    var isDefaultValue = param.isOptional && param.type.equals(param.value(), value);
     var squash = isDefaultValue ? param.squash : false;
     var encoded = param.type.encode(value);
 
@@ -1114,7 +1012,7 @@ UrlMatcher.prototype.format = function (values) {
       if (squash === false) {
         if (encoded != null) {
           if (isArray(encoded)) {
-            result += map(encoded, encodeDashes).join(&quot;-&quot;);
+            result += map(encoded, encodeDashes).join("-");
           } else {
             result += encodeURIComponent(encoded);
           }
@@ -1127,10 +1025,10 @@ UrlMatcher.prototype.format = function (values) {
         result += squash + nextSegment;
       }
     } else {
-      if (encoded == null || (isDefaultValue &amp;&amp; squash !== false)) continue;
+      if (encoded == null || (isDefaultValue && squash !== false)) continue;
       if (!isArray(encoded)) encoded = [ encoded ];
-      encoded = map(encoded, encodeURIComponent).join(&#39;&amp;&#39; + name + &#39;=&#39;);
-      result += (search ? &#39;&amp;&#39; : &#39;?&#39;) + (name + &#39;=&#39; + encoded);
+      encoded = map(encoded, encodeURIComponent).join('&' + name + '=');
+      result += (search ? '&' : '?') + (name + '=' + encoded);
       search = true;
     }
   }
@@ -1150,18 +1048,18 @@ UrlMatcher.prototype.format = function (values) {
  * See {@link ui.router.util.$urlMatcherFactory#methods_type `$urlMatcherFactory#type()`} for more
  * information on registering custom types.
  *
- * @param {Object} config  A configuration object which contains the custom type definition.  The object&#39;s
- *        properties will override the default methods and/or pattern in `Type`&#39;s public interface.
+ * @param {Object} config  A configuration object which contains the custom type definition.  The object's
+ *        properties will override the default methods and/or pattern in `Type`'s public interface.
  * @example
- * &lt;pre&gt;
+ * <pre>
  * {
  *   decode: function(val) { return parseInt(val, 10); },
- *   encode: function(val) { return val &amp;&amp; val.toString(); },
- *   equals: function(a, b) { return this.is(a) &amp;&amp; a === b; },
- *   is: function(val) { return angular.isNumber(val) isFinite(val) &amp;&amp; val % 1 === 0; },
+ *   encode: function(val) { return val && val.toString(); },
+ *   equals: function(a, b) { return this.is(a) && a === b; },
+ *   is: function(val) { return angular.isNumber(val) isFinite(val) && val % 1 === 0; },
  *   pattern: /\d+/
  * }
- * &lt;/pre&gt;
+ * </pre>
  *
  * @property {RegExp} pattern The regular expression pattern used to match values of this type when
  *           coming from a substring of a URL.
@@ -1250,7 +1148,7 @@ Type.prototype.$subPattern = function() {
 
 Type.prototype.pattern = /.*/;
 
-Type.prototype.toString = function() { return &quot;{Type:&quot; + this.name + &quot;}&quot;; };
+Type.prototype.toString = function() { return "{Type:" + this.name + "}"; };
 
 /** Given an encoded string, or a decoded object, returns a decoded object */
 Type.prototype.$normalize = function(val) {
@@ -1258,18 +1156,18 @@ Type.prototype.$normalize = function(val) {
 };
 
 /*
- * Wraps an existing custom Type as an array of Type, depending on &#39;mode&#39;.
+ * Wraps an existing custom Type as an array of Type, depending on 'mode'.
  * e.g.:
- * - urlmatcher pattern &quot;/path?{queryParam[]:int}&quot;
- * - url: &quot;/path?queryParam=1&amp;queryParam=2
+ * - urlmatcher pattern "/path?{queryParam[]:int}"
+ * - url: "/path?queryParam=1&queryParam=2
  * - $stateParams.queryParam will be [1, 2]
- * if `mode` is &quot;auto&quot;, then
- * - url: &quot;/path?queryParam=1 will create $stateParams.queryParam: 1
- * - url: &quot;/path?queryParam=1&amp;queryParam=2 will create $stateParams.queryParam: [1, 2]
+ * if `mode` is "auto", then
+ * - url: "/path?queryParam=1 will create $stateParams.queryParam: 1
+ * - url: "/path?queryParam=1&queryParam=2 will create $stateParams.queryParam: [1, 2]
  */
 Type.prototype.$asArray = function(mode, isSearch) {
   if (!mode) return this;
-  if (mode === &quot;auto&quot; &amp;&amp; !isSearch) throw new Error(&quot;&#39;auto&#39; array mode is for query parameters only&quot;);
+  if (mode === "auto" && !isSearch) throw new Error("'auto' array mode is for query parameters only");
 
   function ArrayType(type, mode) {
     function bindTo(type, callbackName) {
@@ -1280,11 +1178,11 @@ Type.prototype.$asArray = function(mode, isSearch) {
 
     // Wrap non-array value as array
     function arrayWrap(val) { return isArray(val) ? val : (isDefined(val) ? [ val ] : []); }
-    // Unwrap array value for &quot;auto&quot; mode. Return undefined for empty array.
+    // Unwrap array value for "auto" mode. Return undefined for empty array.
     function arrayUnwrap(val) {
       switch(val.length) {
         case 0: return undefined;
-        case 1: return mode === &quot;auto&quot; ? val[0] : val;
+        case 1: return mode === "auto" ? val[0] : val;
         default: return val;
       }
     }
@@ -1306,19 +1204,19 @@ Type.prototype.$asArray = function(mode, isSearch) {
       return function handleArray(val1, val2) {
         var left = arrayWrap(val1), right = arrayWrap(val2);
         if (left.length !== right.length) return false;
-        for (var i = 0; i &lt; left.length; i++) {
+        for (var i = 0; i < left.length; i++) {
           if (!callback(left[i], right[i])) return false;
         }
         return true;
       };
     }
 
-    this.encode = arrayHandler(bindTo(type, &#39;encode&#39;));
-    this.decode = arrayHandler(bindTo(type, &#39;decode&#39;));
-    this.is     = arrayHandler(bindTo(type, &#39;is&#39;), true);
-    this.equals = arrayEqualsHandler(bindTo(type, &#39;equals&#39;));
+    this.encode = arrayHandler(bindTo(type, 'encode'));
+    this.decode = arrayHandler(bindTo(type, 'decode'));
+    this.is     = arrayHandler(bindTo(type, 'is'), true);
+    this.equals = arrayEqualsHandler(bindTo(type, 'equals'));
     this.pattern = type.pattern;
-    this.$normalize = arrayHandler(bindTo(type, &#39;$normalize&#39;));
+    this.$normalize = arrayHandler(bindTo(type, '$normalize'));
     this.name = type.name;
     this.$arrayMode = mode;
   }
@@ -1341,8 +1239,8 @@ function $UrlMatcherFactory() {
 
   var isCaseInsensitive = false, isStrictMode = true, defaultSquashPolicy = false;
 
-  function valToString(val) { return val != null ? val.toString().replace(/\//g, &quot;%2F&quot;) : val; }
-  function valFromString(val) { return val != null ? val.toString().replace(/%2F/g, &quot;/&quot;) : val; }
+  function valToString(val) { return val != null ? val.toString().replace(/\//g, "%2F") : val; }
+  function valFromString(val) { return val != null ? val.toString().replace(/%2F/g, "/") : val; }
 
   var $types = {}, enqueue = true, typeQueue = [], injector, defaultTypes = {
     string: {
@@ -1350,13 +1248,13 @@ function $UrlMatcherFactory() {
       decode: valFromString,
       // TODO: in 1.0, make string .is() return false if value is undefined/null by default.
       // In 0.2.x, string params are optional by default for backwards compat
-      is: function(val) { return val == null || !isDefined(val) || typeof val === &quot;string&quot;; },
+      is: function(val) { return val == null || !isDefined(val) || typeof val === "string"; },
       pattern: /[^/]*/
     },
     int: {
       encode: valToString,
       decode: function(val) { return parseInt(val, 10); },
-      is: function(val) { return isDefined(val) &amp;&amp; this.decode(val.toString()) === val; },
+      is: function(val) { return isDefined(val) && this.decode(val.toString()) === val; },
       pattern: /\d+/
     },
     bool: {
@@ -1370,17 +1268,17 @@ function $UrlMatcherFactory() {
         if (!this.is(val))
           return undefined;
         return [ val.getFullYear(),
-          (&#39;0&#39; + (val.getMonth() + 1)).slice(-2),
-          (&#39;0&#39; + val.getDate()).slice(-2)
-        ].join(&quot;-&quot;);
+          ('0' + (val.getMonth() + 1)).slice(-2),
+          ('0' + val.getDate()).slice(-2)
+        ].join("-");
       },
       decode: function (val) {
         if (this.is(val)) return val;
         var match = this.capture.exec(val);
         return match ? new Date(match[1], match[2] - 1, match[3]) : undefined;
       },
-      is: function(val) { return val instanceof Date &amp;&amp; !isNaN(val.valueOf()); },
-      equals: function (a, b) { return this.is(a) &amp;&amp; this.is(b) &amp;&amp; a.toISOString() === b.toISOString(); },
+      is: function(val) { return val instanceof Date && !isNaN(val.valueOf()); },
+      equals: function (a, b) { return this.is(a) && this.is(b) && a.toISOString() === b.toISOString(); },
       pattern: /[0-9]{4}-(?:0[1-9]|1[0-2])-(?:0[1-9]|[1-2][0-9]|3[0-1])/,
       capture: /([0-9]{4})-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])/
     },
@@ -1407,7 +1305,7 @@ function $UrlMatcherFactory() {
   }
 
   function isInjectable(value) {
-    return (isFunction(value) || (isArray(value) &amp;&amp; isFunction(value[value.length - 1])));
+    return (isFunction(value) || (isArray(value) && isFunction(value[value.length - 1])));
   }
 
   /**
@@ -1415,7 +1313,7 @@ function $UrlMatcherFactory() {
    */
   $UrlMatcherFactory.$$getDefaultValue = function(config) {
     if (!isInjectable(config.value)) return config.value;
-    if (!injector) throw new Error(&quot;Injectable functions cannot be called at configuration time&quot;);
+    if (!injector) throw new Error("Injectable functions cannot be called at configuration time");
     return injector.invoke(config.value);
   };
 
@@ -1465,13 +1363,13 @@ function $UrlMatcherFactory() {
    *    `nosquash`: When generating an href with a default parameter value, do not squash the parameter value from the URL
    *    `slash`: When generating an href with a default parameter value, squash (remove) the parameter value, and, if the
    *             parameter is surrounded by slashes, squash (remove) one slash from the URL
-   *    any other string, e.g. &quot;~&quot;: When generating an href with a default parameter value, squash (remove)
+   *    any other string, e.g. "~": When generating an href with a default parameter value, squash (remove)
    *             the parameter value from the URL and replace it with this string.
    */
   this.defaultSquashPolicy = function(value) {
     if (!isDefined(value)) return defaultSquashPolicy;
-    if (value !== true &amp;&amp; value !== false &amp;&amp; !isString(value))
-      throw new Error(&quot;Invalid squash policy: &quot; + value + &quot;. Valid policies: false, true, arbitrary-string&quot;);
+    if (value !== true && value !== false && !isString(value))
+      throw new Error("Invalid squash policy: " + value + ". Valid policies: false, true, arbitrary-string");
     defaultSquashPolicy = value;
     return value;
   };
@@ -1510,7 +1408,7 @@ function $UrlMatcherFactory() {
 
     forEach(UrlMatcher.prototype, function(val, name) {
       if (isFunction(val)) {
-        result = result &amp;&amp; (isDefined(o[name]) &amp;&amp; isFunction(o[name]));
+        result = result && (isDefined(o[name]) && isFunction(o[name]));
       }
     });
     return result;
@@ -1538,10 +1436,10 @@ function $UrlMatcherFactory() {
    * This is a simple example of a custom type that encodes and decodes items from an
    * array, using the array index as the URL-encoded value:
    *
-   * &lt;pre&gt;
-   * var list = [&#39;John&#39;, &#39;Paul&#39;, &#39;George&#39;, &#39;Ringo&#39;];
+   * <pre>
+   * var list = ['John', 'Paul', 'George', 'Ringo'];
    *
-   * $urlMatcherFactoryProvider.type(&#39;listItem&#39;, {
+   * $urlMatcherFactoryProvider.type('listItem', {
    *   encode: function(item) {
    *     // Represent the list item in the URL using its corresponding index
    *     return list.indexOf(item);
@@ -1553,12 +1451,12 @@ function $UrlMatcherFactory() {
    *   is: function(item) {
    *     // Ensure the item is valid by checking to see that it appears
    *     // in the list
-   *     return list.indexOf(item) &gt; -1;
+   *     return list.indexOf(item) > -1;
    *   }
    * });
    *
-   * $stateProvider.state(&#39;list&#39;, {
-   *   url: &quot;/list/{item:listItem}&quot;,
+   * $stateProvider.state('list', {
+   *   url: "/list/{item:listItem}",
    *   controller: function($scope, $stateParams) {
    *     console.log($stateParams.item);
    *   }
@@ -1566,19 +1464,19 @@ function $UrlMatcherFactory() {
    *
    * // ...
    *
-   * // Changes URL to &#39;/list/3&#39;, logs &quot;Ringo&quot; to the console
-   * $state.go(&#39;list&#39;, { item: &quot;Ringo&quot; });
-   * &lt;/pre&gt;
+   * // Changes URL to '/list/3', logs "Ringo" to the console
+   * $state.go('list', { item: "Ringo" });
+   * </pre>
    *
    * This is a more complex example of a type that relies on dependency injection to
    * interact with services, and uses the parameter name from the URL to infer how to
    * handle encoding and decoding parameter values:
    *
-   * &lt;pre&gt;
+   * <pre>
    * // Defines a custom type that gets a value from a service,
    * // where each service gets different types of values from
    * // a backend API:
-   * $urlMatcherFactoryProvider.type(&#39;dbObject&#39;, {}, function(Users, Posts) {
+   * $urlMatcherFactoryProvider.type('dbObject', {}, function(Users, Posts) {
    *
    *   // Matches up services to URL parameter names
    *   var services = {
@@ -1598,7 +1496,7 @@ function $UrlMatcherFactory() {
    *     },
    *     is: function(object, key) {
    *       // Check that object is a valid dbObject
-   *       return angular.isObject(object) &amp;&amp; object.id &amp;&amp; services[key];
+   *       return angular.isObject(object) && object.id && services[key];
    *     }
    *     equals: function(a, b) {
    *       // Check the equality of decoded objects by comparing
@@ -1610,22 +1508,22 @@ function $UrlMatcherFactory() {
    *
    * // In a config() block, you can then attach URLs with
    * // type-annotated parameters:
-   * $stateProvider.state(&#39;users&#39;, {
-   *   url: &quot;/users&quot;,
+   * $stateProvider.state('users', {
+   *   url: "/users",
    *   // ...
-   * }).state(&#39;users.item&#39;, {
-   *   url: &quot;/{user:dbObject}&quot;,
+   * }).state('users.item', {
+   *   url: "/{user:dbObject}",
    *   controller: function($scope, $stateParams) {
    *     // $stateParams.user will now be an object returned from
    *     // the Users service
    *   },
    *   // ...
    * });
-   * &lt;/pre&gt;
+   * </pre>
    */
   this.type = function (name, definition, definitionFn) {
     if (!isDefined(definition)) return $types[name];
-    if ($types.hasOwnProperty(name)) throw new Error(&quot;A type named &#39;&quot; + name + &quot;&#39; has already been defined.&quot;);
+    if ($types.hasOwnProperty(name)) throw new Error("A type named '" + name + "' has already been defined.");
 
     $types[name] = new Type(extend({ name: name }, definition));
     if (definitionFn) {
@@ -1639,7 +1537,7 @@ function $UrlMatcherFactory() {
   function flushTypeQueue() {
     while(typeQueue.length) {
       var type = typeQueue.shift();
-      if (type.pattern) throw new Error(&quot;You cannot override a type&#39;s .pattern at runtime.&quot;);
+      if (type.pattern) throw new Error("You cannot override a type's .pattern at runtime.");
       angular.extend($types[type.name], injector.invoke(type.def));
     }
   }
@@ -1649,7 +1547,7 @@ function $UrlMatcherFactory() {
   $types = inherit($types, {});
 
   /* No need to document $get, since it returns this */
-  this.$get = [&#39;$injector&#39;, function ($injector) {
+  this.$get = ['$injector', function ($injector) {
     injector = $injector;
     enqueue = false;
     flushTypeQueue();
@@ -1665,51 +1563,51 @@ function $UrlMatcherFactory() {
     config = unwrapShorthand(config);
     type = getType(config, type, location);
     var arrayMode = getArrayMode();
-    type = arrayMode ? type.$asArray(arrayMode, location === &quot;search&quot;) : type;
-    if (type.name === &quot;string&quot; &amp;&amp; !arrayMode &amp;&amp; location === &quot;path&quot; &amp;&amp; config.value === undefined)
-      config.value = &quot;&quot;; // for 0.2.x; in 0.3.0+ do not automatically default to &quot;&quot;
+    type = arrayMode ? type.$asArray(arrayMode, location === "search") : type;
+    if (type.name === "string" && !arrayMode && location === "path" && config.value === undefined)
+      config.value = ""; // for 0.2.x; in 0.3.0+ do not automatically default to ""
     var isOptional = config.value !== undefined;
     var squash = getSquashPolicy(config, isOptional);
     var replace = getReplace(config, arrayMode, isOptional, squash);
 
     function unwrapShorthand(config) {
       var keys = isObject(config) ? objectKeys(config) : [];
-      var isShorthand = indexOf(keys, &quot;value&quot;) === -1 &amp;&amp; indexOf(keys, &quot;type&quot;) === -1 &amp;&amp;
-                        indexOf(keys, &quot;squash&quot;) === -1 &amp;&amp; indexOf(keys, &quot;array&quot;) === -1;
+      var isShorthand = indexOf(keys, "value") === -1 && indexOf(keys, "type") === -1 &&
+                        indexOf(keys, "squash") === -1 && indexOf(keys, "array") === -1;
       if (isShorthand) config = { value: config };
       config.$$fn = isInjectable(config.value) ? config.value : function () { return config.value; };
       return config;
     }
 
     function getType(config, urlType, location) {
-      if (config.type &amp;&amp; urlType) throw new Error(&quot;Param &#39;&quot;+id+&quot;&#39; has two type configurations.&quot;);
+      if (config.type && urlType) throw new Error("Param '"+id+"' has two type configurations.");
       if (urlType) return urlType;
-      if (!config.type) return (location === &quot;config&quot; ? $types.any : $types.string);
+      if (!config.type) return (location === "config" ? $types.any : $types.string);
       return config.type instanceof Type ? config.type : new Type(config.type);
     }
 
     // array config: param name (param[]) overrides default settings.  explicit config overrides param name.
     function getArrayMode() {
-      var arrayDefaults = { array: (location === &quot;search&quot; ? &quot;auto&quot; : false) };
+      var arrayDefaults = { array: (location === "search" ? "auto" : false) };
       var arrayParamNomenclature = id.match(/\[\]$/) ? { array: true } : {};
       return extend(arrayDefaults, arrayParamNomenclature, config).array;
     }
 
     /**
-     * returns false, true, or the squash value to indicate the &quot;default parameter url squash policy&quot;.
+     * returns false, true, or the squash value to indicate the "default parameter url squash policy".
      */
     function getSquashPolicy(config, isOptional) {
       var squash = config.squash;
       if (!isOptional || squash === false) return false;
       if (!isDefined(squash) || squash == null) return defaultSquashPolicy;
       if (squash === true || isString(squash)) return squash;
-      throw new Error(&quot;Invalid squash policy: &#39;&quot; + squash + &quot;&#39;. Valid policies: false, true, or arbitrary string&quot;);
+      throw new Error("Invalid squash policy: '" + squash + "'. Valid policies: false, true, or arbitrary string");
     }
 
     function getReplace(config, arrayMode, isOptional, squash) {
       var replace, configuredKeys, defaultPolicy = [
-        { from: &quot;&quot;,   to: (isOptional || arrayMode ? undefined : &quot;&quot;) },
-        { from: null, to: (isOptional || arrayMode ? undefined : &quot;&quot;) }
+        { from: "",   to: (isOptional || arrayMode ? undefined : "") },
+        { from: null, to: (isOptional || arrayMode ? undefined : "") }
       ];
       replace = isArray(config.replace) ? config.replace : [];
       if (isString(squash))
@@ -1722,10 +1620,10 @@ function $UrlMatcherFactory() {
      * [Internal] Get the default value of a parameter, which may be an injectable function.
      */
     function $$getDefaultValue() {
-      if (!injector) throw new Error(&quot;Injectable functions cannot be called at configuration time&quot;);
+      if (!injector) throw new Error("Injectable functions cannot be called at configuration time");
       var defaultValue = injector.invoke(config.$$fn);
-      if (defaultValue !== null &amp;&amp; defaultValue !== undefined &amp;&amp; !self.type.is(defaultValue))
-        throw new Error(&quot;Default value (&quot; + defaultValue + &quot;) for parameter &#39;&quot; + self.id + &quot;&#39; is not an instance of Type (&quot; + self.type.name + &quot;)&quot;);
+      if (defaultValue !== null && defaultValue !== undefined && !self.type.is(defaultValue))
+        throw new Error("Default value (" + defaultValue + ") for parameter '" + self.id + "' is not an instance of Type (" + self.type.name + ")");
       return defaultValue;
     }
 
@@ -1743,7 +1641,7 @@ function $UrlMatcherFactory() {
       return !isDefined(value) ? $$getDefaultValue() : self.type.$normalize(value);
     }
 
-    function toString() { return &quot;{Param:&quot; + id + &quot; &quot; + type + &quot; squash: &#39;&quot; + squash + &quot;&#39; optional: &quot; + isOptional + &quot;}&quot;; }
+    function toString() { return "{Param:" + id + " " + type + " squash: '" + squash + "' optional: " + isOptional + "}"; }
 
     extend(this, {
       id: id,
@@ -1775,7 +1673,7 @@ function $UrlMatcherFactory() {
       chain.reverse();
       forEach(chain, function(paramset) {
         forEach(objectKeys(paramset), function(key) {
-            if (indexOf(keys, key) === -1 &amp;&amp; indexOf(ignore, key) === -1) keys.push(key);
+            if (indexOf(keys, key) === -1 && indexOf(ignore, key) === -1) keys.push(key);
         });
       });
       return keys;
@@ -1783,31 +1681,31 @@ function $UrlMatcherFactory() {
     $$values: function(paramValues) {
       var values = {}, self = this;
       forEach(self.$$keys(), function(key) {
-        values[key] = self[key].value(paramValues &amp;&amp; paramValues[key]);
+        values[key] = self[key].value(paramValues && paramValues[key]);
       });
       return values;
     },
     $$equals: function(paramValues1, paramValues2) {
       var equal = true, self = this;
       forEach(self.$$keys(), function(key) {
-        var left = paramValues1 &amp;&amp; paramValues1[key], right = paramValues2 &amp;&amp; paramValues2[key];
+        var left = paramValues1 && paramValues1[key], right = paramValues2 && paramValues2[key];
         if (!self[key].type.equals(left, right)) equal = false;
       });
       return equal;
     },
     $$validates: function $$validate(paramValues) {
       var keys = this.$$keys(), i, param, rawVal, normalized, encoded;
-      for (i = 0; i &lt; keys.length; i++) {
+      for (i = 0; i < keys.length; i++) {
         param = this[keys[i]];
         rawVal = paramValues[keys[i]];
-        if ((rawVal === undefined || rawVal === null) &amp;&amp; param.isOptional)
+        if ((rawVal === undefined || rawVal === null) && param.isOptional)
           break; // There was no parameter value, but the param is optional
         normalized = param.type.$normalize(rawVal);
         if (!param.type.is(normalized))
           return false; // The value was not of the correct Type, and could not be decoded to the correct Type
         encoded = param.type.encode(normalized);
-        if (angular.isString(encoded) &amp;&amp; !param.type.pattern.exec(encoded))
-          return false; // The value was of the correct type, but when encoded, did not match the Type&#39;s regexp
+        if (angular.isString(encoded) && !param.type.pattern.exec(encoded))
+          return false; // The value was of the correct type, but when encoded, did not match the Type's regexp
       }
       return true;
     },
@@ -1817,9 +1715,9 @@ function $UrlMatcherFactory() {
   this.ParamSet = ParamSet;
 }
 
-// Register as a provider so it&#39;s available to other providers
-angular.module(&#39;ui.router.util&#39;).provider(&#39;$urlMatcherFactory&#39;, $UrlMatcherFactory);
-angular.module(&#39;ui.router.util&#39;).run([&#39;$urlMatcherFactory&#39;, function($urlMatcherFactory) { }]);
+// Register as a provider so it's available to other providers
+angular.module('ui.router.util').provider('$urlMatcherFactory', $UrlMatcherFactory);
+angular.module('ui.router.util').run(['$urlMatcherFactory', function($urlMatcherFactory) { }]);
 
 /**
  * @ngdoc object
@@ -1837,20 +1735,20 @@ angular.module(&#39;ui.router.util&#39;).run([&#39;$urlMatcherFactory&#39;, func
  * There are several methods on `$urlRouterProvider` that make it useful to use directly
  * in your module config.
  */
-$UrlRouterProvider.$inject = [&#39;$locationProvider&#39;, &#39;$urlMatcherFactoryProvider&#39;];
+$UrlRouterProvider.$inject = ['$locationProvider', '$urlMatcherFactoryProvider'];
 function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
   var rules = [], otherwise = null, interceptDeferred = false, listener;
 
   // Returns a string that is a prefix of all strings matching the RegExp
   function regExpPrefix(re) {
     var prefix = /^\^((?:\\[^a-zA-Z0-9]|[^\\\[\]\^$*+?.()|{}]+)*)/.exec(re.source);
-    return (prefix != null) ? prefix[1].replace(/\\(.)/g, &quot;$1&quot;) : &#39;&#39;;
+    return (prefix != null) ? prefix[1].replace(/\\(.)/g, "$1") : '';
   }
 
   // Interpolates matched values into a String.replace()-style pattern
   function interpolate(pattern, match) {
     return pattern.replace(/\$(\$|\d{1,2})/, function (m, what) {
-      return match[what === &#39;$&#39; ? 0 : Number(what)];
+      return match[what === '$' ? 0 : Number(what)];
     });
   }
 
@@ -1864,11 +1762,11 @@ function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
    * specific URLs.
    *
    * @example
-   * &lt;pre&gt;
-   * var app = angular.module(&#39;app&#39;, [&#39;ui.router.router&#39;]);
+   * <pre>
+   * var app = angular.module('app', ['ui.router.router']);
    *
    * app.config(function ($urlRouterProvider) {
-   *   // Here&#39;s an example of how you might allow case insensitive urls
+   *   // Here's an example of how you might allow case insensitive urls
    *   $urlRouterProvider.rule(function ($injector, $location) {
    *     var path = $location.path(),
    *         normalized = path.toLowerCase();
@@ -1878,7 +1776,7 @@ function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
    *     }
    *   });
    * });
-   * &lt;/pre&gt;
+   * </pre>
    *
    * @param {object} rule Handler function that takes `$injector` and `$location`
    * services as arguments. You can use them to return a valid path as a string.
@@ -1886,7 +1784,7 @@ function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
    * @return {object} `$urlRouterProvider` - `$urlRouterProvider` instance
    */
   this.rule = function (rule) {
-    if (!isFunction(rule)) throw new Error(&quot;&#39;rule&#39; must be a function&quot;);
+    if (!isFunction(rule)) throw new Error("'rule' must be a function");
     rules.push(rule);
     return this;
   };
@@ -1900,21 +1798,21 @@ function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
    * Defines a path that is used when an invalid route is requested.
    *
    * @example
-   * &lt;pre&gt;
-   * var app = angular.module(&#39;app&#39;, [&#39;ui.router.router&#39;]);
+   * <pre>
+   * var app = angular.module('app', ['ui.router.router']);
    *
    * app.config(function ($urlRouterProvider) {
-   *   // if the path doesn&#39;t match any of the urls you configured
+   *   // if the path doesn't match any of the urls you configured
    *   // otherwise will take care of routing the user to the
    *   // specified url
-   *   $urlRouterProvider.otherwise(&#39;/index&#39;);
+   *   $urlRouterProvider.otherwise('/index');
    *
    *   // Example of using function rule as param
    *   $urlRouterProvider.otherwise(function ($injector, $location) {
-   *     return &#39;/a/valid/url&#39;;
+   *     return '/a/valid/url';
    *   });
    * });
-   * &lt;/pre&gt;
+   * </pre>
    *
    * @param {string|object} rule The url path you want to redirect to or a function 
    * rule that returns the url path. The function version is passed two params: 
@@ -1927,7 +1825,7 @@ function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
       var redirect = rule;
       rule = function () { return redirect; };
     }
-    else if (!isFunction(rule)) throw new Error(&quot;&#39;rule&#39; must be a function&quot;);
+    else if (!isFunction(rule)) throw new Error("'rule' must be a function");
     otherwise = rule;
     return this;
   };
@@ -1954,14 +1852,14 @@ function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
    *
    * The handler can return
    *
-   * - **falsy** to indicate that the rule didn&#39;t match after all, then `$urlRouter`
+   * - **falsy** to indicate that the rule didn't match after all, then `$urlRouter`
    *   will continue trying to find another one that matches.
    * - **string** which is treated as a redirect and passed to `$location.url()`
    * - **void** or any **truthy** value tells `$urlRouter` that the url was handled.
    *
    * @example
-   * &lt;pre&gt;
-   * var app = angular.module(&#39;app&#39;, [&#39;ui.router.router&#39;]);
+   * <pre>
+   * var app = angular.module('app', ['ui.router.router']);
    *
    * app.config(function ($urlRouterProvider) {
    *   $urlRouterProvider.when($state.url, function ($match, $stateParams) {
@@ -1971,7 +1869,7 @@ function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
    *     }
    *   });
    * });
-   * &lt;/pre&gt;
+   * </pre>
    *
    * @param {string|object} what The incoming path that you want to redirect.
    * @param {string|object} handler The path you want to redirect your user to.
@@ -1980,27 +1878,27 @@ function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
     var redirect, handlerIsString = isString(handler);
     if (isString(what)) what = $urlMatcherFactory.compile(what);
 
-    if (!handlerIsString &amp;&amp; !isFunction(handler) &amp;&amp; !isArray(handler))
-      throw new Error(&quot;invalid &#39;handler&#39; in when()&quot;);
+    if (!handlerIsString && !isFunction(handler) && !isArray(handler))
+      throw new Error("invalid 'handler' in when()");
 
     var strategies = {
       matcher: function (what, handler) {
         if (handlerIsString) {
           redirect = $urlMatcherFactory.compile(handler);
-          handler = [&#39;$match&#39;, function ($match) { return redirect.format($match); }];
+          handler = ['$match', function ($match) { return redirect.format($match); }];
         }
         return extend(function ($injector, $location) {
           return handleIfMatch($injector, handler, what.exec($location.path(), $location.search()));
         }, {
-          prefix: isString(what.prefix) ? what.prefix : &#39;&#39;
+          prefix: isString(what.prefix) ? what.prefix : ''
         });
       },
       regex: function (what, handler) {
-        if (what.global || what.sticky) throw new Error(&quot;when() RegExp must not be global or sticky&quot;);
+        if (what.global || what.sticky) throw new Error("when() RegExp must not be global or sticky");
 
         if (handlerIsString) {
           redirect = handler;
-          handler = [&#39;$match&#39;, function ($match) { return interpolate(redirect, $match); }];
+          handler = ['$match', function ($match) { return interpolate(redirect, $match); }];
         }
         return extend(function ($injector, $location) {
           return handleIfMatch($injector, handler, what.exec($location.path()));
@@ -2016,7 +1914,7 @@ function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
       if (check[n]) return this.rule(strategies[n](what, handler));
     }
 
-    throw new Error(&quot;invalid &#39;what&#39; in when()&quot;);
+    throw new Error("invalid 'what' in when()");
   };
 
   /**
@@ -2033,8 +1931,8 @@ function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
    * `$locationChangeSuccess` event handler.
    *
    * @example
-   * &lt;pre&gt;
-   * var app = angular.module(&#39;app&#39;, [&#39;ui.router.router&#39;]);
+   * <pre>
+   * var app = angular.module('app', ['ui.router.router']);
    *
    * app.config(function ($urlRouterProvider) {
    *
@@ -2045,11 +1943,11 @@ function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
    *
    * }).run(function ($rootScope, $urlRouter, UserService) {
    *
-   *   $rootScope.$on(&#39;$locationChangeSuccess&#39;, function(e) {
+   *   $rootScope.$on('$locationChangeSuccess', function(e) {
    *     // UserService is an example service for managing user state
    *     if (UserService.isLoggedIn()) return;
    *
-   *     // Prevent $urlRouter&#39;s default handler from firing
+   *     // Prevent $urlRouter's default handler from firing
    *     e.preventDefault();
    *
    *     UserService.handleLogin().then(function() {
@@ -2059,10 +1957,10 @@ function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
    *     });
    *   });
    *
-   *   // Configures $urlRouter&#39;s listener *after* your custom listener
+   *   // Configures $urlRouter's listener *after* your custom listener
    *   $urlRouter.listen();
    * });
-   * &lt;/pre&gt;
+   * </pre>
    *
    * @param {boolean} defer Indicates whether to defer location change interception. Passing
             no parameter is equivalent to `true`.
@@ -2085,13 +1983,13 @@ function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
    *
    */
   this.$get = $get;
-  $get.$inject = [&#39;$location&#39;, &#39;$rootScope&#39;, &#39;$injector&#39;, &#39;$browser&#39;];
+  $get.$inject = ['$location', '$rootScope', '$injector', '$browser'];
   function $get(   $location,   $rootScope,   $injector,   $browser) {
 
     var baseHref = $browser.baseHref(), location = $location.url(), lastPushedUrl;
 
     function appendBasePath(url, isHtml5, absolute) {
-      if (baseHref === &#39;/&#39;) return url;
+      if (baseHref === '/') return url;
       if (isHtml5) return baseHref.slice(0, -1) + url;
       if (absolute) return baseHref.slice(1) + url;
       return url;
@@ -2099,8 +1997,8 @@ function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
 
     // TODO: Optimize groups of rules with non-empty prefix into some sort of decision tree
     function update(evt) {
-      if (evt &amp;&amp; evt.defaultPrevented) return;
-      var ignoreUpdate = lastPushedUrl &amp;&amp; $location.url() === lastPushedUrl;
+      if (evt && evt.defaultPrevented) return;
+      var ignoreUpdate = lastPushedUrl && $location.url() === lastPushedUrl;
       lastPushedUrl = undefined;
       // TODO: Re-implement this in 1.0 for https://github.com/angular-ui/ui-router/issues/1573
       //if (ignoreUpdate) return true;
@@ -2114,7 +2012,7 @@ function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
       }
       var n = rules.length, i;
 
-      for (i = 0; i &lt; n; i++) {
+      for (i = 0; i < n; i++) {
         if (check(rules[i])) return;
       }
       // always check otherwise last to allow dynamic updates to the set of rules
@@ -2122,7 +2020,7 @@ function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
     }
 
     function listen() {
-      listener = listener || $rootScope.$on(&#39;$locationChangeSuccess&#39;, update);
+      listener = listener || $rootScope.$on('$locationChangeSuccess', update);
       return listener;
     }
 
@@ -2141,10 +2039,10 @@ function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
        * with the transition by calling `$urlRouter.sync()`.
        *
        * @example
-       * &lt;pre&gt;
-       * angular.module(&#39;app&#39;, [&#39;ui.router&#39;])
+       * <pre>
+       * angular.module('app', ['ui.router'])
        *   .run(function($rootScope, $urlRouter) {
-       *     $rootScope.$on(&#39;$locationChangeSuccess&#39;, function(evt) {
+       *     $rootScope.$on('$locationChangeSuccess', function(evt) {
        *       // Halt state change from even starting
        *       evt.preventDefault();
        *       // Perform custom logic
@@ -2153,7 +2051,7 @@ function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
        *       if (meetsRequirement) $urlRouter.sync();
        *     });
        * });
-       * &lt;/pre&gt;
+       * </pre>
        */
       sync: function() {
         update();
@@ -2178,13 +2076,13 @@ function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
          var url = urlMatcher.format(params || {});
 
         // Handle the special hash param, if needed
-        if (url !== null &amp;&amp; params &amp;&amp; params[&#39;#&#39;]) {
-            url += &#39;#&#39; + params[&#39;#&#39;];
+        if (url !== null && params && params['#']) {
+            url += '#' + params['#'];
         }
 
         $location.url(url);
-        lastPushedUrl = options &amp;&amp; options.$$avoidResync ? $location.url() : undefined;
-        if (options &amp;&amp; options.replace) $location.replace();
+        lastPushedUrl = options && options.$$avoidResync ? $location.url() : undefined;
+        if (options && options.replace) $location.replace();
       },
 
       /**
@@ -2197,18 +2095,18 @@ function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
        * {@link ui.router.util.type:UrlMatcher `UrlMatcher`}, populated with the provided parameters.
        *
        * @example
-       * &lt;pre&gt;
-       * $bob = $urlRouter.href(new UrlMatcher(&quot;/about/:person&quot;), {
-       *   person: &quot;bob&quot;
+       * <pre>
+       * $bob = $urlRouter.href(new UrlMatcher("/about/:person"), {
+       *   person: "bob"
        * });
-       * // $bob == &quot;/about/bob&quot;;
-       * &lt;/pre&gt;
+       * // $bob == "/about/bob";
+       * </pre>
        *
        * @param {UrlMatcher} urlMatcher The `UrlMatcher` object which is used as the template of the URL to generate.
-       * @param {object=} params An object of parameter values to fill the matcher&#39;s required parameters.
+       * @param {object=} params An object of parameter values to fill the matcher's required parameters.
        * @param {object=} options Options object. The options are:
        *
-       * - **`absolute`** - {boolean=false},  If true will generate an absolute url, e.g. &quot;http://www.example.com/fullurl&quot;.
+       * - **`absolute`** - {boolean=false},  If true will generate an absolute url, e.g. "http://www.example.com/fullurl".
        *
        * @returns {string} Returns the fully compiled URL, or `null` if `params` fail validation against `urlMatcher`
        */
@@ -2223,13 +2121,13 @@ function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
         var url = urlMatcher.format(params);
         options = options || {};
 
-        if (!isHtml5 &amp;&amp; url !== null) {
-          url = &quot;#&quot; + $locationProvider.hashPrefix() + url;
+        if (!isHtml5 && url !== null) {
+          url = "#" + $locationProvider.hashPrefix() + url;
         }
 
         // Handle special hash param, if needed
-        if (url !== null &amp;&amp; params &amp;&amp; params[&#39;#&#39;]) {
-          url += &#39;#&#39; + params[&#39;#&#39;];
+        if (url !== null && params && params['#']) {
+          url += '#' + params['#'];
         }
 
         url = appendBasePath(url, isHtml5, options.absolute);
@@ -2238,16 +2136,16 @@ function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
           return url;
         }
 
-        var slash = (!isHtml5 &amp;&amp; url ? &#39;/&#39; : &#39;&#39;), port = $location.port();
-        port = (port === 80 || port === 443 ? &#39;&#39; : &#39;:&#39; + port);
+        var slash = (!isHtml5 && url ? '/' : ''), port = $location.port();
+        port = (port === 80 || port === 443 ? '' : ':' + port);
 
-        return [$location.protocol(), &#39;://&#39;, $location.host(), port, slash, url].join(&#39;&#39;);
+        return [$location.protocol(), '://', $location.host(), port, slash, url].join('');
       }
     };
   }
 }
 
-angular.module(&#39;ui.router.router&#39;).provider(&#39;$urlRouter&#39;, $UrlRouterProvider);
+angular.module('ui.router.router').provider('$urlRouter', $UrlRouterProvider);
 
 /**
  * @ngdoc object
@@ -2257,10 +2155,10 @@ angular.module(&#39;ui.router.router&#39;).provider(&#39;$urlRouter&#39;, $UrlRo
  * @requires ui.router.util.$urlMatcherFactoryProvider
  *
  * @description
- * The new `$stateProvider` works similar to Angular&#39;s v1 router, but it focuses purely
+ * The new `$stateProvider` works similar to Angular's v1 router, but it focuses purely
  * on state.
  *
- * A state corresponds to a &quot;place&quot; in the application in terms of the overall UI and
+ * A state corresponds to a "place" in the application in terms of the overall UI and
  * navigation. A state describes (via the controller / template / view properties) what
  * the UI looks like and does at that place.
  *
@@ -2270,28 +2168,28 @@ angular.module(&#39;ui.router.router&#39;).provider(&#39;$urlRouter&#39;, $UrlRo
  *
  * The `$stateProvider` provides interfaces to declare these states for your app.
  */
-$StateProvider.$inject = [&#39;$urlRouterProvider&#39;, &#39;$urlMatcherFactoryProvider&#39;];
+$StateProvider.$inject = ['$urlRouterProvider', '$urlMatcherFactoryProvider'];
 function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
 
-  var root, states = {}, $state, queue = {}, abstractKey = &#39;abstract&#39;;
+  var root, states = {}, $state, queue = {}, abstractKey = 'abstract';
 
   // Builds state properties from definition passed to registerState()
   var stateBuilder = {
 
-    // Derive parent state from a hierarchical name only if &#39;parent&#39; is not explicitly defined.
+    // Derive parent state from a hierarchical name only if 'parent' is not explicitly defined.
     // state.children = [];
     // if (parent) parent.children.push(state);
     parent: function(state) {
-      if (isDefined(state.parent) &amp;&amp; state.parent) return findState(state.parent);
+      if (isDefined(state.parent) && state.parent) return findState(state.parent);
       // regex matches any valid composite state name
-      // would match &quot;contact.list&quot; but not &quot;contacts&quot;
+      // would match "contact.list" but not "contacts"
       var compositeName = /^(.+)\.[^.]+$/.exec(state.name);
       return compositeName ? findState(compositeName[1]) : root;
     },
 
-    // inherit &#39;data&#39; from parent and override by own values (if any)
+    // inherit 'data' from parent and override by own values (if any)
     data: function(state) {
-      if (state.parent &amp;&amp; state.parent.data) {
+      if (state.parent && state.parent.data) {
         state.data = state.self.data = extend({}, state.parent.data, state.data);
       }
       return state.data;
@@ -2302,12 +2200,12 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
       var url = state.url, config = { params: state.params || {} };
 
       if (isString(url)) {
-        if (url.charAt(0) == &#39;^&#39;) return $urlMatcherFactory.compile(url.substring(1), config);
+        if (url.charAt(0) == '^') return $urlMatcherFactory.compile(url.substring(1), config);
         return (state.parent.navigable || root).url.concat(url, config);
       }
 
       if (!url || $urlMatcherFactory.isMatcher(url)) return url;
-      throw new Error(&quot;Invalid url &#39;&quot; + url + &quot;&#39; in state &#39;&quot; + state + &quot;&#39;&quot;);
+      throw new Error("Invalid url '" + url + "' in state '" + state + "'");
     },
 
     // Keep track of the closest ancestor state that has a URL (i.e. is navigable)
@@ -2317,28 +2215,28 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
 
     // Own parameters for this state. state.url.params is already built at this point. Create and add non-url params
     ownParams: function(state) {
-      var params = state.url &amp;&amp; state.url.params || new $$UMFP.ParamSet();
+      var params = state.url && state.url.params || new $$UMFP.ParamSet();
       forEach(state.params || {}, function(config, id) {
-        if (!params[id]) params[id] = new $$UMFP.Param(id, null, config, &quot;config&quot;);
+        if (!params[id]) params[id] = new $$UMFP.Param(id, null, config, "config");
       });
       return params;
     },
 
-    // Derive parameters for this state and ensure they&#39;re a super-set of parent&#39;s parameters
+    // Derive parameters for this state and ensure they're a super-set of parent's parameters
     params: function(state) {
-      return state.parent &amp;&amp; state.parent.params ? extend(state.parent.params.$$new(), state.ownParams) : new $$UMFP.ParamSet();
+      return state.parent && state.parent.params ? extend(state.parent.params.$$new(), state.ownParams) : new $$UMFP.ParamSet();
     },
 
-    // If there is no explicit multi-view configuration, make one up so we don&#39;t have
+    // If there is no explicit multi-view configuration, make one up so we don't have
     // to handle both cases in the view directive later. Note that having an explicit
-    // &#39;views&#39; property will mean the default unnamed view properties are ignored. This
+    // 'views' property will mean the default unnamed view properties are ignored. This
     // is also a good time to resolve view names to absolute names, so everything is a
     // straight lookup at link time.
     views: function(state) {
       var views = {};
 
-      forEach(isDefined(state.views) ? state.views : { &#39;&#39;: state }, function (view, name) {
-        if (name.indexOf(&#39;@&#39;) &lt; 0) name += &#39;@&#39; + state.parent.name;
+      forEach(isDefined(state.views) ? state.views : { '': state }, function (view, name) {
+        if (name.indexOf('@') < 0) name += '@' + state.parent.name;
         views[name] = view;
       });
       return views;
@@ -2349,7 +2247,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
       return state.parent ? state.parent.path.concat(state) : []; // exclude root from path
     },
 
-    // Speed up $state.contains() as it&#39;s used a lot
+    // Speed up $state.contains() as it's used a lot
     includes: function(state) {
       var includes = state.parent ? extend({}, state.parent.includes) : {};
       includes[state.name] = true;
@@ -2360,7 +2258,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
   };
 
   function isRelative(stateName) {
-    return stateName.indexOf(&quot;.&quot;) === 0 || stateName.indexOf(&quot;^&quot;) === 0;
+    return stateName.indexOf(".") === 0 || stateName.indexOf("^") === 0;
   }
 
   function findState(stateOrName, base) {
@@ -2371,29 +2269,29 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
         path  = isRelative(name);
 
     if (path) {
-      if (!base) throw new Error(&quot;No reference point given for path &#39;&quot;  + name + &quot;&#39;&quot;);
+      if (!base) throw new Error("No reference point given for path '"  + name + "'");
       base = findState(base);
       
-      var rel = name.split(&quot;.&quot;), i = 0, pathLength = rel.length, current = base;
+      var rel = name.split("."), i = 0, pathLength = rel.length, current = base;
 
-      for (; i &lt; pathLength; i++) {
-        if (rel[i] === &quot;&quot; &amp;&amp; i === 0) {
+      for (; i < pathLength; i++) {
+        if (rel[i] === "" && i === 0) {
           current = base;
           continue;
         }
-        if (rel[i] === &quot;^&quot;) {
-          if (!current.parent) throw new Error(&quot;Path &#39;&quot; + name + &quot;&#39; not valid for state &#39;&quot; + base.name + &quot;&#39;&quot;);
+        if (rel[i] === "^") {
+          if (!current.parent) throw new Error("Path '" + name + "' not valid for state '" + base.name + "'");
           current = current.parent;
           continue;
         }
         break;
       }
-      rel = rel.slice(i).join(&quot;.&quot;);
-      name = current.name + (current.name &amp;&amp; rel ? &quot;.&quot; : &quot;&quot;) + rel;
+      rel = rel.slice(i).join(".");
+      name = current.name + (current.name && rel ? "." : "") + rel;
     }
     var state = states[name];
 
-    if (state &amp;&amp; (isStr || (!isStr &amp;&amp; (state === stateOrName || state.self === stateOrName)))) {
+    if (state && (isStr || (!isStr && (state === stateOrName || state.self === stateOrName)))) {
       return state;
     }
     return undefined;
@@ -2422,17 +2320,17 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
     });
 
     var name = state.name;
-    if (!isString(name) || name.indexOf(&#39;@&#39;) &gt;= 0) throw new Error(&quot;State must have a valid name&quot;);
-    if (states.hasOwnProperty(name)) throw new Error(&quot;State &#39;&quot; + name + &quot;&#39;&#39; is already defined&quot;);
+    if (!isString(name) || name.indexOf('@') >= 0) throw new Error("State must have a valid name");
+    if (states.hasOwnProperty(name)) throw new Error("State '" + name + "'' is already defined");
 
     // Get parent name
-    var parentName = (name.indexOf(&#39;.&#39;) !== -1) ? name.substring(0, name.lastIndexOf(&#39;.&#39;))
+    var parentName = (name.indexOf('.') !== -1) ? name.substring(0, name.lastIndexOf('.'))
         : (isString(state.parent)) ? state.parent
-        : (isObject(state.parent) &amp;&amp; isString(state.parent.name)) ? state.parent.name
-        : &#39;&#39;;
+        : (isObject(state.parent) && isString(state.parent.name)) ? state.parent.name
+        : '';
 
     // If parent is not registered yet, add state to queue and register later
-    if (parentName &amp;&amp; !states[parentName]) {
+    if (parentName && !states[parentName]) {
       return queueState(parentName, state.self);
     }
 
@@ -2442,8 +2340,8 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
     states[name] = state;
 
     // Register the state in the global state list and with $urlRouter if necessary.
-    if (!state[abstractKey] &amp;&amp; state.url) {
-      $urlRouterProvider.when(state.url, [&#39;$match&#39;, &#39;$stateParams&#39;, function ($match, $stateParams) {
+    if (!state[abstractKey] && state.url) {
+      $urlRouterProvider.when(state.url, ['$match', '$stateParams', function ($match, $stateParams) {
         if ($state.$current.navigable != state || !equalForKeys($match, $stateParams)) {
           $state.transitionTo(state, $match, { inherit: true, location: false });
         }
@@ -2458,46 +2356,46 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
 
   // Checks text to see if it looks like a glob.
   function isGlob (text) {
-    return text.indexOf(&#39;*&#39;) &gt; -1;
+    return text.indexOf('*') > -1;
   }
 
   // Returns true if glob matches current $state name.
   function doesStateMatchGlob (glob) {
-    var globSegments = glob.split(&#39;.&#39;),
-        segments = $state.$current.name.split(&#39;.&#39;);
+    var globSegments = glob.split('.'),
+        segments = $state.$current.name.split('.');
 
     //match single stars
-    for (var i = 0, l = globSegments.length; i &lt; l; i++) {
-      if (globSegments[i] === &#39;*&#39;) {
-        segments[i] = &#39;*&#39;;
+    for (var i = 0, l = globSegments.length; i < l; i++) {
+      if (globSegments[i] === '*') {
+        segments[i] = '*';
       }
     }
 
     //match greedy starts
-    if (globSegments[0] === &#39;**&#39;) {
+    if (globSegments[0] === '**') {
        segments = segments.slice(indexOf(segments, globSegments[1]));
-       segments.unshift(&#39;**&#39;);
+       segments.unshift('**');
     }
     //match greedy ends
-    if (globSegments[globSegments.length - 1] === &#39;**&#39;) {
+    if (globSegments[globSegments.length - 1] === '**') {
        segments.splice(indexOf(segments, globSegments[globSegments.length - 2]) + 1, Number.MAX_VALUE);
-       segments.push(&#39;**&#39;);
+       segments.push('**');
     }
 
     if (globSegments.length != segments.length) {
       return false;
     }
 
-    return segments.join(&#39;&#39;) === globSegments.join(&#39;&#39;);
+    return segments.join('') === globSegments.join('');
   }
 
 
   // Implicit root state that is always active
   root = registerState({
-    name: &#39;&#39;,
-    url: &#39;^&#39;,
+    name: '',
+    url: '^',
     views: null,
-    &#39;abstract&#39;: true
+    'abstract': true
   });
   root.navigable = null;
 
@@ -2520,7 +2418,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
    * necessarily have a good use case for decoration, that is up to you to decide.
    *
    * In addition, users can attach custom decorators, which will generate new 
-   * properties within the state&#39;s internal definition. There is currently no clear 
+   * properties within the state's internal definition. There is currently no clear 
    * use-case for this beyond accessing internal states (i.e. $state.$current), 
    * however, expect this to become increasingly relevant as we introduce additional 
    * meta-programming features.
@@ -2540,10 +2438,10 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
    * - **navigable** `{object}` - returns closest ancestor state that has a URL (aka is 
    *   navigable).
    * - **params** `{object}` - returns an array of state params that are ensured to 
-   *   be a super-set of parent&#39;s params.
+   *   be a super-set of parent's params.
    * - **views** `{object}` - returns a views object where each key is an absolute view 
-   *   name (i.e. &quot;viewName@stateName&quot;) and each value is the config object 
-   *   (template, controller) for the view. Even when you don&#39;t use the views object 
+   *   name (i.e. "viewName@stateName") and each value is the config object 
+   *   (template, controller) for the view. Even when you don't use the views object 
    *   explicitly on a state config, one is still created for you internally.
    *   So by decorating this builder function you have access to decorating template 
    *   and controller properties.
@@ -2555,34 +2453,34 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
    *   would pass a `$state.includes()` test.
    *
    * @example
-   * &lt;pre&gt;
-   * // Override the internal &#39;views&#39; builder with a function that takes the state
+   * <pre>
+   * // Override the internal 'views' builder with a function that takes the state
    * // definition, and a reference to the internal function being overridden:
-   * $stateProvider.decorator(&#39;views&#39;, function (state, parent) {
+   * $stateProvider.decorator('views', function (state, parent) {
    *   var result = {},
    *       views = parent(state);
    *
    *   angular.forEach(views, function (config, name) {
-   *     var autoName = (state.name + &#39;.&#39; + name).replace(&#39;.&#39;, &#39;/&#39;);
-   *     config.templateUrl = config.templateUrl || &#39;/partials/&#39; + autoName + &#39;.html&#39;;
+   *     var autoName = (state.name + '.' + name).replace('.', '/');
+   *     config.templateUrl = config.templateUrl || '/partials/' + autoName + '.html';
    *     result[name] = config;
    *   });
    *   return result;
    * });
    *
-   * $stateProvider.state(&#39;home&#39;, {
+   * $stateProvider.state('home', {
    *   views: {
-   *     &#39;contact.list&#39;: { controller: &#39;ListController&#39; },
-   *     &#39;contact.item&#39;: { controller: &#39;ItemController&#39; }
+   *     'contact.list': { controller: 'ListController' },
+   *     'contact.item': { controller: 'ItemController' }
    *   }
    * });
    *
    * // ...
    *
-   * $state.go(&#39;home&#39;);
+   * $state.go('home');
    * // Auto-populates list and item views with /partials/home/contact/list.html,
    * // and /partials/home/contact/item.html, respectively.
-   * &lt;/pre&gt;
+   * </pre>
    *
    * @param {string} name The name of the builder function to decorate. 
    * @param {object} func A function that is responsible for decorating the original 
@@ -2596,13 +2494,13 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
   this.decorator = decorator;
   function decorator(name, func) {
     /*jshint validthis: true */
-    if (isString(name) &amp;&amp; !isDefined(func)) {
+    if (isString(name) && !isDefined(func)) {
       return stateBuilder[name];
     }
     if (!isFunction(func) || !isString(name)) {
       return this;
     }
-    if (stateBuilder[name] &amp;&amp; !stateBuilder.$delegates[name]) {
+    if (stateBuilder[name] && !stateBuilder.$delegates[name]) {
       stateBuilder.$delegates[name] = stateBuilder[name];
     }
     stateBuilder[name] = func;
@@ -2618,95 +2516,95 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
    * Registers a state configuration under a given state name. The stateConfig object
    * has the following acceptable properties.
    *
-   * @param {string} name A unique state name, e.g. &quot;home&quot;, &quot;about&quot;, &quot;contacts&quot;.
-   * To create a parent/child state use a dot, e.g. &quot;about.sales&quot;, &quot;home.newest&quot;.
+   * @param {string} name A unique state name, e.g. "home", "about", "contacts".
+   * To create a parent/child state use a dot, e.g. "about.sales", "home.newest".
    * @param {object} stateConfig State configuration object.
    * @param {string|function=} stateConfig.template
-   * &lt;a id=&#39;template&#39;&gt;&lt;/a&gt;
+   * <a id='template'></a>
    *   html template as a string or a function that returns
    *   an html template as a string which should be used by the uiView directives. This property 
    *   takes precedence over templateUrl.
    *   
    *   If `template` is a function, it will be called with the following parameters:
    *
-   *   - {array.&amp;lt;object&amp;gt;} - state parameters extracted from the current $location.path() by
+   *   - {array.&lt;object&gt;} - state parameters extracted from the current $location.path() by
    *     applying the current state
    *
-   * &lt;pre&gt;template:
-   *   &quot;&lt;h1&gt;inline template definition&lt;/h1&gt;&quot; +
-   *   &quot;&lt;div ui-view&gt;&lt;/div&gt;&quot;&lt;/pre&gt;
-   * &lt;pre&gt;template: function(params) {
-   *       return &quot;&lt;h1&gt;generated template&lt;/h1&gt;&quot;; }&lt;/pre&gt;
-   * &lt;/div&gt;
+   * <pre>template:
+   *   "<h1>inline template definition</h1>" +
+   *   "<div ui-view></div>"</pre>
+   * <pre>template: function(params) {
+   *       return "<h1>generated template</h1>"; }</pre>
+   * </div>
    *
    * @param {string|function=} stateConfig.templateUrl
-   * &lt;a id=&#39;templateUrl&#39;&gt;&lt;/a&gt;
+   * <a id='templateUrl'></a>
    *
    *   path or function that returns a path to an html
    *   template that should be used by uiView.
    *   
    *   If `templateUrl` is a function, it will be called with the following parameters:
    *
-   *   - {array.&amp;lt;object&amp;gt;} - state parameters extracted from the current $location.path() by 
+   *   - {array.&lt;object&gt;} - state parameters extracted from the current $location.path() by 
    *     applying the current state
    *
-   * &lt;pre&gt;templateUrl: &quot;home.html&quot;&lt;/pre&gt;
-   * &lt;pre&gt;templateUrl: function(params) {
-   *     return myTemplates[params.pageId]; }&lt;/pre&gt;
+   * <pre>templateUrl: "home.html"</pre>
+   * <pre>templateUrl: function(params) {
+   *     return myTemplates[params.pageId]; }</pre>
    *
    * @param {function=} stateConfig.templateProvider
-   * &lt;a id=&#39;templateProvider&#39;&gt;&lt;/a&gt;
+   * <a id='templateProvider'></a>
    *    Provider function that returns HTML content string.
-   * &lt;pre&gt; templateProvider:
+   * <pre> templateProvider:
    *       function(MyTemplateService, params) {
    *         return MyTemplateService.getTemplate(params.pageId);
-   *       }&lt;/pre&gt;
+   *       }</pre>
    *
    * @param {string|function=} stateConfig.controller
-   * &lt;a id=&#39;controller&#39;&gt;&lt;/a&gt;
+   * <a id='controller'></a>
    *
    *  Controller fn that should be associated with newly
    *   related scope or the name of a registered controller if passed as a string.
    *   Optionally, the ControllerAs may be declared here.
-   * &lt;pre&gt;controller: &quot;MyRegisteredController&quot;&lt;/pre&gt;
-   * &lt;pre&gt;controller:
-   *     &quot;MyRegisteredController as fooCtrl&quot;}&lt;/pre&gt;
-   * &lt;pre&gt;controller: function($scope, MyService) {
-   *     $scope.data = MyService.getData(); }&lt;/pre&gt;
+   * <pre>controller: "MyRegisteredController"</pre>
+   * <pre>controller:
+   *     "MyRegisteredController as fooCtrl"}</pre>
+   * <pre>controller: function($scope, MyService) {
+   *     $scope.data = MyService.getData(); }</pre>
    *
    * @param {function=} stateConfig.controllerProvider
-   * &lt;a id=&#39;controllerProvider&#39;&gt;&lt;/a&gt;
+   * <a id='controllerProvider'></a>
    *
    * Injectable provider function that returns the actual controller or string.
-   * &lt;pre&gt;controllerProvider:
+   * <pre>controllerProvider:
    *   function(MyResolveData) {
    *     if (MyResolveData.foo)
-   *       return &quot;FooCtrl&quot;
+   *       return "FooCtrl"
    *     else if (MyResolveData.bar)
-   *       return &quot;BarCtrl&quot;;
+   *       return "BarCtrl";
    *     else return function($scope) {
-   *       $scope.baz = &quot;Qux&quot;;
+   *       $scope.baz = "Qux";
    *     }
-   *   }&lt;/pre&gt;
+   *   }</pre>
    *
    * @param {string=} stateConfig.controllerAs
-   * &lt;a id=&#39;controllerAs&#39;&gt;&lt;/a&gt;
+   * <a id='controllerAs'></a>
    * 
    * A controller alias name. If present the controller will be
    *   published to scope under the controllerAs name.
-   * &lt;pre&gt;controllerAs: &quot;myCtrl&quot;&lt;/pre&gt;
+   * <pre>controllerAs: "myCtrl"</pre>
    *
    * @param {string|object=} stateConfig.parent
-   * &lt;a id=&#39;parent&#39;&gt;&lt;/a&gt;
+   * <a id='parent'></a>
    * Optionally specifies the parent state of this state.
    *
-   * &lt;pre&gt;parent: &#39;parentState&#39;&lt;/pre&gt;
-   * &lt;pre&gt;parent: parentState // JS variable&lt;/pre&gt;
+   * <pre>parent: 'parentState'</pre>
+   * <pre>parent: parentState // JS variable</pre>
    *
    * @param {object=} stateConfig.resolve
-   * &lt;a id=&#39;resolve&#39;&gt;&lt;/a&gt;
+   * <a id='resolve'></a>
    *
-   * An optional map&amp;lt;string, function&amp;gt; of dependencies which
+   * An optional map&lt;string, function&gt; of dependencies which
    *   should be injected into the controller. If any of these dependencies are promises, 
    *   the router will wait for them all to be resolved before the controller is instantiated.
    *   If all the promises are resolved successfully, the $stateChangeSuccess event is fired
@@ -2720,15 +2618,15 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
    *     it is injected and return value it treated as dependency. If result is a promise, it is 
    *     resolved before its value is injected into controller.
    *
-   * &lt;pre&gt;resolve: {
+   * <pre>resolve: {
    *     myResolve1:
    *       function($http, $stateParams) {
-   *         return $http.get(&quot;/api/foos/&quot;+stateParams.fooID);
+   *         return $http.get("/api/foos/"+stateParams.fooID);
    *       }
-   *     }&lt;/pre&gt;
+   *     }</pre>
    *
    * @param {string=} stateConfig.url
-   * &lt;a id=&#39;url&#39;&gt;&lt;/a&gt;
+   * <a id='url'></a>
    *
    *   A url fragment with optional parameters. When a state is navigated or
    *   transitioned to, the `$stateParams` service will be populated with any 
@@ -2738,99 +2636,99 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
    *   more details on acceptable patterns )
    *
    * examples:
-   * &lt;pre&gt;url: &quot;/home&quot;
-   * url: &quot;/users/:userid&quot;
-   * url: &quot;/books/{bookid:[a-zA-Z_-]}&quot;
-   * url: &quot;/books/{categoryid:int}&quot;
-   * url: &quot;/books/{publishername:string}/{categoryid:int}&quot;
-   * url: &quot;/messages?before&amp;after&quot;
-   * url: &quot;/messages?{before:date}&amp;{after:date}&quot;
-   * url: &quot;/messages/:mailboxid?{before:date}&amp;{after:date}&quot;
-   * &lt;/pre&gt;
+   * <pre>url: "/home"
+   * url: "/users/:userid"
+   * url: "/books/{bookid:[a-zA-Z_-]}"
+   * url: "/books/{categoryid:int}"
+   * url: "/books/{publishername:string}/{categoryid:int}"
+   * url: "/messages?before&after"
+   * url: "/messages?{before:date}&{after:date}"
+   * url: "/messages/:mailboxid?{before:date}&{after:date}"
+   * </pre>
    *
    * @param {object=} stateConfig.views
-   * &lt;a id=&#39;views&#39;&gt;&lt;/a&gt;
-   * an optional map&amp;lt;string, object&amp;gt; which defined multiple views, or targets views
+   * <a id='views'></a>
+   * an optional map&lt;string, object&gt; which defined multiple views, or targets views
    * manually/explicitly.
    *
    * Examples:
    *
-   * Targets three named `ui-view`s in the parent state&#39;s template
-   * &lt;pre&gt;views: {
+   * Targets three named `ui-view`s in the parent state's template
+   * <pre>views: {
    *     header: {
-   *       controller: &quot;headerCtrl&quot;,
-   *       templateUrl: &quot;header.html&quot;
+   *       controller: "headerCtrl",
+   *       templateUrl: "header.html"
    *     }, body: {
-   *       controller: &quot;bodyCtrl&quot;,
-   *       templateUrl: &quot;body.html&quot;
+   *       controller: "bodyCtrl",
+   *       templateUrl: "body.html"
    *     }, footer: {
-   *       controller: &quot;footCtrl&quot;,
-   *       templateUrl: &quot;footer.html&quot;
+   *       controller: "footCtrl",
+   *       templateUrl: "footer.html"
    *     }
-   *   }&lt;/pre&gt;
+   *   }</pre>
    *
-   * Targets named `ui-view=&quot;header&quot;` from grandparent state &#39;top&#39;&#39;s template, and named `ui-view=&quot;body&quot; from parent state&#39;s template.
-   * &lt;pre&gt;views: {
-   *     &#39;header@top&#39;: {
-   *       controller: &quot;msgHeaderCtrl&quot;,
-   *       templateUrl: &quot;msgHeader.html&quot;
-   *     }, &#39;body&#39;: {
-   *       controller: &quot;messagesCtrl&quot;,
-   *       templateUrl: &quot;messages.html&quot;
+   * Targets named `ui-view="header"` from grandparent state 'top''s template, and named `ui-view="body" from parent state's template.
+   * <pre>views: {
+   *     'header@top': {
+   *       controller: "msgHeaderCtrl",
+   *       templateUrl: "msgHeader.html"
+   *     }, 'body': {
+   *       controller: "messagesCtrl",
+   *       templateUrl: "messages.html"
    *     }
-   *   }&lt;/pre&gt;
+   *   }</pre>
    *
    * @param {boolean=} [stateConfig.abstract=false]
-   * &lt;a id=&#39;abstract&#39;&gt;&lt;/a&gt;
+   * <a id='abstract'></a>
    * An abstract state will never be directly activated,
    *   but can provide inherited properties to its common children states.
-   * &lt;pre&gt;abstract: true&lt;/pre&gt;
+   * <pre>abstract: true</pre>
    *
    * @param {function=} stateConfig.onEnter
-   * &lt;a id=&#39;onEnter&#39;&gt;&lt;/a&gt;
+   * <a id='onEnter'></a>
    *
    * Callback function for when a state is entered. Good way
    *   to trigger an action or dispatch an event, such as opening a dialog.
    * If minifying your scripts, make sure to explictly annotate this function,
-   * because it won&#39;t be automatically annotated by your build tools.
+   * because it won't be automatically annotated by your build tools.
    *
-   * &lt;pre&gt;onEnter: function(MyService, $stateParams) {
+   * <pre>onEnter: function(MyService, $stateParams) {
    *     MyService.foo($stateParams.myParam);
-   * }&lt;/pre&gt;
+   * }</pre>
    *
    * @param {function=} stateConfig.onExit
-   * &lt;a id=&#39;onExit&#39;&gt;&lt;/a&gt;
+   * <a id='onExit'></a>
    *
    * Callback function for when a state is exited. Good way to
    *   trigger an action or dispatch an event, such as opening a dialog.
    * If minifying your scripts, make sure to explictly annotate this function,
-   * because it won&#39;t be automatically annotated by your build tools.
+   * because it won't be automatically annotated by your build tools.
    *
-   * &lt;pre&gt;onExit: function(MyService, $stateParams) {
+   * <pre>onExit: function(MyService, $stateParams) {
    *     MyService.cleanup($stateParams.myParam);
-   * }&lt;/pre&gt;
+   * }</pre>
    *
    * @param {boolean=} [stateConfig.reloadOnSearch=true]
-   * &lt;a id=&#39;reloadOnSearch&#39;&gt;&lt;/a&gt;
+   * <a id='reloadOnSearch'></a>
    *
    * If `false`, will not retrigger the same state
    *   just because a search/query parameter has changed (via $location.search() or $location.hash()). 
-   *   Useful for when you&#39;d like to modify $location.search() without triggering a reload.
-   * &lt;pre&gt;reloadOnSearch: false&lt;/pre&gt;
+   *   Useful for when you'd like to modify $location.search() without triggering a reload.
+   * <pre>reloadOnSearch: false</pre>
    *
    * @param {object=} stateConfig.data
-   * &lt;a id=&#39;data&#39;&gt;&lt;/a&gt;
+   * <a id='data'></a>
    *
-   * Arbitrary data object, useful for custom configuration.  The parent state&#39;s `data` is
+   * Arbitrary data object, useful for custom configuration.  The parent state's `data` is
    *   prototypally inherited.  In other words, adding a data property to a state adds it to
    *   the entire subtree via prototypal inheritance.
    *
-   * &lt;pre&gt;data: {
-   *     requiredRole: &#39;foo&#39;
-   * } &lt;/pre&gt;
+   * <pre>data: {
+   *     requiredRole: 'foo'
+   * } </pre>
    *
    * @param {object=} stateConfig.params
-   * &lt;a id=&#39;params&#39;&gt;&lt;/a&gt;
+   * <a id='params'></a>
    *
    * A map which optionally configures parameters declared in the `url`, or
    *   defines additional non-url parameters.  For each parameter being
@@ -2846,38 +2744,38 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
    *     default value will be used instead.  If `value` is a function,
    *     it will be injected and invoked, and the return value used.
    *
-   *     *Note*: `undefined` is treated as &quot;no default value&quot; while `null`
-   *     is treated as &quot;the default value is `null`&quot;.
+   *     *Note*: `undefined` is treated as "no default value" while `null`
+   *     is treated as "the default value is `null`".
    *
    *     *Shorthand*: If you only need to configure the default value of the
    *     parameter, you may use a shorthand syntax.   In the **`params`**
    *     map, instead mapping the param name to a full parameter configuration
    *     object, simply set map it to the default parameter value, e.g.:
    *
-   * &lt;pre&gt;// define a parameter&#39;s default value
+   * <pre>// define a parameter's default value
    * params: {
-   *     param1: { value: &quot;defaultValue&quot; }
+   *     param1: { value: "defaultValue" }
    * }
    * // shorthand default values
    * params: {
-   *     param1: &quot;defaultValue&quot;,
-   *     param2: &quot;param2Default&quot;
-   * }&lt;/pre&gt;
+   *     param1: "defaultValue",
+   *     param2: "param2Default"
+   * }</pre>
    *
    *   - ** array ** - {boolean=}: *(default: false)* If true, the param value will be
    *     treated as an array of values.  If you specified a Type, the value will be
    *     treated as an array of the specified Type.  Note: query parameter values
-   *     default to a special `&quot;auto&quot;` mode.
+   *     default to a special `"auto"` mode.
    *
-   *     For query parameters in `&quot;auto&quot;` mode, if multiple  values for a single parameter
-   *     are present in the URL (e.g.: `/foo?bar=1&amp;bar=2&amp;bar=3`) then the values
-   *     are mapped to an array (e.g.: `{ foo: [ &#39;1&#39;, &#39;2&#39;, &#39;3&#39; ] }`).  However, if
+   *     For query parameters in `"auto"` mode, if multiple  values for a single parameter
+   *     are present in the URL (e.g.: `/foo?bar=1&bar=2&bar=3`) then the values
+   *     are mapped to an array (e.g.: `{ foo: [ '1', '2', '3' ] }`).  However, if
    *     only one value is present (e.g.: `/foo?bar=1`) then the value is treated as single
-   *     value (e.g.: `{ foo: &#39;1&#39; }`).
+   *     value (e.g.: `{ foo: '1' }`).
    *
-   * &lt;pre&gt;params: {
+   * <pre>params: {
    *     param1: { array: true }
-   * }&lt;/pre&gt;
+   * }</pre>
    *
    *   - ** squash ** - {bool|string=}: `squash` configures how a default parameter value is represented in the URL when
    *     the current parameter value is the same as the default value. If `squash` is not set, it uses the
@@ -2886,46 +2784,46 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
    *
    *   There are three squash settings:
    *
-   *     - false: The parameter&#39;s default value is not squashed.  It is encoded and included in the URL
-   *     - true: The parameter&#39;s default value is omitted from the URL.  If the parameter is preceeded and followed
-   *       by slashes in the state&#39;s `url` declaration, then one of those slashes are omitted.
+   *     - false: The parameter's default value is not squashed.  It is encoded and included in the URL
+   *     - true: The parameter's default value is omitted from the URL.  If the parameter is preceeded and followed
+   *       by slashes in the state's `url` declaration, then one of those slashes are omitted.
    *       This can allow for cleaner looking URLs.
-   *     - `&quot;&lt;arbitrary string&gt;&quot;`: The parameter&#39;s default value is replaced with an arbitrary placeholder of  your choice.
+   *     - `"<arbitrary string>"`: The parameter's default value is replaced with an arbitrary placeholder of  your choice.
    *
-   * &lt;pre&gt;params: {
+   * <pre>params: {
    *     param1: {
-   *       value: &quot;defaultId&quot;,
+   *       value: "defaultId",
    *       squash: true
    * } }
-   * // squash &quot;defaultValue&quot; to &quot;~&quot;
+   * // squash "defaultValue" to "~"
    * params: {
    *     param1: {
-   *       value: &quot;defaultValue&quot;,
-   *       squash: &quot;~&quot;
+   *       value: "defaultValue",
+   *       squash: "~"
    * } }
-   * &lt;/pre&gt;
+   * </pre>
    *
    *
    * @example
-   * &lt;pre&gt;
+   * <pre>
    * // Some state name examples
    *
    * // stateName can be a single top-level name (must be unique).
-   * $stateProvider.state(&quot;home&quot;, {});
+   * $stateProvider.state("home", {});
    *
    * // Or it can be a nested state name. This state is a child of the
-   * // above &quot;home&quot; state.
-   * $stateProvider.state(&quot;home.newest&quot;, {});
+   * // above "home" state.
+   * $stateProvider.state("home.newest", {});
    *
    * // Nest states as deeply as needed.
-   * $stateProvider.state(&quot;home.newest.abc.xyz.inception&quot;, {});
+   * $stateProvider.state("home.newest.abc.xyz.inception", {});
    *
    * // state() returns $stateProvider, so you can chain state declarations.
    * $stateProvider
-   *   .state(&quot;home&quot;, {})
-   *   .state(&quot;about&quot;, {})
-   *   .state(&quot;contacts&quot;, {});
-   * &lt;/pre&gt;
+   *   .state("home", {})
+   *   .state("about", {})
+   *   .state("contacts", {});
+   * </pre>
    *
    */
   this.state = state;
@@ -2950,25 +2848,25 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
    * @requires ui.router.router.$urlRouter
    *
    * @property {object} params A param object, e.g. {sectionId: section.id)}, that 
-   * you&#39;d like to test against the current active state.
-   * @property {object} current A reference to the state&#39;s config object. However 
+   * you'd like to test against the current active state.
+   * @property {object} current A reference to the state's config object. However 
    * you passed it in. Useful for accessing custom data.
-   * @property {object} transition Currently pending transition. A promise that&#39;ll 
+   * @property {object} transition Currently pending transition. A promise that'll 
    * resolve or reject.
    *
    * @description
    * `$state` service is responsible for representing states as well as transitioning
    * between them. It also provides interfaces to ask for current state or even states
-   * you&#39;re coming from.
+   * you're coming from.
    */
   this.$get = $get;
-  $get.$inject = [&#39;$rootScope&#39;, &#39;$q&#39;, &#39;$view&#39;, &#39;$injector&#39;, &#39;$resolve&#39;, &#39;$stateParams&#39;, &#39;$urlRouter&#39;, &#39;$location&#39;, &#39;$urlMatcherFactory&#39;];
+  $get.$inject = ['$rootScope', '$q', '$view', '$injector', '$resolve', '$stateParams', '$urlRouter', '$location', '$urlMatcherFactory'];
   function $get(   $rootScope,   $q,   $view,   $injector,   $resolve,   $stateParams,   $urlRouter,   $location,   $urlMatcherFactory) {
 
-    var TransitionSuperseded = $q.reject(new Error(&#39;transition superseded&#39;));
-    var TransitionPrevented = $q.reject(new Error(&#39;transition prevented&#39;));
-    var TransitionAborted = $q.reject(new Error(&#39;transition aborted&#39;));
-    var TransitionFailed = $q.reject(new Error(&#39;transition failed&#39;));
+    var TransitionSuperseded = $q.reject(new Error('transition superseded'));
+    var TransitionPrevented = $q.reject(new Error('transition prevented'));
+    var TransitionAborted = $q.reject(new Error('transition aborted'));
+    var TransitionFailed = $q.reject(new Error('transition failed'));
 
     // Handles the case where a state which is the target of a transition is not found, and the user
     // can optionally retry or defer the transition
@@ -2983,7 +2881,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
        * The event is broadcast allowing any handlers a single chance to deal with the error (usually by
        * lazy-loading the unfound state). A special `unfoundState` object is passed to the listener handler,
        * you can see its three properties in the example. You can use `event.preventDefault()` to abort the
-       * transition and the promise returned from `go` will be rejected with a `&#39;transition aborted&#39;` value.
+       * transition and the promise returned from `go` will be rejected with a `'transition aborted'` value.
        *
        * @param {Object} event Event object.
        * @param {Object} unfoundState Unfound State information. Contains: `to, toParams, options` properties.
@@ -2992,20 +2890,20 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
        *
        * @example
        *
-       * &lt;pre&gt;
+       * <pre>
        * // somewhere, assume lazy.state has not been defined
-       * $state.go(&quot;lazy.state&quot;, {a:1, b:2}, {inherit:false});
+       * $state.go("lazy.state", {a:1, b:2}, {inherit:false});
        *
        * // somewhere else
-       * $scope.$on(&#39;$stateNotFound&#39;,
+       * $scope.$on('$stateNotFound',
        * function(event, unfoundState, fromState, fromParams){
-       *     console.log(unfoundState.to); // &quot;lazy.state&quot;
+       *     console.log(unfoundState.to); // "lazy.state"
        *     console.log(unfoundState.toParams); // {a:1, b:2}
        *     console.log(unfoundState.options); // {inherit:false} + default options
        * })
-       * &lt;/pre&gt;
+       * </pre>
        */
-      var evt = $rootScope.$broadcast(&#39;$stateNotFound&#39;, redirect, state, params);
+      var evt = $rootScope.$broadcast('$stateNotFound', redirect, state, params);
 
       if (evt.defaultPrevented) {
         $urlRouter.update();
@@ -3054,44 +2952,44 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
      * controllers reinstantiated, and events re-fired.
      *
      * @example
-     * &lt;pre&gt;
-     * var app angular.module(&#39;app&#39;, [&#39;ui.router&#39;]);
+     * <pre>
+     * var app angular.module('app', ['ui.router']);
      *
-     * app.controller(&#39;ctrl&#39;, function ($scope, $state) {
+     * app.controller('ctrl', function ($scope, $state) {
      *   $scope.reload = function(){
      *     $state.reload();
      *   }
      * });
-     * &lt;/pre&gt;
+     * </pre>
      *
      * `reload()` is just an alias for:
-     * &lt;pre&gt;
+     * <pre>
      * $state.transitionTo($state.current, $stateParams, { 
      *   reload: true, inherit: false, notify: true
      * });
-     * &lt;/pre&gt;
+     * </pre>
      *
      * @param {string=|object=} state - A state name or a state object, which is the root of the resolves to be re-resolved.
      * @example
-     * &lt;pre&gt;
-     * //assuming app application consists of 3 states: &#39;contacts&#39;, &#39;contacts.detail&#39;, &#39;contacts.detail.item&#39; 
-     * //and current state is &#39;contacts.detail.item&#39;
-     * var app angular.module(&#39;app&#39;, [&#39;ui.router&#39;]);
+     * <pre>
+     * //assuming app application consists of 3 states: 'contacts', 'contacts.detail', 'contacts.detail.item' 
+     * //and current state is 'contacts.detail.item'
+     * var app angular.module('app', ['ui.router']);
      *
-     * app.controller(&#39;ctrl&#39;, function ($scope, $state) {
+     * app.controller('ctrl', function ($scope, $state) {
      *   $scope.reload = function(){
-     *     //will reload &#39;contact.detail&#39; and &#39;contact.detail.item&#39; states
-     *     $state.reload(&#39;contact.detail&#39;);
+     *     //will reload 'contact.detail' and 'contact.detail.item' states
+     *     $state.reload('contact.detail');
      *   }
      * });
-     * &lt;/pre&gt;
+     * </pre>
      *
      * `reload()` is just an alias for:
-     * &lt;pre&gt;
+     * <pre>
      * $state.transitionTo($state.current, $stateParams, { 
      *   reload: true, inherit: false, notify: true
      * });
-     * &lt;/pre&gt;
+     * </pre>
 
      * @returns {promise} A promise representing the state of the new transition. See
      * {@link ui.router.state.$state#methods_go $state.go}.
@@ -3110,27 +3008,27 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
      * `$state.transitionTo` internally but automatically sets options to 
      * `{ location: true, inherit: true, relative: $state.$current, notify: true }`. 
      * This allows you to easily use an absolute or relative to path and specify 
-     * only the parameters you&#39;d like to update (while letting unspecified parameters 
+     * only the parameters you'd like to update (while letting unspecified parameters 
      * inherit from the currently active ancestor states).
      *
      * @example
-     * &lt;pre&gt;
-     * var app = angular.module(&#39;app&#39;, [&#39;ui.router&#39;]);
+     * <pre>
+     * var app = angular.module('app', ['ui.router']);
      *
-     * app.controller(&#39;ctrl&#39;, function ($scope, $state) {
+     * app.controller('ctrl', function ($scope, $state) {
      *   $scope.changeState = function () {
-     *     $state.go(&#39;contact.detail&#39;);
+     *     $state.go('contact.detail');
      *   };
      * });
-     * &lt;/pre&gt;
-     * &lt;img src=&#39;../ngdoc_assets/StateGoExamples.png&#39;/&gt;
+     * </pre>
+     * <img src='../ngdoc_assets/StateGoExamples.png'/>
      *
      * @param {string} to Absolute state name or relative state path. Some examples:
      *
-     * - `$state.go(&#39;contact.detail&#39;)` - will go to the `contact.detail` state
-     * - `$state.go(&#39;^&#39;)` - will go to a parent state
-     * - `$state.go(&#39;^.sibling&#39;)` - will go to a sibling state
-     * - `$state.go(&#39;.child.grandchild&#39;)` - will go to grandchild state
+     * - `$state.go('contact.detail')` - will go to the `contact.detail` state
+     * - `$state.go('^')` - will go to a parent state
+     * - `$state.go('^.sibling')` - will go to a sibling state
+     * - `$state.go('.child.grandchild')` - will go to grandchild state
      *
      * @param {object=} params A map of the parameters that will be sent to the state, 
      * will populate $stateParams. Any parameters that are not specified will be inherited from currently 
@@ -3141,13 +3039,13 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
      * @param {object=} options Options object. The options are:
      *
      * - **`location`** - {boolean=true|string=} - If `true` will update the url in the location bar, if `false`
-     *    will not. If string, must be `&quot;replace&quot;`, which will update url and also replace last history record.
+     *    will not. If string, must be `"replace"`, which will update url and also replace last history record.
      * - **`inherit`** - {boolean=true}, If `true` will inherit url parameters from current url.
-     * - **`relative`** - {object=$state.$current}, When transitioning with relative path (e.g &#39;^&#39;), 
+     * - **`relative`** - {object=$state.$current}, When transitioning with relative path (e.g '^'), 
      *    defines which state to be relative from.
      * - **`notify`** - {boolean=true}, If `true` will broadcast $stateChangeStart and $stateChangeSuccess events.
      * - **`reload`** (v0.2.5) - {boolean=false}, If `true` will force transition even if the state or params 
-     *    have not changed, aka a reload of the same state. It differs from reloadOnSearch because you&#39;d
+     *    have not changed, aka a reload of the same state. It differs from reloadOnSearch because you'd
      *    use this when you want to force a reload when *everything* is the same, including search params.
      *
      * @returns {promise} A promise representing the state of the new transition.
@@ -3156,13 +3054,13 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
      *
      * - $state.current
      *
-     * &lt;br/&gt;Possible rejection values:
+     * <br/>Possible rejection values:
      *
-     * - &#39;transition superseded&#39; - when a newer transition has been started after this one
-     * - &#39;transition prevented&#39; - when `event.preventDefault()` has been called in a `$stateChangeStart` listener
-     * - &#39;transition aborted&#39; - when `event.preventDefault()` has been called in a `$stateNotFound` listener or
+     * - 'transition superseded' - when a newer transition has been started after this one
+     * - 'transition prevented' - when `event.preventDefault()` has been called in a `$stateChangeStart` listener
+     * - 'transition aborted' - when `event.preventDefault()` has been called in a `$stateNotFound` listener or
      *   when a `$stateNotFound` `event.retry` promise errors.
-     * - &#39;transition failed&#39; - when a state has been unsuccessfully found after 2 tries.
+     * - 'transition failed' - when a state has been unsuccessfully found after 2 tries.
      * - *resolve error* - when an error has occurred with a `resolve`
      *
      */
@@ -3180,15 +3078,15 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
      * uses `transitionTo` internally. `$state.go` is recommended in most situations.
      *
      * @example
-     * &lt;pre&gt;
-     * var app = angular.module(&#39;app&#39;, [&#39;ui.router&#39;]);
+     * <pre>
+     * var app = angular.module('app', ['ui.router']);
      *
-     * app.controller(&#39;ctrl&#39;, function ($scope, $state) {
+     * app.controller('ctrl', function ($scope, $state) {
      *   $scope.changeState = function () {
-     *     $state.transitionTo(&#39;contact.detail&#39;);
+     *     $state.transitionTo('contact.detail');
      *   };
      * });
-     * &lt;/pre&gt;
+     * </pre>
      *
      * @param {string} to State name.
      * @param {object=} toParams A map of the parameters that will be sent to the state,
@@ -3196,13 +3094,13 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
      * @param {object=} options Options object. The options are:
      *
      * - **`location`** - {boolean=true|string=} - If `true` will update the url in the location bar, if `false`
-     *    will not. If string, must be `&quot;replace&quot;`, which will update url and also replace last history record.
+     *    will not. If string, must be `"replace"`, which will update url and also replace last history record.
      * - **`inherit`** - {boolean=false}, If `true` will inherit url parameters from current url.
-     * - **`relative`** - {object=}, When transitioning with relative path (e.g &#39;^&#39;), 
+     * - **`relative`** - {object=}, When transitioning with relative path (e.g '^'), 
      *    defines which state to be relative from.
      * - **`notify`** - {boolean=true}, If `true` will broadcast $stateChangeStart and $stateChangeSuccess events.
      * - **`reload`** (v0.2.5) - {boolean=false|string=|object=}, If `true` will force transition even if the state or params 
-     *    have not changed, aka a reload of the same state. It differs from reloadOnSearch because you&#39;d
+     *    have not changed, aka a reload of the same state. It differs from reloadOnSearch because you'd
      *    use this when you want to force a reload when *everything* is the same, including search params.
      *    if String, then will reload the state with the name given in reload, and any children.
      *    if Object, then a stateObj is expected, will reload the state found in stateObj, and any children.
@@ -3220,7 +3118,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
       var evt, toState = findState(to, options.relative);
 
       // Store the hash param for later (since it will be stripped out by various methods)
-      var hash = toParams[&#39;#&#39;];
+      var hash = toParams['#'];
 
       if (!isDefined(toState)) {
         var redirect = { to: to, toParams: toParams, options: options };
@@ -3238,11 +3136,11 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
         toState = findState(to, options.relative);
 
         if (!isDefined(toState)) {
-          if (!options.relative) throw new Error(&quot;No such state &#39;&quot; + to + &quot;&#39;&quot;);
-          throw new Error(&quot;Could not resolve &#39;&quot; + to + &quot;&#39; from state &#39;&quot; + options.relative + &quot;&#39;&quot;);
+          if (!options.relative) throw new Error("No such state '" + to + "'");
+          throw new Error("Could not resolve '" + to + "' from state '" + options.relative + "'");
         }
       }
-      if (toState[abstractKey]) throw new Error(&quot;Cannot transition to abstract state &#39;&quot; + to + &quot;&#39;&quot;);
+      if (toState[abstractKey]) throw new Error("Cannot transition to abstract state '" + to + "'");
       if (options.inherit) toParams = inheritParams($stateParams, toParams || {}, $state.$current, toState);
       if (!toState.params.$$validates(toParams)) return TransitionFailed;
 
@@ -3251,44 +3149,44 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
 
       var toPath = to.path;
 
-      // Starting from the root of the path, keep all levels that haven&#39;t changed
+      // Starting from the root of the path, keep all levels that haven't changed
       var keep = 0, state = toPath[keep], locals = root.locals, toLocals = [];
 
       if (!options.reload) {
-        while (state &amp;&amp; state === fromPath[keep] &amp;&amp; state.ownParams.$$equals(toParams, fromParams)) {
+        while (state && state === fromPath[keep] && state.ownParams.$$equals(toParams, fromParams)) {
           locals = toLocals[keep] = state.locals;
           keep++;
           state = toPath[keep];
         }
       } else if (isString(options.reload) || isObject(options.reload)) {
-        if (isObject(options.reload) &amp;&amp; !options.reload.name) {
-          throw new Error(&#39;Invalid reload state object&#39;);
+        if (isObject(options.reload) && !options.reload.name) {
+          throw new Error('Invalid reload state object');
         }
         
         var reloadState = options.reload === true ? fromPath[0] : findState(options.reload);
-        if (options.reload &amp;&amp; !reloadState) {
-          throw new Error(&quot;No such reload state &#39;&quot; + (isString(options.reload) ? options.reload : options.reload.name) + &quot;&#39;&quot;);
+        if (options.reload && !reloadState) {
+          throw new Error("No such reload state '" + (isString(options.reload) ? options.reload : options.reload.name) + "'");
         }
 
-        while (state &amp;&amp; state === fromPath[keep] &amp;&amp; state !== reloadState) {
+        while (state && state === fromPath[keep] && state !== reloadState) {
           locals = toLocals[keep] = state.locals;
           keep++;
           state = toPath[keep];
         }
       }
 
-      // If we&#39;re going to the same state and all locals are kept, we&#39;ve got nothing to do.
-      // But clear &#39;transition&#39;, as we still want to cancel any other pending transitions.
-      // TODO: We may not want to bump &#39;transition&#39; if we&#39;re called from a location change
-      // that we&#39;ve initiated ourselves, because we might accidentally abort a legitimate
+      // If we're going to the same state and all locals are kept, we've got nothing to do.
+      // But clear 'transition', as we still want to cancel any other pending transitions.
+      // TODO: We may not want to bump 'transition' if we're called from a location change
+      // that we've initiated ourselves, because we might accidentally abort a legitimate
       // transition initiated from code?
       if (shouldSkipReload(to, toParams, from, fromParams, locals, options)) {
-        if (hash) toParams[&#39;#&#39;] = hash;
+        if (hash) toParams['#'] = hash;
         $state.params = toParams;
         copy($state.params, $stateParams);
-        if (options.location &amp;&amp; to.navigable &amp;&amp; to.navigable.url) {
+        if (options.location && to.navigable && to.navigable.url) {
           $urlRouter.push(to.navigable.url, toParams, {
-            $$avoidResync: true, replace: options.location === &#39;replace&#39;
+            $$avoidResync: true, replace: options.location === 'replace'
           });
           $urlRouter.update(true);
         }
@@ -3309,7 +3207,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
          * @description
          * Fired when the state transition **begins**. You can use `event.preventDefault()`
          * to prevent the transition from happening and then the transition promise will be
-         * rejected with a `&#39;transition prevented&#39;` value.
+         * rejected with a `'transition prevented'` value.
          *
          * @param {Object} event Event object.
          * @param {State} toState The state being transitioned to.
@@ -3319,23 +3217,23 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
          *
          * @example
          *
-         * &lt;pre&gt;
-         * $rootScope.$on(&#39;$stateChangeStart&#39;,
+         * <pre>
+         * $rootScope.$on('$stateChangeStart',
          * function(event, toState, toParams, fromState, fromParams){
          *     event.preventDefault();
          *     // transitionTo() promise will be rejected with
-         *     // a &#39;transition prevented&#39; error
+         *     // a 'transition prevented' error
          * })
-         * &lt;/pre&gt;
+         * </pre>
          */
-        if ($rootScope.$broadcast(&#39;$stateChangeStart&#39;, to.self, toParams, from.self, fromParams).defaultPrevented) {
-          $rootScope.$broadcast(&#39;$stateChangeCancel&#39;, to.self, toParams, from.self, fromParams);
+        if ($rootScope.$broadcast('$stateChangeStart', to.self, toParams, from.self, fromParams).defaultPrevented) {
+          $rootScope.$broadcast('$stateChangeCancel', to.self, toParams, from.self, fromParams);
           $urlRouter.update();
           return TransitionPrevented;
         }
       }
 
-      // Resolve locals for the remaining states, but don&#39;t update any global state just
+      // Resolve locals for the remaining states, but don't update any global state just
       // yet -- if anything fails to resolve the current state needs to remain untouched.
       // We also set up an inheritance chain for the locals here. This allows the view directive
       // to quickly look up the correct definition for each view in the current state. Even
@@ -3344,7 +3242,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
       // (fully resolved) current locals, and pass this down the chain.
       var resolved = $q.when(locals);
 
-      for (var l = keep; l &lt; toPath.length; l++, state = toPath[l]) {
+      for (var l = keep; l < toPath.length; l++, state = toPath[l]) {
         locals = toLocals[l] = inherit(locals);
         resolved = resolveState(state, toParams, state === to, resolved, locals, options);
       }
@@ -3358,8 +3256,8 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
 
         if ($state.transition !== transition) return TransitionSuperseded;
 
-        // Exit &#39;from&#39; states not kept
-        for (l = fromPath.length - 1; l &gt;= keep; l--) {
+        // Exit 'from' states not kept
+        for (l = fromPath.length - 1; l >= keep; l--) {
           exiting = fromPath[l];
           if (exiting.self.onExit) {
             $injector.invoke(exiting.self.onExit, exiting.self, exiting.locals.globals);
@@ -3367,8 +3265,8 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
           exiting.locals = null;
         }
 
-        // Enter &#39;to&#39; states not kept
-        for (l = keep; l &lt; toPath.length; l++) {
+        // Enter 'to' states not kept
+        for (l = keep; l < toPath.length; l++) {
           entering = toPath[l];
           entering.locals = toLocals[l];
           if (entering.self.onEnter) {
@@ -3377,7 +3275,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
         }
 
         // Re-add the saved hash before we start returning things
-        if (hash) toParams[&#39;#&#39;] = hash;
+        if (hash) toParams['#'] = hash;
 
         // Run it again, to catch any transitions in callbacks
         if ($state.transition !== transition) return TransitionSuperseded;
@@ -3389,9 +3287,9 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
         copy($state.params, $stateParams);
         $state.transition = null;
 
-        if (options.location &amp;&amp; to.navigable) {
+        if (options.location && to.navigable) {
           $urlRouter.push(to.navigable.url, to.navigable.locals.globals.$stateParams, {
-            $$avoidResync: true, replace: options.location === &#39;replace&#39;
+            $$avoidResync: true, replace: options.location === 'replace'
           });
         }
 
@@ -3410,7 +3308,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
          * @param {State} fromState The current state, pre-transition.
          * @param {Object} fromParams The params supplied to the `fromState`.
          */
-          $rootScope.$broadcast(&#39;$stateChangeSuccess&#39;, to.self, toParams, from.self, fromParams);
+          $rootScope.$broadcast('$stateChangeSuccess', to.self, toParams, from.self, fromParams);
         }
         $urlRouter.update(true);
 
@@ -3425,7 +3323,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
          * @eventOf ui.router.state.$state
          * @eventType broadcast on root scope
          * @description
-         * Fired when an **error occurs** during transition. It&#39;s important to note that if you
+         * Fired when an **error occurs** during transition. It's important to note that if you
          * have any errors in your resolve functions (javascript errors, non-existent services, etc)
          * they will not throw traditionally. You must listen for this $stateChangeError event to
          * catch **ALL** errors.
@@ -3437,7 +3335,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
          * @param {Object} fromParams The params supplied to the `fromState`.
          * @param {Error} error The resolve error object.
          */
-        evt = $rootScope.$broadcast(&#39;$stateChangeError&#39;, to.self, toParams, from.self, fromParams, error);
+        evt = $rootScope.$broadcast('$stateChangeError', to.self, toParams, from.self, fromParams, error);
 
         if (!evt.defaultPrevented) {
             $urlRouter.update();
@@ -3461,20 +3359,20 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
      * must match with none missing and no extras.
      *
      * @example
-     * &lt;pre&gt;
-     * $state.$current.name = &#39;contacts.details.item&#39;;
+     * <pre>
+     * $state.$current.name = 'contacts.details.item';
      *
      * // absolute name
-     * $state.is(&#39;contact.details.item&#39;); // returns true
+     * $state.is('contact.details.item'); // returns true
      * $state.is(contactDetailItemStateObject); // returns true
      *
      * // relative name (. and ^), typically from a template
-     * // E.g. from the &#39;contacts.details&#39; template
-     * &lt;div ng-class=&quot;{highlighted: $state.is(&#39;.item&#39;)}&quot;&gt;Item&lt;/div&gt;
-     * &lt;/pre&gt;
+     * // E.g. from the 'contacts.details' template
+     * <div ng-class="{highlighted: $state.is('.item')}">Item</div>
+     * </pre>
      *
-     * @param {string|object} stateOrName The state name (absolute or relative) or state object you&#39;d like to check.
-     * @param {object=} params A param object, e.g. `{sectionId: section.id}`, that you&#39;d like
+     * @param {string|object} stateOrName The state name (absolute or relative) or state object you'd like to check.
+     * @param {object=} params A param object, e.g. `{sectionId: section.id}`, that you'd like
      * to test against the current active state.
      * @param {object=} options An options object.  The options are:
      *
@@ -3500,42 +3398,42 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
      * @description
      * A method to determine if the current active state is equal to or is the child of the
      * state stateName. If any params are passed then they will be tested for a match as well.
-     * Not all the parameters need to be passed, just the ones you&#39;d like to test for equality.
+     * Not all the parameters need to be passed, just the ones you'd like to test for equality.
      *
      * @example
      * Partial and relative names
-     * &lt;pre&gt;
-     * $state.$current.name = &#39;contacts.details.item&#39;;
+     * <pre>
+     * $state.$current.name = 'contacts.details.item';
      *
      * // Using partial names
-     * $state.includes(&quot;contacts&quot;); // returns true
-     * $state.includes(&quot;contacts.details&quot;); // returns true
-     * $state.includes(&quot;contacts.details.item&quot;); // returns true
-     * $state.includes(&quot;contacts.list&quot;); // returns false
-     * $state.includes(&quot;about&quot;); // returns false
+     * $state.includes("contacts"); // returns true
+     * $state.includes("contacts.details"); // returns true
+     * $state.includes("contacts.details.item"); // returns true
+     * $state.includes("contacts.list"); // returns false
+     * $state.includes("about"); // returns false
      *
      * // Using relative names (. and ^), typically from a template
-     * // E.g. from the &#39;contacts.details&#39; template
-     * &lt;div ng-class=&quot;{highlighted: $state.includes(&#39;.item&#39;)}&quot;&gt;Item&lt;/div&gt;
-     * &lt;/pre&gt;
+     * // E.g. from the 'contacts.details' template
+     * <div ng-class="{highlighted: $state.includes('.item')}">Item</div>
+     * </pre>
      *
      * Basic globbing patterns
-     * &lt;pre&gt;
-     * $state.$current.name = &#39;contacts.details.item.url&#39;;
+     * <pre>
+     * $state.$current.name = 'contacts.details.item.url';
      *
-     * $state.includes(&quot;*.details.*.*&quot;); // returns true
-     * $state.includes(&quot;*.details.**&quot;); // returns true
-     * $state.includes(&quot;**.item.**&quot;); // returns true
-     * $state.includes(&quot;*.details.item.url&quot;); // returns true
-     * $state.includes(&quot;*.details.*.url&quot;); // returns true
-     * $state.includes(&quot;*.details.*&quot;); // returns false
-     * $state.includes(&quot;item.**&quot;); // returns false
-     * &lt;/pre&gt;
+     * $state.includes("*.details.*.*"); // returns true
+     * $state.includes("*.details.**"); // returns true
+     * $state.includes("**.item.**"); // returns true
+     * $state.includes("*.details.item.url"); // returns true
+     * $state.includes("*.details.*.url"); // returns true
+     * $state.includes("*.details.*"); // returns false
+     * $state.includes("item.**"); // returns false
+     * </pre>
      *
      * @param {string} stateOrName A partial name, relative name, or glob pattern
      * to be searched for within the current state name.
      * @param {object=} params A param object, e.g. `{sectionId: section.id}`,
-     * that you&#39;d like to test against the current active state.
+     * that you'd like to test against the current active state.
      * @param {object=} options An options object.  The options are:
      *
      * - **`relative`** - {string|object=} -  If `stateOrName` is a relative state reference and `options.relative` is set,
@@ -3545,7 +3443,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
      */
     $state.includes = function includes(stateOrName, params, options) {
       options = extend({ relative: $state.$current }, options || {});
-      if (isString(stateOrName) &amp;&amp; isGlob(stateOrName)) {
+      if (isString(stateOrName) && isGlob(stateOrName)) {
         if (!doesStateMatchGlob(stateOrName)) {
           return false;
         }
@@ -3568,21 +3466,21 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
      * A url generation method that returns the compiled url for the given state populated with the given params.
      *
      * @example
-     * &lt;pre&gt;
-     * expect($state.href(&quot;about.person&quot;, { person: &quot;bob&quot; })).toEqual(&quot;/about/bob&quot;);
-     * &lt;/pre&gt;
+     * <pre>
+     * expect($state.href("about.person", { person: "bob" })).toEqual("/about/bob");
+     * </pre>
      *
-     * @param {string|object} stateOrName The state name or state object you&#39;d like to generate a url from.
-     * @param {object=} params An object of parameter values to fill the state&#39;s required parameters.
+     * @param {string|object} stateOrName The state name or state object you'd like to generate a url from.
+     * @param {object=} params An object of parameter values to fill the state's required parameters.
      * @param {object=} options Options object. The options are:
      *
      * - **`lossy`** - {boolean=true} -  If true, and if there is no url associated with the state provided in the
      *    first parameter, then the constructed href url will be built from the first navigable ancestor (aka
      *    ancestor with a valid url).
      * - **`inherit`** - {boolean=true}, If `true` will inherit url parameters from current url.
-     * - **`relative`** - {object=$state.$current}, When transitioning with relative path (e.g &#39;^&#39;), 
+     * - **`relative`** - {object=$state.$current}, When transitioning with relative path (e.g '^'), 
      *    defines which state to be relative from.
-     * - **`absolute`** - {boolean=false},  If true will generate an absolute url, e.g. &quot;http://www.example.com/fullurl&quot;.
+     * - **`absolute`** - {boolean=false},  If true will generate an absolute url, e.g. "http://www.example.com/fullurl".
      * 
      * @returns {string} compiled state url
      */
@@ -3599,12 +3497,12 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
       if (!isDefined(state)) return null;
       if (options.inherit) params = inheritParams($stateParams, params || {}, $state.$current, state);
       
-      var nav = (state &amp;&amp; options.lossy) ? state.navigable : state;
+      var nav = (state && options.lossy) ? state.navigable : state;
 
       if (!nav || nav.url === undefined || nav.url === null) {
         return null;
       }
-      return $urlRouter.href(nav.url, filterByKeys(state.params.$$keys().concat(&#39;#&#39;), params || {}), {
+      return $urlRouter.href(nav.url, filterByKeys(state.params.$$keys().concat('#'), params || {}), {
         absolute: options.absolute
       });
     };
@@ -3625,7 +3523,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
     $state.get = function (stateOrName, context) {
       if (arguments.length === 0) return map(objectKeys(states), function(name) { return states[name].self; });
       var state = findState(stateOrName, context || $state.$current);
-      return (state &amp;&amp; state.self) ? state.self : null;
+      return (state && state.self) ? state.self : null;
     };
 
     function resolveState(state, params, paramsAreFiltered, inherited, dst, options) {
@@ -3636,8 +3534,8 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
       var $stateParams = (paramsAreFiltered) ? params : filterByKeys(state.params.$$keys(), params);
       var locals = { $stateParams: $stateParams };
 
-      // Resolve &#39;global&#39; dependencies for the state, i.e. those not specific to a view.
-      // We&#39;re also including $stateParams in this; that way the parameters are restricted
+      // Resolve 'global' dependencies for the state, i.e. those not specific to a view.
+      // We're also including $stateParams in this; that way the parameters are restricted
       // to the set that should be visible to the state, and are independent of when we update
       // the global $state and $stateParams values.
       dst.resolve = $resolve.resolve(state.resolve, locals, dst.resolve, state);
@@ -3651,9 +3549,9 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
 
         // Resolve template and dependencies for all views.
         forEach(state.views, function (view, name) {
-          var injectables = (view.resolve &amp;&amp; view.resolve !== state.resolve ? view.resolve : {});
+          var injectables = (view.resolve && view.resolve !== state.resolve ? view.resolve : {});
           injectables.$template = [ function () {
-            return $view.load(name, { view: view, locals: dst.globals, params: $stateParams, notify: options.notify }) || &#39;&#39;;
+            return $view.load(name, { view: view, locals: dst.globals, params: $stateParams, notify: options.notify }) || '';
           }];
 
           viewsPromises.push($resolve.resolve(injectables, dst.globals, dst.resolve, state).then(function (result) {
@@ -3690,7 +3588,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
     function nonSearchParamsEqual(fromAndToState, fromParams, toParams) {
       // Identify whether all the parameters that differ between `fromParams` and `toParams` were search params.
       function notSearchParam(key) {
-        return fromAndToState.params[key].location != &quot;search&quot;;
+        return fromAndToState.params[key].location != "search";
       }
       var nonQueryParamKeys = fromAndToState.params.$$keys().filter(notSearchParam);
       var nonQueryParams = pick.apply({}, [fromAndToState.params].concat(nonQueryParamKeys));
@@ -3699,21 +3597,21 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
     }
 
     // If reload was not explicitly requested
-    // and we&#39;re transitioning to the same state we&#39;re already in
-    // and    the locals didn&#39;t change
-    //     or they changed in a way that doesn&#39;t merit reloading
+    // and we're transitioning to the same state we're already in
+    // and    the locals didn't change
+    //     or they changed in a way that doesn't merit reloading
     //        (reloadOnParams:false, or reloadOnSearch.false and only search params changed)
     // Then return true.
-    if (!options.reload &amp;&amp; to === from &amp;&amp;
-      (locals === from.locals || (to.self.reloadOnSearch === false &amp;&amp; nonSearchParamsEqual(from, fromParams, toParams)))) {
+    if (!options.reload && to === from &&
+      (locals === from.locals || (to.self.reloadOnSearch === false && nonSearchParamsEqual(from, fromParams, toParams)))) {
       return true;
     }
   }
 }
 
-angular.module(&#39;ui.router.state&#39;)
-  .value(&#39;$stateParams&#39;, {})
-  .provider(&#39;$state&#39;, $StateProvider);
+angular.module('ui.router.state')
+  .value('$stateParams', {})
+  .provider('$state', $StateProvider);
 
 
 $ViewProvider.$inject = [];
@@ -3730,10 +3628,10 @@ function $ViewProvider() {
    * @description
    *
    */
-  $get.$inject = [&#39;$rootScope&#39;, &#39;$templateFactory&#39;];
+  $get.$inject = ['$rootScope', '$templateFactory'];
   function $get(   $rootScope,   $templateFactory) {
     return {
-      // $view.load(&#39;full.viewName&#39;, { template: ..., controller: ..., resolve: ..., async: false, params: ... })
+      // $view.load('full.viewName', { template: ..., controller: ..., resolve: ..., async: false, params: ... })
       /**
        * @ngdoc function
        * @name ui.router.state.$view#load
@@ -3753,7 +3651,7 @@ function $ViewProvider() {
         if (options.view) {
           result = $templateFactory.fromConfig(options.view, options.params, options.locals);
         }
-        if (result &amp;&amp; options.notify) {
+        if (result && options.notify) {
         /**
          * @ngdoc event
          * @name ui.router.state.$state#$viewContentLoading
@@ -3768,16 +3666,16 @@ function $ViewProvider() {
          *
          * @example
          *
-         * &lt;pre&gt;
-         * $scope.$on(&#39;$viewContentLoading&#39;,
+         * <pre>
+         * $scope.$on('$viewContentLoading',
          * function(event, viewConfig){
          *     // Access to all the view config properties.
-         *     // and one special property &#39;targetView&#39;
+         *     // and one special property 'targetView'
          *     // viewConfig.targetView
          * });
-         * &lt;/pre&gt;
+         * </pre>
          */
-          $rootScope.$broadcast(&#39;$viewContentLoading&#39;, options);
+          $rootScope.$broadcast('$viewContentLoading', options);
         }
         return result;
       }
@@ -3785,7 +3683,7 @@ function $ViewProvider() {
   }
 }
 
-angular.module(&#39;ui.router.state&#39;).provider(&#39;$view&#39;, $ViewProvider);
+angular.module('ui.router.state').provider('$view', $ViewProvider);
 
 /**
  * @ngdoc object
@@ -3825,7 +3723,7 @@ function $ViewScrollProvider() {
    * If you prefer to rely on `$anchorScroll` to scroll the view to the anchor,
    * this can be enabled by calling {@link ui.router.state.$uiViewScrollProvider#methods_useAnchorScroll `$uiViewScrollProvider.useAnchorScroll()`}.
    */
-  this.$get = [&#39;$anchorScroll&#39;, &#39;$timeout&#39;, function ($anchorScroll, $timeout) {
+  this.$get = ['$anchorScroll', '$timeout', function ($anchorScroll, $timeout) {
     if (useAnchorScroll) {
       return $anchorScroll;
     }
@@ -3838,7 +3736,7 @@ function $ViewScrollProvider() {
   }];
 }
 
-angular.module(&#39;ui.router.state&#39;).provider(&#39;$uiViewScroll&#39;, $ViewScrollProvider);
+angular.module('ui.router.state').provider('$uiViewScroll', $ViewScrollProvider);
 
 /**
  * @ngdoc directive
@@ -3860,8 +3758,8 @@ angular.module(&#39;ui.router.state&#39;).provider(&#39;$uiViewScroll&#39;, $Vie
  * same state. You can have views of the same name that live in different states.
  *
  * @param {string=} autoscroll It allows you to set the scroll behavior of the browser window
- * when a view is populated. By default, $anchorScroll is overridden by ui-router&#39;s custom scroll
- * service, {@link ui.router.state.$uiViewScroll}. This custom service let&#39;s you
+ * when a view is populated. By default, $anchorScroll is overridden by ui-router's custom scroll
+ * service, {@link ui.router.state.$uiViewScroll}. This custom service let's you
  * scroll ui-view elements into view when they are populated during a state activation.
  *
  * *Note: To revert back to old [`$anchorScroll`](http://docs.angularjs.org/api/ng.$anchorScroll)
@@ -3871,89 +3769,89 @@ angular.module(&#39;ui.router.state&#39;).provider(&#39;$uiViewScroll&#39;, $Vie
  * 
  * @example
  * A view can be unnamed or named. 
- * &lt;pre&gt;
- * &lt;!-- Unnamed --&gt;
- * &lt;div ui-view&gt;&lt;/div&gt; 
+ * <pre>
+ * <!-- Unnamed -->
+ * <div ui-view></div> 
  * 
- * &lt;!-- Named --&gt;
- * &lt;div ui-view=&quot;viewName&quot;&gt;&lt;/div&gt;
- * &lt;/pre&gt;
+ * <!-- Named -->
+ * <div ui-view="viewName"></div>
+ * </pre>
  *
  * You can only have one unnamed view within any template (or root html). If you are only using a 
  * single view and it is unnamed then you can populate it like so:
- * &lt;pre&gt;
- * &lt;div ui-view&gt;&lt;/div&gt; 
- * $stateProvider.state(&quot;home&quot;, {
- *   template: &quot;&lt;h1&gt;HELLO!&lt;/h1&gt;&quot;
+ * <pre>
+ * <div ui-view></div> 
+ * $stateProvider.state("home", {
+ *   template: "<h1>HELLO!</h1>"
  * })
- * &lt;/pre&gt;
+ * </pre>
  * 
  * The above is a convenient shortcut equivalent to specifying your view explicitly with the {@link ui.router.state.$stateProvider#views `views`}
  * config property, by name, in this case an empty name:
- * &lt;pre&gt;
- * $stateProvider.state(&quot;home&quot;, {
+ * <pre>
+ * $stateProvider.state("home", {
  *   views: {
- *     &quot;&quot;: {
- *       template: &quot;&lt;h1&gt;HELLO!&lt;/h1&gt;&quot;
+ *     "": {
+ *       template: "<h1>HELLO!</h1>"
  *     }
  *   }    
  * })
- * &lt;/pre&gt;
+ * </pre>
  * 
- * But typically you&#39;ll only use the views property if you name your view or have more than one view 
- * in the same template. There&#39;s not really a compelling reason to name a view if its the only one, 
+ * But typically you'll only use the views property if you name your view or have more than one view 
+ * in the same template. There's not really a compelling reason to name a view if its the only one, 
  * but you could if you wanted, like so:
- * &lt;pre&gt;
- * &lt;div ui-view=&quot;main&quot;&gt;&lt;/div&gt;
- * &lt;/pre&gt; 
- * &lt;pre&gt;
- * $stateProvider.state(&quot;home&quot;, {
+ * <pre>
+ * <div ui-view="main"></div>
+ * </pre> 
+ * <pre>
+ * $stateProvider.state("home", {
  *   views: {
- *     &quot;main&quot;: {
- *       template: &quot;&lt;h1&gt;HELLO!&lt;/h1&gt;&quot;
+ *     "main": {
+ *       template: "<h1>HELLO!</h1>"
  *     }
  *   }    
  * })
- * &lt;/pre&gt;
+ * </pre>
  * 
- * Really though, you&#39;ll use views to set up multiple views:
- * &lt;pre&gt;
- * &lt;div ui-view&gt;&lt;/div&gt;
- * &lt;div ui-view=&quot;chart&quot;&gt;&lt;/div&gt; 
- * &lt;div ui-view=&quot;data&quot;&gt;&lt;/div&gt; 
- * &lt;/pre&gt;
+ * Really though, you'll use views to set up multiple views:
+ * <pre>
+ * <div ui-view></div>
+ * <div ui-view="chart"></div> 
+ * <div ui-view="data"></div> 
+ * </pre>
  * 
- * &lt;pre&gt;
- * $stateProvider.state(&quot;home&quot;, {
+ * <pre>
+ * $stateProvider.state("home", {
  *   views: {
- *     &quot;&quot;: {
- *       template: &quot;&lt;h1&gt;HELLO!&lt;/h1&gt;&quot;
+ *     "": {
+ *       template: "<h1>HELLO!</h1>"
  *     },
- *     &quot;chart&quot;: {
- *       template: &quot;&lt;chart_thing/&gt;&quot;
+ *     "chart": {
+ *       template: "<chart_thing/>"
  *     },
- *     &quot;data&quot;: {
- *       template: &quot;&lt;data_thing/&gt;&quot;
+ *     "data": {
+ *       template: "<data_thing/>"
  *     }
  *   }    
  * })
- * &lt;/pre&gt;
+ * </pre>
  *
  * Examples for `autoscroll`:
  *
- * &lt;pre&gt;
- * &lt;!-- If autoscroll present with no expression,
- *      then scroll ui-view into view --&gt;
- * &lt;ui-view autoscroll/&gt;
+ * <pre>
+ * <!-- If autoscroll present with no expression,
+ *      then scroll ui-view into view -->
+ * <ui-view autoscroll/>
  *
- * &lt;!-- If autoscroll present with valid expression,
- *      then scroll ui-view into view if expression evaluates to true --&gt;
- * &lt;ui-view autoscroll=&#39;true&#39;/&gt;
- * &lt;ui-view autoscroll=&#39;false&#39;/&gt;
- * &lt;ui-view autoscroll=&#39;scopeVariable&#39;/&gt;
- * &lt;/pre&gt;
+ * <!-- If autoscroll present with valid expression,
+ *      then scroll ui-view into view if expression evaluates to true -->
+ * <ui-view autoscroll='true'/>
+ * <ui-view autoscroll='false'/>
+ * <ui-view autoscroll='scopeVariable'/>
+ * </pre>
  */
-$ViewDirective.$inject = [&#39;$state&#39;, &#39;$injector&#39;, &#39;$uiViewScroll&#39;, &#39;$interpolate&#39;];
+$ViewDirective.$inject = ['$state', '$injector', '$uiViewScroll', '$interpolate'];
 function $ViewDirective(   $state,   $injector,   $uiViewScroll,   $interpolate) {
 
   function getService() {
@@ -3969,8 +3867,8 @@ function $ViewDirective(   $state,   $injector,   $uiViewScroll,   $interpolate)
   }
 
   var service = getService(),
-      $animator = service(&#39;$animator&#39;),
-      $animate = service(&#39;$animate&#39;);
+      $animator = service('$animator'),
+      $animate = service('$animate');
 
   // Returns a set of DOM manipulation functions based on which Angular version
   // it should use
@@ -3986,17 +3884,17 @@ function $ViewDirective(   $state,   $injector,   $uiViewScroll,   $interpolate)
       return {
         enter: function(element, target, cb) {
           var promise = $animate.enter(element, null, target, cb);
-          if (promise &amp;&amp; promise.then) promise.then(cb);
+          if (promise && promise.then) promise.then(cb);
         },
         leave: function(element, cb) {
           var promise = $animate.leave(element, cb);
-          if (promise &amp;&amp; promise.then) promise.then(cb);
+          if (promise && promise.then) promise.then(cb);
         }
       };
     }
 
     if ($animator) {
-      var animate = $animator &amp;&amp; $animator(scope, attrs);
+      var animate = $animator && $animator(scope, attrs);
 
       return {
         enter: function(element, target, cb) {animate.enter(element, null, target); cb(); },
@@ -4008,21 +3906,21 @@ function $ViewDirective(   $state,   $injector,   $uiViewScroll,   $interpolate)
   }
 
   var directive = {
-    restrict: &#39;ECA&#39;,
+    restrict: 'ECA',
     terminal: true,
     priority: 400,
-    transclude: &#39;element&#39;,
+    transclude: 'element',
     compile: function (tElement, tAttrs, $transclude) {
       return function (scope, $element, attrs) {
         var previousEl, currentEl, currentScope, latestLocals,
-            onloadExp     = attrs.onload || &#39;&#39;,
+            onloadExp     = attrs.onload || '',
             autoScrollExp = attrs.autoscroll,
             renderer      = getRenderer(attrs, scope);
 
-        scope.$on(&#39;$stateChangeSuccess&#39;, function() {
+        scope.$on('$stateChangeSuccess', function() {
           updateView(false);
         });
-        scope.$on(&#39;$viewContentLoading&#39;, function() {
+        scope.$on('$viewContentLoading', function() {
           updateView(false);
         });
 
@@ -4052,19 +3950,19 @@ function $ViewDirective(   $state,   $injector,   $uiViewScroll,   $interpolate)
         function updateView(firstTime) {
           var newScope,
               name            = getUiViewName(scope, attrs, $element, $interpolate),
-              previousLocals  = name &amp;&amp; $state.$current &amp;&amp; $state.$current.locals[name];
+              previousLocals  = name && $state.$current && $state.$current.locals[name];
 
-          if (!firstTime &amp;&amp; previousLocals === latestLocals) return; // nothing to do
+          if (!firstTime && previousLocals === latestLocals) return; // nothing to do
           newScope = scope.$new();
           latestLocals = $state.$current.locals[name];
 
           var clone = $transclude(newScope, function(clone) {
             renderer.enter(clone, $element, function onUiViewEnter() {
               if(currentScope) {
-                currentScope.$emit(&#39;$viewContentAnimationEnded&#39;);
+                currentScope.$emit('$viewContentAnimationEnded');
               }
 
-              if (angular.isDefined(autoScrollExp) &amp;&amp; !autoScrollExp || scope.$eval(autoScrollExp)) {
+              if (angular.isDefined(autoScrollExp) && !autoScrollExp || scope.$eval(autoScrollExp)) {
                 $uiViewScroll(clone);
               }
             });
@@ -4083,7 +3981,7 @@ function $ViewDirective(   $state,   $injector,   $uiViewScroll,   $interpolate)
            *
            * @param {Object} event Event object.
            */
-          currentScope.$emit(&#39;$viewContentLoaded&#39;);
+          currentScope.$emit('$viewContentLoaded');
           currentScope.$eval(onloadExp);
         }
       };
@@ -4093,23 +3991,23 @@ function $ViewDirective(   $state,   $injector,   $uiViewScroll,   $interpolate)
   return directive;
 }
 
-$ViewDirectiveFill.$inject = [&#39;$compile&#39;, &#39;$controller&#39;, &#39;$state&#39;, &#39;$interpolate&#39;];
+$ViewDirectiveFill.$inject = ['$compile', '$controller', '$state', '$interpolate'];
 function $ViewDirectiveFill (  $compile,   $controller,   $state,   $interpolate) {
   return {
-    restrict: &#39;ECA&#39;,
+    restrict: 'ECA',
     priority: -400,
     compile: function (tElement) {
       var initial = tElement.html();
       return function (scope, $element, attrs) {
         var current = $state.$current,
             name = getUiViewName(scope, attrs, $element, $interpolate),
-            locals  = current &amp;&amp; current.locals[name];
+            locals  = current && current.locals[name];
 
         if (! locals) {
           return;
         }
 
-        $element.data(&#39;$uiView&#39;, { name: name, state: locals.$$state });
+        $element.data('$uiView', { name: name, state: locals.$$state });
         $element.html(locals.$template ? locals.$template : initial);
 
         var link = $compile($element.contents());
@@ -4121,8 +4019,8 @@ function $ViewDirectiveFill (  $compile,   $controller,   $state,   $interpolate
           if (locals.$$controllerAs) {
             scope[locals.$$controllerAs] = controller;
           }
-          $element.data(&#39;$ngControllerController&#39;, controller);
-          $element.children().data(&#39;$ngControllerController&#39;, controller);
+          $element.data('$ngControllerController', controller);
+          $element.children().data('$ngControllerController', controller);
         }
 
         link(scope);
@@ -4133,29 +4031,29 @@ function $ViewDirectiveFill (  $compile,   $controller,   $state,   $interpolate
 
 /**
  * Shared ui-view code for both directives:
- * Given scope, element, and its attributes, return the view&#39;s name
+ * Given scope, element, and its attributes, return the view's name
  */
 function getUiViewName(scope, attrs, element, $interpolate) {
-  var name = $interpolate(attrs.uiView || attrs.name || &#39;&#39;)(scope);
-  var inherited = element.inheritedData(&#39;$uiView&#39;);
-  return name.indexOf(&#39;@&#39;) &gt;= 0 ?  name :  (name + &#39;@&#39; + (inherited ? inherited.state.name : &#39;&#39;));
+  var name = $interpolate(attrs.uiView || attrs.name || '')(scope);
+  var inherited = element.inheritedData('$uiView');
+  return name.indexOf('@') >= 0 ?  name :  (name + '@' + (inherited ? inherited.state.name : ''));
 }
 
-angular.module(&#39;ui.router.state&#39;).directive(&#39;uiView&#39;, $ViewDirective);
-angular.module(&#39;ui.router.state&#39;).directive(&#39;uiView&#39;, $ViewDirectiveFill);
+angular.module('ui.router.state').directive('uiView', $ViewDirective);
+angular.module('ui.router.state').directive('uiView', $ViewDirectiveFill);
 
 function parseStateRef(ref, current) {
   var preparsed = ref.match(/^\s*({[^}]*})\s*$/), parsed;
-  if (preparsed) ref = current + &#39;(&#39; + preparsed[1] + &#39;)&#39;;
-  parsed = ref.replace(/\n/g, &quot; &quot;).match(/^([^(]+?)\s*(\((.*)\))?$/);
-  if (!parsed || parsed.length !== 4) throw new Error(&quot;Invalid state ref &#39;&quot; + ref + &quot;&#39;&quot;);
+  if (preparsed) ref = current + '(' + preparsed[1] + ')';
+  parsed = ref.replace(/\n/g, " ").match(/^([^(]+?)\s*(\((.*)\))?$/);
+  if (!parsed || parsed.length !== 4) throw new Error("Invalid state ref '" + ref + "'");
   return { state: parsed[1], paramExpr: parsed[3] || null };
 }
 
 function stateContext(el) {
-  var stateData = el.parent().inheritedData(&#39;$uiView&#39;);
+  var stateData = el.parent().inheritedData('$uiView');
 
-  if (stateData &amp;&amp; stateData.state &amp;&amp; stateData.state.name) {
+  if (stateData && stateData.state && stateData.state.name) {
     return stateData.state;
   }
 }
@@ -4170,8 +4068,8 @@ function stateContext(el) {
  * @restrict A
  *
  * @description
- * A directive that binds a link (`&lt;a&gt;` tag) to a state. If the state has an associated 
- * URL, the directive will automatically generate &amp; update the `href` attribute via 
+ * A directive that binds a link (`<a>` tag) to a state. If the state has an associated 
+ * URL, the directive will automatically generate & update the `href` attribute via 
  * the {@link ui.router.state.$state#methods_href $state.href()} method. Clicking 
  * the link will trigger a state transition with optional parameters. 
  *
@@ -4188,56 +4086,56 @@ function stateContext(el) {
  * and `reload`.
  *
  * @example
- * Here&#39;s an example of how you&#39;d use ui-sref and how it would compile. If you have the 
+ * Here's an example of how you'd use ui-sref and how it would compile. If you have the 
  * following template:
- * &lt;pre&gt;
- * &lt;a ui-sref=&quot;home&quot;&gt;Home&lt;/a&gt; | &lt;a ui-sref=&quot;about&quot;&gt;About&lt;/a&gt; | &lt;a ui-sref=&quot;{page: 2}&quot;&gt;Next page&lt;/a&gt;
+ * <pre>
+ * <a ui-sref="home">Home</a> | <a ui-sref="about">About</a> | <a ui-sref="{page: 2}">Next page</a>
  * 
- * &lt;ul&gt;
- *     &lt;li ng-repeat=&quot;contact in contacts&quot;&gt;
- *         &lt;a ui-sref=&quot;contacts.detail({ id: contact.id })&quot;&gt;{{ contact.name }}&lt;/a&gt;
- *     &lt;/li&gt;
- * &lt;/ul&gt;
- * &lt;/pre&gt;
+ * <ul>
+ *     <li ng-repeat="contact in contacts">
+ *         <a ui-sref="contacts.detail({ id: contact.id })">{{ contact.name }}</a>
+ *     </li>
+ * </ul>
+ * </pre>
  * 
  * Then the compiled html would be (assuming Html5Mode is off and current state is contacts):
- * &lt;pre&gt;
- * &lt;a href=&quot;#/home&quot; ui-sref=&quot;home&quot;&gt;Home&lt;/a&gt; | &lt;a href=&quot;#/about&quot; ui-sref=&quot;about&quot;&gt;About&lt;/a&gt; | &lt;a href=&quot;#/contacts?page=2&quot; ui-sref=&quot;{page: 2}&quot;&gt;Next page&lt;/a&gt;
+ * <pre>
+ * <a href="#/home" ui-sref="home">Home</a> | <a href="#/about" ui-sref="about">About</a> | <a href="#/contacts?page=2" ui-sref="{page: 2}">Next page</a>
  * 
- * &lt;ul&gt;
- *     &lt;li ng-repeat=&quot;contact in contacts&quot;&gt;
- *         &lt;a href=&quot;#/contacts/1&quot; ui-sref=&quot;contacts.detail({ id: contact.id })&quot;&gt;Joe&lt;/a&gt;
- *     &lt;/li&gt;
- *     &lt;li ng-repeat=&quot;contact in contacts&quot;&gt;
- *         &lt;a href=&quot;#/contacts/2&quot; ui-sref=&quot;contacts.detail({ id: contact.id })&quot;&gt;Alice&lt;/a&gt;
- *     &lt;/li&gt;
- *     &lt;li ng-repeat=&quot;contact in contacts&quot;&gt;
- *         &lt;a href=&quot;#/contacts/3&quot; ui-sref=&quot;contacts.detail({ id: contact.id })&quot;&gt;Bob&lt;/a&gt;
- *     &lt;/li&gt;
- * &lt;/ul&gt;
+ * <ul>
+ *     <li ng-repeat="contact in contacts">
+ *         <a href="#/contacts/1" ui-sref="contacts.detail({ id: contact.id })">Joe</a>
+ *     </li>
+ *     <li ng-repeat="contact in contacts">
+ *         <a href="#/contacts/2" ui-sref="contacts.detail({ id: contact.id })">Alice</a>
+ *     </li>
+ *     <li ng-repeat="contact in contacts">
+ *         <a href="#/contacts/3" ui-sref="contacts.detail({ id: contact.id })">Bob</a>
+ *     </li>
+ * </ul>
  *
- * &lt;a ui-sref=&quot;home&quot; ui-sref-opts=&quot;{reload: true}&quot;&gt;Home&lt;/a&gt;
- * &lt;/pre&gt;
+ * <a ui-sref="home" ui-sref-opts="{reload: true}">Home</a>
+ * </pre>
  *
- * @param {string} ui-sref &#39;stateName&#39; can be any valid absolute or relative state
+ * @param {string} ui-sref 'stateName' can be any valid absolute or relative state
  * @param {Object} ui-sref-opts options to pass to {@link ui.router.state.$state#go $state.go()}
  */
-$StateRefDirective.$inject = [&#39;$state&#39;, &#39;$timeout&#39;];
+$StateRefDirective.$inject = ['$state', '$timeout'];
 function $StateRefDirective($state, $timeout) {
-  var allowedOptions = [&#39;location&#39;, &#39;inherit&#39;, &#39;reload&#39;, &#39;absolute&#39;];
+  var allowedOptions = ['location', 'inherit', 'reload', 'absolute'];
 
   return {
-    restrict: &#39;A&#39;,
-    require: [&#39;?^uiSrefActive&#39;, &#39;?^uiSrefActiveEq&#39;],
+    restrict: 'A',
+    require: ['?^uiSrefActive', '?^uiSrefActiveEq'],
     link: function(scope, element, attrs, uiSrefActive) {
       var ref = parseStateRef(attrs.uiSref, $state.current.name);
       var params = null, url = null, base = stateContext(element) || $state.$current;
-      // SVGAElement does not use the href attribute, but rather the &#39;xlinkHref&#39; attribute.
-      var hrefKind = Object.prototype.toString.call(element.prop(&#39;href&#39;)) === &#39;[object SVGAnimatedString]&#39; ?
-                 &#39;xlink:href&#39; : &#39;href&#39;;
-      var newHref = null, isAnchor = element.prop(&quot;tagName&quot;).toUpperCase() === &quot;A&quot;;
-      var isForm = element[0].nodeName === &quot;FORM&quot;;
-      var attr = isForm ? &quot;action&quot; : hrefKind, nav = true;
+      // SVGAElement does not use the href attribute, but rather the 'xlinkHref' attribute.
+      var hrefKind = Object.prototype.toString.call(element.prop('href')) === '[object SVGAnimatedString]' ?
+                 'xlink:href' : 'href';
+      var newHref = null, isAnchor = element.prop("tagName").toUpperCase() === "A";
+      var isForm = element[0].nodeName === "FORM";
+      var attr = isForm ? "action" : hrefKind, nav = true;
 
       var options = { relative: base, inherit: true };
       var optionsOverride = scope.$eval(attrs.uiSrefOpts) || {};
@@ -4275,19 +4173,19 @@ function $StateRefDirective($state, $timeout) {
 
       if (isForm) return;
 
-      element.bind(&quot;click&quot;, function(e) {
+      element.bind("click", function(e) {
         var button = e.which || e.button;
-        if ( !(button &gt; 1 || e.ctrlKey || e.metaKey || e.shiftKey || element.attr(&#39;target&#39;)) ) {
+        if ( !(button > 1 || e.ctrlKey || e.metaKey || e.shiftKey || element.attr('target')) ) {
           // HACK: This is to allow ng-clicks to be processed before the transition is initiated:
           var transition = $timeout(function() {
             $state.go(ref.state, params, options);
           });
           e.preventDefault();
 
-          // if the state has no URL, ignore one preventDefault from the &lt;a&gt; directive.
-          var ignorePreventDefaultCount = isAnchor &amp;&amp; !newHref ? 1: 0;
+          // if the state has no URL, ignore one preventDefault from the <a> directive.
+          var ignorePreventDefaultCount = isAnchor && !newHref ? 1: 0;
           e.preventDefault = function() {
-            if (ignorePreventDefaultCount-- &lt;= 0)
+            if (ignorePreventDefaultCount-- <= 0)
               $timeout.cancel(transition);
           };
         }
@@ -4308,51 +4206,51 @@ function $StateRefDirective($state, $timeout) {
  *
  * @description
  * A directive working alongside ui-sref to add classes to an element when the
- * related ui-sref directive&#39;s state is active, and removing them when it is inactive.
+ * related ui-sref directive's state is active, and removing them when it is inactive.
  * The primary use-case is to simplify the special appearance of navigation menus
- * relying on `ui-sref`, by having the &quot;active&quot; state&#39;s menu button appear different,
+ * relying on `ui-sref`, by having the "active" state's menu button appear different,
  * distinguishing it from the inactive menu items.
  *
  * ui-sref-active can live on the same element as ui-sref or on a parent element. The first
  * ui-sref-active found at the same level or above the ui-sref will be used.
  *
- * Will activate when the ui-sref&#39;s target state or any child state is active. If you
+ * Will activate when the ui-sref's target state or any child state is active. If you
  * need to activate only when the ui-sref target state is active and *not* any of
- * it&#39;s children, then you will use
+ * it's children, then you will use
  * {@link ui.router.state.directive:ui-sref-active-eq ui-sref-active-eq}
  *
  * @example
  * Given the following template:
- * &lt;pre&gt;
- * &lt;ul&gt;
- *   &lt;li ui-sref-active=&quot;active&quot; class=&quot;item&quot;&gt;
- *     &lt;a href ui-sref=&quot;app.user({user: &#39;bilbobaggins&#39;})&quot;&gt;@bilbobaggins&lt;/a&gt;
- *   &lt;/li&gt;
- * &lt;/ul&gt;
- * &lt;/pre&gt;
+ * <pre>
+ * <ul>
+ *   <li ui-sref-active="active" class="item">
+ *     <a href ui-sref="app.user({user: 'bilbobaggins'})">@bilbobaggins</a>
+ *   </li>
+ * </ul>
+ * </pre>
  *
  *
- * When the app state is &quot;app.user&quot; (or any children states), and contains the state parameter &quot;user&quot; with value &quot;bilbobaggins&quot;,
- * the resulting HTML will appear as (note the &#39;active&#39; class):
- * &lt;pre&gt;
- * &lt;ul&gt;
- *   &lt;li ui-sref-active=&quot;active&quot; class=&quot;item active&quot;&gt;
- *     &lt;a ui-sref=&quot;app.user({user: &#39;bilbobaggins&#39;})&quot; href=&quot;/users/bilbobaggins&quot;&gt;@bilbobaggins&lt;/a&gt;
- *   &lt;/li&gt;
- * &lt;/ul&gt;
- * &lt;/pre&gt;
+ * When the app state is "app.user" (or any children states), and contains the state parameter "user" with value "bilbobaggins",
+ * the resulting HTML will appear as (note the 'active' class):
+ * <pre>
+ * <ul>
+ *   <li ui-sref-active="active" class="item active">
+ *     <a ui-sref="app.user({user: 'bilbobaggins'})" href="/users/bilbobaggins">@bilbobaggins</a>
+ *   </li>
+ * </ul>
+ * </pre>
  *
  * The class name is interpolated **once** during the directives link time (any further changes to the
  * interpolated value are ignored).
  *
  * Multiple classes may be specified in a space-separated format:
- * &lt;pre&gt;
- * &lt;ul&gt;
- *   &lt;li ui-sref-active=&#39;class1 class2 class3&#39;&gt;
- *     &lt;a ui-sref=&quot;app.user&quot;&gt;link&lt;/a&gt;
- *   &lt;/li&gt;
- * &lt;/ul&gt;
- * &lt;/pre&gt;
+ * <pre>
+ * <ul>
+ *   <li ui-sref-active='class1 class2 class3'>
+ *     <a ui-sref="app.user">link</a>
+ *   </li>
+ * </ul>
+ * </pre>
  */
 
 /**
@@ -4370,17 +4268,17 @@ function $StateRefDirective($state, $timeout) {
  * when the exact target state used in the `ui-sref` is active; no child states.
  *
  */
-$StateRefActiveDirective.$inject = [&#39;$state&#39;, &#39;$stateParams&#39;, &#39;$interpolate&#39;];
+$StateRefActiveDirective.$inject = ['$state', '$stateParams', '$interpolate'];
 function $StateRefActiveDirective($state, $stateParams, $interpolate) {
   return  {
-    restrict: &quot;A&quot;,
-    controller: [&#39;$scope&#39;, &#39;$element&#39;, &#39;$attrs&#39;, function ($scope, $element, $attrs) {
+    restrict: "A",
+    controller: ['$scope', '$element', '$attrs', function ($scope, $element, $attrs) {
       var states = [], activeClass;
 
-      // There probably isn&#39;t much point in $observing this
+      // There probably isn't much point in $observing this
       // uiSrefActive and uiSrefActiveEq share the same directive object with some
       // slight difference in logic routing
-      activeClass = $interpolate($attrs.uiSrefActiveEq || $attrs.uiSrefActive || &#39;&#39;, false)($scope);
+      activeClass = $interpolate($attrs.uiSrefActiveEq || $attrs.uiSrefActive || '', false)($scope);
 
       // Allow uiSref to communicate with uiSrefActive[Equals]
       this.$$addStateInfo = function (newState, newParams) {
@@ -4394,7 +4292,7 @@ function $StateRefActiveDirective($state, $stateParams, $interpolate) {
         update();
       };
 
-      $scope.$on(&#39;$stateChangeSuccess&#39;, update);
+      $scope.$on('$stateChangeSuccess', update);
 
       // Update route state
       function update() {
@@ -4406,7 +4304,7 @@ function $StateRefActiveDirective($state, $stateParams, $interpolate) {
       }
 
       function anyMatch() {
-        for (var i = 0; i &lt; states.length; i++) {
+        for (var i = 0; i < states.length; i++) {
           if (isMatch(states[i].state, states[i].params)) {
             return true;
           }
@@ -4415,7 +4313,7 @@ function $StateRefActiveDirective($state, $stateParams, $interpolate) {
       }
 
       function isMatch(state, params) {
-        if (typeof $attrs.uiSrefActiveEq !== &#39;undefined&#39;) {
+        if (typeof $attrs.uiSrefActiveEq !== 'undefined') {
           return $state.is(state.name, params);
         } else {
           return $state.includes(state.name, params);
@@ -4425,10 +4323,10 @@ function $StateRefActiveDirective($state, $stateParams, $interpolate) {
   };
 }
 
-angular.module(&#39;ui.router.state&#39;)
-  .directive(&#39;uiSref&#39;, $StateRefDirective)
-  .directive(&#39;uiSrefActive&#39;, $StateRefActiveDirective)
-  .directive(&#39;uiSrefActiveEq&#39;, $StateRefActiveDirective);
+angular.module('ui.router.state')
+  .directive('uiSref', $StateRefDirective)
+  .directive('uiSrefActive', $StateRefActiveDirective)
+  .directive('uiSrefActiveEq', $StateRefActiveDirective);
 
 /**
  * @ngdoc filter
@@ -4437,9 +4335,9 @@ angular.module(&#39;ui.router.state&#39;)
  * @requires ui.router.state.$state
  *
  * @description
- * Translates to {@link ui.router.state.$state#methods_is $state.is(&quot;stateName&quot;)}.
+ * Translates to {@link ui.router.state.$state#methods_is $state.is("stateName")}.
  */
-$IsStateFilter.$inject = [&#39;$state&#39;];
+$IsStateFilter.$inject = ['$state'];
 function $IsStateFilter($state) {
   var isFilter = function (state) {
     return $state.is(state);
@@ -4455,9 +4353,9 @@ function $IsStateFilter($state) {
  * @requires ui.router.state.$state
  *
  * @description
- * Translates to {@link ui.router.state.$state#methods_includes $state.includes(&#39;fullOrPartialStateName&#39;)}.
+ * Translates to {@link ui.router.state.$state#methods_includes $state.includes('fullOrPartialStateName')}.
  */
-$IncludedByStateFilter.$inject = [&#39;$state&#39;];
+$IncludedByStateFilter.$inject = ['$state'];
 function $IncludedByStateFilter($state) {
   var includesFilter = function (state) {
     return $state.includes(state);
@@ -4466,33 +4364,7 @@ function $IncludedByStateFilter($state) {
   return  includesFilter;
 }
 
-angular.module(&#39;ui.router.state&#39;)
-  .filter(&#39;isState&#39;, $IsStateFilter)
-  .filter(&#39;includedByState&#39;, $IncludedByStateFilter);
-})(window, window.angular);</pre>
-</div>
-
-
-
-  <footer class="clearfix">
-    <div class="container">
-      <a href="#"><span class="mega-octicon octicon-mark-github"></span></a>
-
-      <ul class="clearfix">
-        <li>
-          <form accept-charset="UTF-8" action="/site/mobile_preference" class="js-mobile-preference-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="tFQY2+t0pjO/Fwy8snA93yOWgaJBpoNZ2QdwAWO1WTpkYTH8KmRaI4u4up3BkxnlKL3uGDfEievGh4e/EQQa3Q==" /></div>
-            <input type="hidden" name="mobile" value="false">
-            <input type="hidden" name="anchor" class="js-mobile-preference-anchor-field">
-
-            <button type="submit" class="switch-to-desktop" data-ga-click="Mobile, switch to desktop, switch button">
-              Desktop version
-            </button>
-</form>        </li>
-
-      </ul>
-    </div>
-  </footer>
-  
-</body>
-</html>
-
+angular.module('ui.router.state')
+  .filter('isState', $IsStateFilter)
+  .filter('includedByState', $IncludedByStateFilter);
+})(window, window.angular);

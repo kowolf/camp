@@ -61,27 +61,17 @@ angular.module('campApp').controller('seasonDetailController', function($scope, 
 				{
 					className:'success',
 					autoHideDelay: 7000,
-					elementPosition: 'bottom center',
+					elementPosition: ' right',
 				}
 			);
 			
-	
-			/*notify({
-	            message: 'Season save successfully!!!',
-	            classes: 'alert-success',
-	            //templateUrl: $scope.template,
-	            //position: 'center',
-	            duration: 3000,
-	            container: document.getElementById('#global-message')
-	        });*/
-			
 			$scope.season = angular.copy(data);
-			}).error(function() {
+		}).error(function() {
 				$('.single-message').notify('Season failed to saved!!!', 
 						{
 							className:'error',
 							autoHideDelay: 7000,
-							elementPosition: 'bottom center',
+							elementPosition: 'right',
 						}
 					);
 		});

@@ -1,16 +1,52 @@
-<div class="form-group">
-	<label for="location">Location</label> <input type="text"
-		class="form-control" name="location" ng-model="formData.location">
+<style>
+.angular-google-map-container {
+	height: 400px;
+}
+</style>
+
+
+
+<div class="panel panel-default">
+	<div class="panel-body">
+		<google-map control="map.control" center="map.center" zoom="map.zoom">
+		<marker coords="marker.center"></marker> </google-map>
+		<form class="form-horizontal" role="form">
+			<div class="form-group">
+				<label for="origin" class="col-sm-2 control-label">Origin</label>
+				<div class="col-sm-8">
+					<input type="text" id="origin" class="form-control"
+						ng-model="directions.origin" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="destination" class="col-sm-2 control-label">Destination</label>
+				<div class="col-sm-8">
+					<input type="text" id="destination" class="form-control"
+						ng-model="directions.destination" />
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-8">
+					<button class="btn btn-primary" ng-click="getDirections()">Get
+						Directions</button>
+				</div>
+			</div>
+		</form>
+
+		<div id="directionsList" ng-show="directions.showList"
+			class="panel panel-primary"></div>
+	</div>
 </div>
 
+
 <div class="form-group row">
-	
-		<a ui-sref="start.main" class="btn btn-info"> Start Over</span></a>
-		<a ui-sref="form.season" class="btn btn-info">  <span class="glyphicon glyphicon-circle-arrow-left"></span>Previous
-				Section
-		</a>
-		<a ui-sref="form.count" class="btn btn-info"> Next
-			Section <span class="glyphicon glyphicon-circle-arrow-right"></span>
-		</a>
-	
+
+	<a ui-sref="start.main" class="btn btn-info"> Start Over</span></a> <a
+		ui-sref="form.season" class="btn btn-info"> <span
+		class="glyphicon glyphicon-circle-arrow-left"></span>Previous Section
+	</a> <a ui-sref="form.count" class="btn btn-info"> Next Section <span
+		class="glyphicon glyphicon-circle-arrow-right"></span>
+	</a>
+
 </div>
+

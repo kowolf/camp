@@ -1,4 +1,8 @@
-
+<style>
+.angular-google-map-container {
+	height: 400px;
+}
+</style>
 <div class="row">
 	<table>
 		<tbody>
@@ -26,9 +30,7 @@
     		<!-- <option value="">Select Account</option> -->
 		</select>
 	</div>
-	<div>
-		<label for="location">Location</label><input id="location" type="text" ng-model="camp.location"/>
-	</div>
+	
 	<div>
 		<label for="count">Count</label><input id="count" type="text" ng-model="camp.count"/>
 	</div>
@@ -38,6 +40,45 @@
 			<li>{{item.name}}</li>
 		</ul>
 	</div>
+	
+	<!-- <div>
+		<label for="locationOrigin">Location Origin</label><input id="locationOrigin" type="text" ng-model="camp.locationOrigin"/>
+	</div>
+	<div>
+		<label for="locationDestination">Location Destination</label><input id="locationDestination" type="text" ng-model="camp.locationDestination"/>
+	</div> -->
+	
+	<div class="panel panel-default">
+	<div class="panel-body">
+		<google-map control="map.control" center="map.center" zoom="map.zoom">
+		<marker coords="marker.center"></marker> </google-map>
+		<form class="form-horizontal" role="form">
+			<div class="form-group">
+				<label for="origin" class="col-sm-2 control-label">Origin</label>
+				<div class="col-sm-8">
+					<input type="text" id="origin" class="form-control"
+						ng-model="camp.locationOrigin" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="destination" class="col-sm-2 control-label">Destination</label>
+				<div class="col-sm-8">
+					<input type="text" id="destination" class="form-control"
+						ng-model="camp.locationDestination" />
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-8">
+					<button class="btn btn-primary" ng-click="getDirections()">Get
+						Directions</button>
+				</div>
+			</div>
+		</form>
+
+		<div id="directionsList" ng-show="directions.showList"
+			class="panel panel-primary"></div>
+	</div>
+</div>
 	
 	<div>
 		<button ng-click="update()" >Save</button>

@@ -17,6 +17,7 @@
 
 </head>
 <body ng-app="campApp">
+<h1>TEST</h1>
 
 	<!-- views will be injected here -->
 	<div class="container">
