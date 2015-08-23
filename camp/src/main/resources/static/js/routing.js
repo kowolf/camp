@@ -22,6 +22,25 @@ angular.module('campApp')
 		
 	})
 	
+	// (/person)
+	.state('person', {
+		url : '/person',
+		templateUrl : 'person.html',
+		controller : 'personController'
+	}).state('person.list', {
+		url : '/list',
+		templateUrl : 'person-list.html',
+		controller : 'personController'
+	}).state('person.add', {
+		url : '/add',
+		templateUrl : 'person-form.html',
+		controller : 'personAddController'
+	}).state('person.edit', {
+		url : '/edit/:id',
+		templateUrl : 'person-form.html',
+		controller : 'personEditController'
+	})
+	
 	// (/season)
 	.state('season', {
 		url : '/season',
