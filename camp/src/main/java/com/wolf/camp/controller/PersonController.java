@@ -57,12 +57,17 @@ public class PersonController {
 	}
 
 	@RequestMapping(method = RequestMethod.DELETE, value = "{id}")
-	public void delete(@PathVariable String id) {
+	public void delete(@PathVariable Integer id) {
+		
+		Person person = new Person();
+		person.setId(id);
+		
+		personService.deletePerson(person);
 
 	}
 
 	@RequestMapping(method = RequestMethod.PUT, value = "/{id}")
-	public Person update(@PathVariable String id, @RequestBody Person person) {	
+	public Person update(@PathVariable Integer id, @RequestBody Person person) {	
 		
 		person = personService.savePerson(person);
 

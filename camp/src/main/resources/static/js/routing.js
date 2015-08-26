@@ -34,11 +34,11 @@ angular.module('campApp')
 	}).state('person.add', {
 		url : '/add',
 		templateUrl : 'person-form.html',
-		controller : 'personAddController'
+		controller : 'personController'
 	}).state('person.edit', {
 		url : '/edit/:id',
 		templateUrl : 'person-form.html',
-		controller : 'personEditController'
+		controller : 'personController'
 	})
 	
 	// (/season)

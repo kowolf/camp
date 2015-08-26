@@ -1,23 +1,28 @@
 
 
-
+<div class="row">
+	<button class="btn-primary" ng-click="newPerson()">Add Person</button>
+</div>
+<div class="row">
+&nbsp;
+</div>
 <div class="row">
 	<table class="table table-condensed ">
 		<tbody class="" ng-repeat="person in personList">
 			<tr>
 				<td>
-					<!-- <a ui-sref-active="active" ui-sref="camp.edit({id:camp.id})">camp #{{camp.id}}</a> -->
-					{{person.id}}
+					<a ui-sref-active="active" ui-sref="person.edit({id:person.id})">{{person.name}}</a>
+				</td>
+
+				<td>
+					{{person.email}}
 				</td>
 				<td>
-					{{person.name}}
+					<button class="btn btn-xs" ng-click="deletePerson(person)">Delete</button>
 				</td>
 			</tr>
 		</tbody>
 	</table>
-</div>
-<div class="row">
-	<div class="selectedItems">{{mySelections}}</div>
 </div>
 
 
