@@ -1,0 +1,28 @@
+
+
+<div class="row">
+	<button class="btn-primary" ng-click="newItem()">Add Item</button>
+</div>
+<div class="row">
+&nbsp;
+</div>
+<div class="row">
+	<table class="table table-condensed ">
+		<tbody class="" ng-repeat="item in itemList">
+			<tr>
+				<td>
+					<a ui-sref-active="active" ui-sref="item.edit({id:item.id})">{{item.name}}</a>
+				</td>
+
+				<td>
+					{{item.description}}
+				</td>
+				<td>
+					<button class="btn btn-xs" ng-click="deleteItem(item)">Delete</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
