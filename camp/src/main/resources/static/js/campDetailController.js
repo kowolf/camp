@@ -30,6 +30,8 @@ angular.module('campApp').controller('campDetailController', function($scope,$st
 			destination : data.locationDestination,
 			showList : false
 		}
+		
+		$scope.getDirections();
 	
 		console.log("data = " + JSON.stringify(data));
 	}).error(function(data, status) {

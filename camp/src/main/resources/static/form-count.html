@@ -5,6 +5,24 @@
 		<input type="text" class="form-control" name="count"
 			ng-model="formData.count">
 	</div>
+	
+	
+	<div class="row form-group">
+  		<label>People Going</label>
+	
+		<ui-select multiple ng-model="campPersons.selectedPersons" theme="select2"  style="width: 800px;">
+		  <ui-select-match placeholder="Select person...">{{$item.name}} </ui-select-match>
+		  <ui-select-choices repeat="person in personList | propsFilter: {name: $select.search}">
+		    <div ng-bind-html="person.name | highlight: $select.search"></div>
+		    <small>
+		      email: {{person.email}}
+		    </small>
+		  </ui-select-choices>
+		</ui-select>
+	
+	</div>
+	
+	
 	<div class="row form-group">
 		<a ui-sref="start.main" class="btn btn-info"> Start Over</a>
 		<a ui-sref="form.location" class="btn  btn-info"> <i

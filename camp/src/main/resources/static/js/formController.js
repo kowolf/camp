@@ -8,6 +8,9 @@ angular
 					$scope.formData = {};
 					$scope.formMaster = angular.copy($scope.formData);
 					$scope.campId = 0;
+					
+					$scope.campPersons = {};
+					$scope.campPersons.selectedPersons = [];
 
 					$http({
 						method : 'GET',
@@ -26,14 +29,23 @@ angular
 					}).success(function(data, status) {
 						//console.log(JSON.stringify(data));
 						$scope.status = status;
-						$scope.itemList = data;				   
+						$scope.personList = data;				   
 					}).error(function(data, status) {
-						$scope.campList = data || "Request failed";
+						$scope.personList = data || "Request failed";
 						$scope.status = status;
 					});
 
 					// function to process the form
 					$scope.saveCamp = function() {
+						
+						var thePersons = [];
+						
+						for (var i = 0; i < $scope.campPersons.selectedPersons.length; i++) {
+							thePersons
+									.push('http://localhost:8080/camp/rest/person/'
+										+ $scope.campPersons.selectedPersons[i].id);
+						}
+						
 						var req = {
 							method : 'POST',
 							url : 'rest/camps',
@@ -45,7 +57,8 @@ angular
 								// Rework to use Season object
 								locationOrigin : $scope.directions.origin,
 								locationDestination: $scope.directions.destination,
-								count : $scope.formData.count
+								count : $scope.formData.count,
+								personList:thePersons
 							},
 						}
 

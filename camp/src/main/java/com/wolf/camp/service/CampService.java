@@ -23,6 +23,12 @@ public class CampService {
 	public Camp getCamp(Integer id) {
 		return campRepository.findOne(id);
 	}
+	
+public Camp createCamp(Camp camp) {
+		
+		return campRepository.save(camp);
+	}
+
 
 	public Camp saveCamp(Camp camp) {
 		

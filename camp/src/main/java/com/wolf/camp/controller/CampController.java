@@ -53,7 +53,7 @@ public class CampController {
 	@RequestMapping(method = RequestMethod.POST)
 	public Camp create(@RequestBody Camp camp) {
 
-		camp = campService.saveCamp(camp);
+		camp = campService.createCamp(camp);
 
 		return camp;
 	}
