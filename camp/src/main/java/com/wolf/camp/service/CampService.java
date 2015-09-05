@@ -5,6 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import scala.annotation.meta.setter;
+
 import com.wolf.camp.model.Camp;
 import com.wolf.camp.repository.CampRepository;
 
@@ -23,6 +25,16 @@ public class CampService {
 	}
 
 	public Camp saveCamp(Camp camp) {
+		
+		Camp currentCamp = campRepository.findOne(camp.getId());
+		
+		currentCamp.setEmail(camp.getEmail());
+		currentCamp.setSeason(camp.getSeason());
+		currentCamp.setLocationOrigin(camp.getLocationOrigin());
+		currentCamp.setLocationDestination(camp.getLocationDestination());
+		currentCamp.setCount(camp.getCount());
+		currentCamp.setPersonList(camp.getPersonList());
+		
 		return campRepository.save(camp);
 	}
 

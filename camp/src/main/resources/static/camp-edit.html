@@ -41,6 +41,21 @@
 		</ul>
 	</div>
 	
+	<div class="row">
+  	<label>People Going</label>
+	
+	<ui-select multiple ng-model="campPersons.selectedPersons" theme="select2"  style="width: 800px;">
+	  <ui-select-match placeholder="Select person...">{{$item.name}} </ui-select-match>
+	  <ui-select-choices repeat="person in personList | propsFilter: {name: $select.search}">
+	    <div ng-bind-html="person.name | highlight: $select.search"></div>
+	    <small>
+	      email: {{person.email}}
+	    </small>
+	  </ui-select-choices>
+	</ui-select>
+	
+</div>
+	
 	<!-- <div>
 		<label for="locationOrigin">Location Origin</label><input id="locationOrigin" type="text" ng-model="camp.locationOrigin"/>
 	</div>
@@ -78,10 +93,10 @@
 		<div id="directionsList" ng-show="directions.showList"
 			class="panel panel-primary"></div>
 	</div>
-</div>
+</div> 
 	
 	<div>
-		<button ng-click="update()" >Save</button>
+		<button class="btn btn-success single-message" ng-click="update()" >Save</button>
 	</div>
 </div>
 

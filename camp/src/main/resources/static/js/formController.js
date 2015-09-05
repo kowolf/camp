@@ -19,6 +19,18 @@ angular
 						$scope.seasons = data || "Request failed";
 						$scope.status = status;
 					});
+					
+					$http({
+						method : 'GET',
+						url : 'rest/person'
+					}).success(function(data, status) {
+						//console.log(JSON.stringify(data));
+						$scope.status = status;
+						$scope.itemList = data;				   
+					}).error(function(data, status) {
+						$scope.campList = data || "Request failed";
+						$scope.status = status;
+					});
 
 					// function to process the form
 					$scope.saveCamp = function() {
@@ -67,7 +79,7 @@ angular
 						}
 
 						$http(req).success(function(data) {
-							console.log(JSON.stringify(data));
+							//console.log(JSON.stringify(data));
 							$scope.formData = angular.copy(data);
 						}).error(function() {
 						});

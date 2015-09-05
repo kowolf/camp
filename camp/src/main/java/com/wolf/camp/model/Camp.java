@@ -2,11 +2,18 @@ package com.wolf.camp.model;
 
 // Generated May 5, 2015 8:59:40 PM by Hibernate Tools 4.3.1
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.OrderBy;
+
 import static javax.persistence.GenerationType.IDENTITY;
+
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -25,6 +32,9 @@ public class Camp implements java.io.Serializable {
 	private String email;
 	private String locationOrigin;
 	private String locationDestination;
+	private List<Person> personList;
+	
+	//TODO: Add a person list model somewhat after season/items
 
 	public Camp() {
 	}
@@ -94,6 +104,22 @@ public class Camp implements java.io.Serializable {
 	public void setLocationDestination(String locationDestination) {
 		this.locationDestination = locationDestination;
 	}
+
+	@ManyToMany
+	
+	  @JoinTable(
+		      name="CAMP_PERSON",
+		      joinColumns={@JoinColumn(name="CAMP_ID", referencedColumnName="ID", nullable = false, updatable = true)},
+		      inverseJoinColumns={@JoinColumn(name="PERSON_ID", referencedColumnName="ID", nullable = false, updatable = true)})
+	@OrderBy("id")
+	public List<Person> getPersonList() {
+		return personList;
+	}
+
+	public void setPersonList(List<Person> personList) {
+		this.personList = personList;
+	}
+	
 	
 	
 
